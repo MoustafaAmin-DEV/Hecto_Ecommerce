@@ -1,0 +1,67 @@
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/glubal-rules";
+
+.leatest-blog {
+  margin: 130px 0;
+
+  .leatPro {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /* shadow */
+    box-shadow: 0px 8px 40px 0px rgba(49, 32, 138, 0.05);
+
+    .leatestInfo {
+      .info {
+        margin-right: 29px;
+      }
+
+      .date {
+        color: #ffa454;
+      }
+
+      .pen {
+        color: $secondry-color;
+      }
+
+      p {
+        padding-left: 4px;
+        color: $third-color;
+        font-family: $font-family-Josefin;
+        font-size: $fs-14;
+        font-weight: 400;
+      }
+    }
+
+    .card-title {
+      margin-top: 31px;
+      font-family: $font-family-Josefin;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .card-text {
+      color: #72718f;
+      font-size: $fs-16;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 17px;
+      margin-bottom: 14px;
+    }
+
+    a {
+      font-size: $fs-16;
+      font-weight: 400;
+      line-height: 30px;
+      text-decoration-line: underline;
+    }
+
+    .leatestColor1 {
+      color: $third-color;
+    }
+
+    .leatestColor2 {
+      color: $secondry-color;
+    }
+  }
+}

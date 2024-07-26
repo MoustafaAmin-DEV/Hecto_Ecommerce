@@ -1,0 +1,139 @@
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/mixins";
+.featured-products {
+  margin: 130px 0;
+  ::ng-deep {
+    .owl-carousel {
+      .owl-dots {
+        margin-top: 50px !important;
+        .owl-dot {
+          &.active,
+          &:hover {
+            span {
+              width: 28px;
+              background-color: $secondry-color;
+            }
+          }
+          span {
+            transition: 0.3s;
+            width: 20px;
+            height: 7px;
+            background-color: #febad7;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feat {
+  background: $white;
+  transition: 0.3s;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  height: 450px;
+  &:hover {
+    .feat-img {
+      .feat-btn {
+        bottom: 9px;
+        z-index: 1;
+      }
+      .icon-feat {
+        z-index: 1;
+      }
+    }
+    .feat-body {
+      background-color: #00009d;
+      h2,
+      p,
+      span {
+        color: $white;
+      }
+      .change-img a.change-blue {
+        background-color: $white;
+      }
+    }
+  }
+  .feat-img {
+    background-color: #f6f7fb;
+    height: 60%;
+    img {
+      height: 100%;
+    }
+    .icon-feat {
+      left: 11px;
+      top: 11px;
+      z-index: -1;
+      transition: 0.3s;
+      a {
+        transition: 0.3s;
+        padding: 8px;
+        margin-left: 5px;
+        border-radius: 50%;
+        svg {
+          color: #1389ffb6;
+          transition: 0.3s;
+        }
+        &:hover {
+          background-color: #eeeffb;
+          svg {
+            color: #2f1ac4;
+          }
+        }
+      }
+    }
+    .feat-btn {
+      transition: 0.4s;
+      z-index: -1;
+      color: $white;
+      font-family: $font-family-Josefin;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 2px;
+      background: #08d15f;
+      left: 50%;
+      bottom: -20px;
+      transform: translate(-50%);
+      padding: 8px 15px;
+    }
+  }
+  .feat-body {
+    transition: 0.3s;
+
+    h2 {
+      color: $secondry-color;
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+    .change-img {
+      a {
+        width: 30px;
+        height: 7px;
+        padding: 0;
+        margin-right: 5px;
+        &.change-green {
+          background-color: #05e6b7;
+        }
+        &.change-red {
+          background-color: #f701a8;
+        }
+        &.change-blue {
+          background-color: #00009d;
+          transition: 0.3s;
+        }
+      }
+    }
+    p,
+    span {
+      color: $third-color;
+      font-family: $font-family-Josefin;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    span {
+      font-family: lato;
+    }
+  }
+}

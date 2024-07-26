@@ -1,0 +1,84 @@
+<div class="latest-product" *ngIf="home">
+  <div class="container">
+    <div class="title-head">latest products</div>
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="latest_btn d-flex justify-content-center flex-wrap mb-5">
+          <button
+            class="New_Arrivals mb-3 me-2 me-md-4"
+            [ngClass]="{ 'active-btn': productType === 'newArrivals' }"
+            (click)="setProductType('newArrivals')"
+          >
+            New Arrival
+          </button>
+          <button
+            class="Best_Seller mb-3 me-2 me-md-4"
+            [ngClass]="{ 'active-btn': productType === 'BestSeller' }"
+            (click)="setProductType('BestSeller')"
+          >
+            Best Seller
+          </button>
+          <button
+            class="Featured mb-3 me-2 me-md-4"
+            [ngClass]="{ 'active-btn': productType === 'Featured' }"
+            (click)="setProductType('Featured')"
+          >
+            Featured
+          </button>
+          <button
+            class="Special_Offer mb-3 me-2 me-md-4"
+            [ngClass]="{ 'active-btn': productType === 'SpecialOffer' }"
+            (click)="setProductType('SpecialOffer')"
+          >
+            Special Offer
+          </button>
+        </div>
+      </div>
+      <div class="row product_cart">
+        <div
+          class="latest_item col-lg-4 col-md-6 col-12"
+          *ngFor="let product of home[productType]"
+        >
+          <div class="">
+            <div class="card latest-pro border-0 mb-4">
+              <div class="card-img-top position-relative latest-img">
+                <img
+                  src="{{ product.imgvector }}"
+                  alt=""
+                  class="position-absolute vector"
+                  [ngClass]="{ 'd-none': product.imgvector === '' }"
+                />
+                <span
+                  class="position-absolute hint-sale"
+                  [ngClass]="{ 'd-none': product.latestBanner === '' }"
+                  >{{ product.latestBanner }}</span
+                >
+                <img src="{{ product.latestImg }}" alt="" />
+                <div class="icon-latest position-absolute d-flex flex-column">
+                  <a href="#"><i class="fa fa-cart-shopping"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search-plus"></i></a>
+                </div>
+              </div>
+              <div
+                class="card-body latest-text d-flex align-items-center justify-content-between"
+              >
+                <h2 class="card-title">{{ product.latestTitel }}</h2>
+                <div class="sale">
+                  <h3>
+                    $
+                    {{
+                      product["latestSale"] -
+                        (product["latestSale"] / 100) * product["latestOffer"]
+                    }}
+                    <del class="ps-2">${{ product.latestSale }}</del>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

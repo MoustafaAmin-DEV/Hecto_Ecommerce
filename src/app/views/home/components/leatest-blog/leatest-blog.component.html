@@ -1,0 +1,41 @@
+<div class="leatest-blog" *ngIf="home">
+  <div class="container">
+    <div class="title-head">Leatest Blog</div>
+    <div class="row">
+      <div
+        class="col-lg-4 col-md-6 col-12 leatPro"
+        *ngFor="let leatPro of home"
+      >
+        <div class="card border-0">
+          <img
+            class="card-img-top mw-100"
+            src="{{ leatPro.leatestImg }}"
+            alt="Title"
+          />
+          <div class="card-body">
+            <div
+              class="leatestInfo d-flex align-items-center"
+              *ngFor="let info of home.leatestInfo"
+            >
+              <div class="info d-flex">
+                <i class="pen fa-solid fa-pen-nib fa-fw"></i>
+                <p>{{ info.name }}</p>
+              </div>
+              <div class="d-flex">
+                <i class="date fa-regular fa-calendar-days fa-fw"></i>
+                <p>{{ info.date }}</p>
+              </div>
+            </div>
+            <h4 class="card-title {{ leatPro.leatestClass }}">
+              {{ leatPro.leatestTilttle }}
+            </h4>
+            <p class="card-text">{{ leatPro.leatestDescription }}</p>
+            <a class="{{ leatPro.leatestClass }}" href="">{{
+              leatPro.leatestLink
+            }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

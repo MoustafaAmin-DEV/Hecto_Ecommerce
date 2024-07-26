@@ -1,0 +1,100 @@
+.register-form {
+  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+  .title-register {
+    h1 {
+      color: #000;
+      font-family: "Josefin Sans";
+      font-size: 32px;
+      font-weight: 700;
+    }
+    p {
+      color: #9096b2;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+  form {
+    label {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    input {
+      border-radius: 2px;
+      border: 1px solid #c2c5e1;
+      padding: 13px;
+      outline: 0;
+      font-size: 18px;
+      &:focus {
+        border-color: #fb2e86;
+      }
+      &::-webkit-input-placeholder {
+        color: #9096b2;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &::-moz-placeholder {
+        color: #9096b2;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &:-ms-input-placeholder {
+        color: #9096b2;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &::-ms-input-placeholder {
+        color: #9096b2;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &::placeholder {
+        color: #9096b2;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .btn-signUp {
+      width: 100%;
+      color: #fff;
+      font-family: Lato;
+      font-size: 17px;
+      font-weight: 700;
+      border-radius: 3px;
+      background: #fb2e86;
+      padding: 13px;
+    }
+    .hint-login {
+      p {
+        color: #9096b2;
+        font-size: 17px;
+        font-weight: 600;
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

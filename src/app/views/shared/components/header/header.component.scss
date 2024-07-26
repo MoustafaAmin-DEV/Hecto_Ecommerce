@@ -1,0 +1,231 @@
+@import "../../../../../assets/scss/vars";
+
+@import "../../../../../assets/scss/mixins";
+
+@import "../../../../../assets/scss/glubal-rules";
+
+// strat heading-bar
+
+.heading-bar {
+  background-color: $main-color;
+
+  .row {
+    height: 44px;
+
+    p,
+    a {
+      color: #f1f1f1;
+      font-family: $font-family-Josefin;
+      font-size: $fs-16;
+
+      font-weight: 600;
+
+      svg {
+        width: 16px;
+      }
+    }
+
+    .logo {
+      p {
+        color: $white;
+        font-family: $font-family-Josefin;
+        font-size: 34px;
+        font-weight: 700;
+        @include smwidth {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .head-left {
+      .envelope {
+        margin-right: 48px;
+
+        @include mdwidth {
+          margin-right: 10px;
+        }
+
+        span {
+          padding-right: 10px;
+        }
+      }
+
+      .phone {
+        span {
+          padding-right: 12px;
+        }
+      }
+
+      @include smwidth {
+        display: none;
+      }
+    }
+
+    .nav {
+      .nav-item {
+        margin-right: 17px;
+        cursor: pointer;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+
+        .wish {
+          padding-left: 3px;
+        }
+
+        ul {
+          min-width: 8rem !important;
+
+          li {
+            margin: 0 10px;
+
+            a {
+              font-family: $font-family-Josefin;
+              font-size: $fs-14;
+
+              font-weight: 600;
+              color: $black;
+              border-radius: 6px;
+
+              &:hover {
+                background-color: $main-color;
+                color: $white;
+                transition: 0.4s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// strat heading-bar
+//start nav-bar
+
+.nav-bar {
+  height: 40px;
+  margin: 19px 0;
+
+  .logo {
+    p {
+      color: #0d0e43;
+      font-family: $font-family-Josefin;
+      font-size: 34px;
+
+      font-weight: 700;
+    }
+  }
+
+  .nav {
+    .nav-item {
+      margin-right: 35px;
+
+      .nav-link {
+        color: #0d0e43;
+
+        font-size: $fs-16;
+
+        font-weight: 400;
+        line-height: 20px;
+        cursor: pointer;
+        /* 125% */
+      }
+
+      .active {
+        color: $secondry-color;
+      }
+    }
+  }
+
+  .search {
+    width: 317px;
+    height: 40px;
+
+    input {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .search-icon {
+      width: 51px;
+      background-color: $secondry-color;
+      cursor: pointer;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        color: $white;
+      }
+    }
+  }
+}
+
+//end nav-bar
+//start offcanvas
+
+.offcanvas {
+  width: calc(100% - 50%);
+
+  @include smwidth {
+    width: calc(100% - 30%);
+  }
+
+  .offcanvas-header {
+    h5 {
+      color: $main-color;
+      font-family: $font-family-Josefin;
+      font-size: 30px;
+
+      font-weight: 700;
+    }
+  }
+
+  .offcanvas-body {
+    .link {
+      ul {
+        a {
+          color: #0d0e43;
+          font-family: $font-family-Josefin;
+          font-size: $fs-16;
+
+          font-weight: 400;
+        }
+      }
+    }
+
+    .icon {
+      svg {
+        color: $main-color;
+      }
+    }
+
+    .nav {
+      a {
+        color: #0d0e43;
+        font-family: $font-family-Josefin;
+        font-size: $fs-16;
+        font-weight: 400;
+      }
+
+      .active {
+        color: $secondry-color;
+      }
+    }
+
+    p {
+      color: #0d0e43;
+      font-family: $font-family-Josefin;
+      font-size: $fs-16;
+      font-weight: 600;
+      svg {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+//end offcanvas

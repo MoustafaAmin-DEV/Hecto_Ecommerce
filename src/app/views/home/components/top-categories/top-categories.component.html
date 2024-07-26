@@ -1,0 +1,25 @@
+<div class="top-categories" *ngIf="home">
+  <div class="container">
+    <div class="title-head">Top Categories</div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let catePro of home">
+        <div class="card cate border-0">
+          <div class="cate-bg">
+            <div
+              class="cateimg position-relative d-flex justify-content-center align-items-center"
+            >
+              <img class="mw-100" src="{{ catePro.cateImg }}" alt="Title" />
+              <a href="#" class="btn cate-btn position-absolute"
+                >View Details</a
+              >
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h4 class="card-title">{{ catePro.cateTittle }}</h4>
+            <p class="card-text">{{ catePro.cateSale }}</p>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>

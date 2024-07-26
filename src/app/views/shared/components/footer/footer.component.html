@@ -1,0 +1,69 @@
+<footer>
+  <div class="container" *ngIf="dataFooter">
+    <div class="row">
+      <div
+        class="col-xl-4 col-lg-5 col-md-6 col-12 mb-4 mb-md-0 px-2 me-0 me-xl-4"
+      >
+        <h1>Hekto</h1>
+        <div
+          class="sign-up d-flex justify-content-between align-items-center p-1"
+        >
+          <input
+            type="email"
+            class="border-0 ms-2"
+            placeholder="Enter Email Address"
+          />
+          <div class="sign text-center">
+            <p class="p-0">Sign Up</p>
+          </div>
+        </div>
+        <p class="m-0">Contact Info</p>
+        <p class="m-0">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+      </div>
+      <div
+        class="col-xl-2 col-lg-3 col-md-6 col-12"
+        *ngFor="let item of dataFooter"
+      >
+        <h5>{{ item.titleFooter }}</h5>
+        <ul class="text-start" *ngFor="let list of item.list">
+          <li>
+            <a>{{ list.listTitle1 }}</a>
+          </li>
+          <li>
+            <a>{{ list.listTitle2 }}</a>
+          </li>
+          <li>
+            <a>{{ list.listTitle3 }}</a>
+          </li>
+          <li>
+            <a>{{ list.listTitle4 }}</a>
+          </li>
+          <li>
+            <a>{{ list.listTitle5 }}</a>
+          </li>
+          <li>
+            <a>{{ list.listTitle6 }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyRight d-flex align-items-center py-3 py-sm-0">
+  <div class="container">
+    <div class="copyRight">
+      <p>©Webecy - All Rights Reserved</p>
+      <ul class="d-flex align-items-center">
+        <li>
+          <a href=""><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram fa-fw"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter fa-fw"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

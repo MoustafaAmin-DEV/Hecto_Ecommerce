@@ -1,0 +1,117 @@
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/glubal-rules";
+
+footer {
+  background-color: #eeeffb;
+  padding: 100px 0;
+
+  @include smwidth {
+    padding: 10px 0;
+  }
+
+  h1 {
+    color: $black;
+    font-family: $font-family-Josefin;
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .sign-up {
+    background-color: $white;
+    height: 44px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    width: 377px;
+    @include lgwidth {
+      width: 350px;
+    }
+
+    input {
+      color: #8a8fb9;
+      font-size: $fs-16;
+      font-weight: 400;
+      opacity: 0.45;
+    }
+
+    .sign {
+      background-color: $secondry-color;
+      height: 100%;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      padding: 0 35px;
+
+      p {
+        color: #eeeffb;
+        font-family: $font-family-roboto;
+        font-size: $fs-16;
+        font-weight: 500;
+      }
+    }
+  }
+
+  p {
+    padding-bottom: 10px;
+    color: #8a8fb9;
+    font-size: $fs-16;
+    font-weight: 400;
+  }
+
+  h5 {
+    margin-bottom: 25px;
+    color: #8a8fb9;
+    font-family: $font-family-Josefin;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  ul {
+    li {
+      color: #8a8fb9;
+      font-size: $fs-16;
+      font-weight: 400;
+      padding-bottom: 21px;
+    }
+  }
+}
+
+.copyRight {
+  background: #e7e4f8;
+  padding: 5px 0 !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 787px) {
+    flex-direction: column;
+  }
+
+  p {
+    color: #9da0ae;
+    font-size: $fs-16;
+    font-weight: 600;
+    @media (max-width: 787px) {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  ul {
+    li {
+      margin-right: 11px;
+
+      a {
+        background-color: $third-color;
+        border-radius: 50%;
+        padding: 5px;
+
+        @include smwidth {
+          padding: 2px;
+        }
+
+        svg {
+          color: $white;
+        }
+      }
+    }
+  }
+}

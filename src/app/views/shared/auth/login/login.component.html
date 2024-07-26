@@ -1,0 +1,104 @@
+<div class="login-form">
+  <div class="container">
+    <div class="row min-vh-100">
+      <div
+        class="col-lg-6 col-12 m-auto gap-3 bg-white shadow p-5 rounded-2 d-flex flex-column"
+      >
+        <div class="title-login text-center">
+          <h1>Login</h1>
+          <div *ngIf="error" class="alert alert-primary mb-0">
+            <h5>
+              {{ error }}
+            </h5>
+          </div>
+          <p>Please login using account detail bellow.</p>
+        </div>
+        <form
+          class="d-flex gap-4 flex-column"
+          [formGroup]="loginForm"
+          (ngSubmit)="submitLogin(loginForm)"
+        >
+          <!-- Email input -->
+          <div class="d-flex flex-column gap-2">
+            <label class="emailAddress-label" for="emailAddress"
+              >Email address</label
+            >
+            <input
+              type="email"
+              id="emailAddress"
+              class="emailAddress-input"
+              formControlName="email"
+              placeholder="Email address"
+            />
+            <div
+              *ngIf="
+                loginForm.get('email')?.errors &&
+                loginForm.get('email')?.touched
+              "
+              class="alert alert-primary mb-0"
+              role="alert"
+            >
+              <p *ngIf="loginForm.get('email')?.errors?.['required']">
+                <strong>email</strong> is required
+              </p>
+              <p *ngIf="loginForm.get('email')?.errors?.['email']">
+                <strong>email</strong> invalid
+              </p>
+            </div>
+          </div>
+
+          <!-- Password input -->
+          <div class="d-flex flex-column gap-2">
+            <label class="password-label" for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="password-input"
+              placeholder="Password"
+              formControlName="password"
+            />
+            <div
+              *ngIf="
+                loginForm.get('password')?.errors &&
+                loginForm.get('password')?.touched
+              "
+              class="alert alert-primary mb-0"
+              role="alert"
+            >
+              <p *ngIf="loginForm.get('password')?.errors?.['required']">
+                <strong>password</strong> is required
+              </p>
+              <p *ngIf="loginForm.get('password')?.errors?.['pattern']">
+                <strong>password</strong> Must start with upper case
+              </p>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="d-flex forgot-pass">
+            <a routerLink="/resetPassword">Forgot your password?</a>
+          </div>
+
+          <!-- Submit button -->
+          <div class="d-flex">
+            <button
+              type="submit"
+              class="btn btn-signIn"
+              [disabled]="loginForm.invalid"
+            >
+              Sign In
+            </button>
+          </div>
+
+          <!-- Register buttons -->
+          <div class="text-center hint-register">
+            <p>
+              Don’t have an Account?
+              <a routerLink="/register">Create account</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

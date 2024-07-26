@@ -1,0 +1,38 @@
+<div class="featured-products" *ngIf="home">
+  <div class="container">
+    <div class="title-head">featured products</div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let featPro of home">
+        <div class="m-2">
+          <div class="card border-0 feat">
+            <div class="card-img-top feat-img p-5 position-relative">
+              <div class="icon-feat position-absolute">
+                <a href="#"><i class="fa fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-search-plus"></i></a>
+              </div>
+              <img src="{{ featPro.featImg }}" alt="image-1" class="mw-100" />
+              <a
+                [routerLink]="['/products', featPro.id]"
+                class="btn feat-btn position-absolute"
+                >View Details</a
+              >
+            </div>
+            <div
+              class="card-body feat-body border-0 shadow-none text-center rounded-0"
+            >
+              <h2 class="mb-2">{{ featPro.titleFeat }}</h2>
+              <div class="change-img mb-2">
+                <a href="#" class="btn change-green"></a>
+                <a href="#" class="btn change-red"></a>
+                <a href="#" class="btn change-blue"></a>
+              </div>
+              <p class="mb-2">{{ featPro.codeFeat }}</p>
+              <span>{{ featPro.saleFeat }}</span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>

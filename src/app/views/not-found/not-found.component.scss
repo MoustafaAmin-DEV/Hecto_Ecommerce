@@ -1,0 +1,38 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/glubal-rules.scss";
+
+.not-found {
+  margin-bottom: 124px;
+
+  .image {
+    height: 390.604px;
+    background-image: url("../../../assets/images/notfound/Group\ 123.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .text {
+    text-align: center;
+
+    p {
+      color: $third-color;
+      font-family: $font-family-Josefin;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .not-btn {
+      margin-top: 62px;
+      padding: 9px 30px;
+      background-color: $secondry-color;
+      color: $white;
+      font-family: $font-family-Josefin;
+      font-size: $fs-16;
+      font-weight: 400;
+      line-height: 25.6px;
+      /* 160% */
+    }
+  }
+}

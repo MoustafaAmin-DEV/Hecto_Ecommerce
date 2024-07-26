@@ -1,0 +1,154 @@
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/mixins";
+
+.Trending-Products {
+  .trendPro {
+    margin: 10px 0;
+    padding: 11px;
+    height: 350px;
+    box-shadow: 0px 8px 40px 0px rgba(49, 32, 138, 0.05);
+    transition: 0.3s;
+    -webkit-animation: fadeIn 3s;
+    animation: fadeIn 3s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    .trendImg {
+      background-color: #f5f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 244px;
+    }
+
+    .card-body {
+      .card-title {
+        color: $third-color;
+        text-align: center;
+        font-size: $fs-16;
+        font-weight: 700;
+        line-height: 25.6px;
+        /* 160% */
+      }
+
+      .saletrend {
+        .sale-new {
+          margin-right: 12px;
+          color: $third-color;
+          /* Caption\ */
+          font-family: $font-family-Josefin;
+          font-size: $fs-14;
+          font-weight: 400;
+        }
+
+        .sale-old {
+          color: rgba(21, 24, 117, 0.3);
+          /* price cut */
+          font-family: $font-family-Josefin;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.trend-offer {
+  margin-top: 39px;
+
+  .amont-offer {
+    padding: 34px 0 0 25px;
+    /* shadow */
+    box-shadow: 0px 8px 40px 0px rgba(49, 32, 138, 0.05);
+  }
+
+  .title-offer {
+    margin-bottom: 11px;
+    color: $third-color;
+    font-family: $font-family-Josefin;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .link-offer {
+    color: $secondry-color;
+    text-align: center;
+    font-size: $fs-16;
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+
+  .img-offer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .img1 {
+    background-color: #fff6fb;
+  }
+
+  .img2 {
+    background-color: #eeeffb;
+  }
+}
+
+.Trending-products-list {
+  padding: 15px 0;
+
+  .list {
+    margin-bottom: 20px;
+
+    .list-img {
+      background-color: #f5f6f8;
+      width: 107px;
+      height: 74px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .list-body {
+      padding-left: 9px;
+
+      .list-title {
+        color: $third-color;
+        text-align: center;
+        /* button text */
+        font-family: $font-family-Josefin;
+        font-size: $fs-16;
+        font-weight: 600;
+      }
+
+      .list-sale {
+        color: $third-color;
+        /* price cut */
+        font-family: $font-family-Josefin;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,199 @@
+<div class="register-form">
+  <div class="container">
+    <div class="row min-vh-100">
+      <div
+        class="col-lg-7 col-12 m-auto gap-3 bg-white shadow p-5 rounded-2 d-flex flex-column"
+      >
+        <div class="title-register text-center">
+          <h1>Register</h1>
+          <div *ngIf="error" class="alert alert-primary mb-0">
+            <h5>
+              {{ error }}
+            </h5>
+          </div>
+          <p>
+            To register you an account, please add your information in the
+            following form.
+          </p>
+        </div>
+        <form
+          class="d-flex gap-4 flex-column"
+          [formGroup]="registerForm"
+          (ngSubmit)="submitRegister(registerForm)"
+        >
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+          <div class="row gap-2">
+            <div class="col">
+              <div class="d-flex flex-column gap-2">
+                <label class="firstName-label" for="firstName"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  id="firstName"
+                  class="firstName-input"
+                  placeholder="First name"
+                  formControlName="firstName"
+                />
+                <div
+                  *ngIf="
+                    registerForm.get('firstName')?.errors &&
+                    registerForm.get('firstName')?.touched
+                  "
+                  class="alert alert-primary mb-0"
+                  role="alert"
+                >
+                  <p
+                    *ngIf="registerForm.get('firstName')?.errors?.['required']"
+                  >
+                    <strong>firstName</strong> is required
+                  </p>
+                  <p
+                    *ngIf="registerForm.get('firstName')?.errors?.['minlength']"
+                  >
+                    <strong>firstName</strong> minLength is 4
+                  </p>
+                  <p
+                    *ngIf="registerForm.get('firstName')?.errors?.['maxlength']"
+                  >
+                    <strong>firstName</strong> maxLength is 8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column gap-2">
+                <label class="lastName-label" for="lastName">Last name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  class="lastName-input"
+                  placeholder="Last name"
+                  formControlName="lastName"
+                />
+                <div
+                  *ngIf="
+                    registerForm.get('lastName')?.errors &&
+                    registerForm.get('lastName')?.touched
+                  "
+                  class="alert alert-primary mb-0"
+                  role="alert"
+                >
+                  <p *ngIf="registerForm.get('lastName')?.errors?.['required']">
+                    <strong>lastName</strong> is required
+                  </p>
+                  <p
+                    *ngIf="registerForm.get('lastName')?.errors?.['minlength']"
+                  >
+                    <strong>lastName</strong> minLength is 3
+                  </p>
+                  <p
+                    *ngIf="registerForm.get('lastName')?.errors?.['maxlength']"
+                  >
+                    <strong>lastName</strong> maxLength is 8
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email input -->
+          <div class="d-flex flex-column gap-2">
+            <label class="emailAddress-label" for="emailAddress"
+              >Email address</label
+            >
+            <input
+              type="email"
+              id="emailAddress"
+              class="emailAddress-input"
+              placeholder="Email address"
+              formControlName="email"
+            />
+            <div
+              *ngIf="
+                registerForm.get('email')?.errors &&
+                registerForm.get('email')?.touched
+              "
+              class="alert alert-primary mb-0"
+              role="alert"
+            >
+              <p *ngIf="registerForm.get('email')?.errors?.['required']">
+                <strong>email</strong> is required
+              </p>
+              <p *ngIf="registerForm.get('email')?.errors?.['email']">
+                <strong>email</strong> invalid
+              </p>
+            </div>
+          </div>
+
+          <!-- Password input -->
+          <div class="d-flex flex-column gap-2">
+            <label class="password-label" for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="password-input"
+              placeholder="Password"
+              formControlName="password"
+            />
+            <div
+              *ngIf="
+                registerForm.get('password')?.errors &&
+                registerForm.get('password')?.touched
+              "
+              class="alert alert-primary"
+              role="alert"
+            >
+              <p *ngIf="registerForm.get('password')?.errors?.['required']">
+                <strong>password</strong> is required
+              </p>
+              <p *ngIf="registerForm.get('password')?.errors?.['pattern']">
+                <strong>password</strong> Must start with upper case
+              </p>
+            </div>
+          </div>
+
+          <!-- Password input -->
+          <div class="d-flex flex-column gap-2">
+            <label class="cPassword-label" for="cPassword"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="cPassword"
+              class="cPassword-input"
+              placeholder="Confirm Password"
+              formControlName="cPassword"
+            />
+            <div
+              *ngIf="registerForm.controls?.['cPassword']?.errors"
+              class="alert alert-primary"
+              role="alert"
+            >
+              <p>
+                <strong>Your Password</strong> and confirmation Password do not
+                match
+              </p>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="d-flex gap-3">
+            <button
+              type="submit"
+              class="btn btn-signUp"
+              [disabled]="registerForm.invalid"
+            >
+              Sign up
+            </button>
+          </div>
+
+          <!-- Register buttons -->
+          <div class="text-center hint-login">
+            <p>Do you have an Account? <a routerLink="/login">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

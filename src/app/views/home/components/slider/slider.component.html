@@ -1,0 +1,54 @@
+<div class="slider" *ngIf="home">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let slide of home">
+      <div class="position-relative">
+        <div class="container">
+          <div class="slide-content align-items-center d-flex pb-5">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+              <div class="col-lg-7 col-12 item-text mb-5">
+                <span class="hint mb-2 d-block">{{ slide.hint }}</span>
+                <h2 class="title-slider">
+                  {{ slide.titleSlider }}
+                </h2>
+                <p class="description-slider pe-sm-5">
+                  {{ slide.descriptionSlider }}
+                </p>
+                <a href="#" class="btn btn-shop">Shop Now</a>
+                <div class="img-Lamp position-absolute d-none d-lg-block">
+                  <img
+                    src="../../../../../assets/images/home/image 32.png"
+                    alt=""
+                    class="mw-100"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-lg-5 col-12 position-relative item-img my-5 my-lg-0"
+              >
+                <img src="{{ slide.imgslider }}" alt="" />
+                <img
+                  src="../../../../../assets/images/home/Ellipse 60.png"
+                  alt="Ellipse"
+                  class="position-absolute Ellipse-1 mw-100"
+                />
+
+                <img
+                  src="../../../../../assets/images/home/Ellipse 61.png"
+                  alt="Ellipse"
+                  class="position-absolute Ellipse-2 mw-100 d-none d-sm-block"
+                />
+                <div class="position-absolute vector">
+                  <img
+                    src="../../../../../assets/images/home/Group 130.png"
+                    alt="vector"
+                    class="mw-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>

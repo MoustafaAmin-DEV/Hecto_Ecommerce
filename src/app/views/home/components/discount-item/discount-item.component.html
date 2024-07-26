@@ -1,0 +1,41 @@
+<div class="discount-content" *ngIf="home">
+  <div class="title-head">Discount Item</div>
+  <div class="discount">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let disPro of home">
+        <div class="container">
+          <div class="discount-item">
+            <div
+              class="row align-items-center py-5 flex-column-reverse flex-lg-row"
+            >
+              <div class="col-lg-6 my-5 col-12 item-text">
+                <h2>{{ disPro.discountTitle }}</h2>
+                <span> {{ disPro.typePro }} </span>
+                <p>
+                  {{ disPro.descriptionPro }}
+                </p>
+                <ul *ngFor="let disfeat of disPro.featPro">
+                  <li>{{ disfeat.feat1 }}</li>
+                  <li>{{ disfeat.feat2 }}</li>
+                  <li>{{ disfeat.feat3 }}</li>
+                  <li>{{ disfeat.feat4 }}</li>
+                </ul>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+              <div class="col-lg-6 my-5 col-12">
+                <div class="item-img position-relative">
+                  <img src="{{ disPro.imagPro }}" alt="" class="mw-100" />
+                  <img
+                    src="../../../../../assets/images/home/ellipse-64.png"
+                    alt=""
+                    class="position-absolute ellipse"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>

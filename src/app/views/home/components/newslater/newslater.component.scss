@@ -1,0 +1,39 @@
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/glubal-rules";
+
+.newslater {
+  height: 462px;
+  background-image: url("../../../../../assets/images/home/Rectangle\ 102.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .title {
+    p {
+      text-align: center;
+      color: $third-color;
+      font-family: $font-family-Josefin;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 155%;
+      /* 54.25px */
+      letter-spacing: 0.525px;
+
+      @include smwidth {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 28px;
+    padding: 16px 34px;
+    background-color: $secondry-color;
+    color: $white;
+    font-family: $font-family-Josefin;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.34px;
+  }
+}

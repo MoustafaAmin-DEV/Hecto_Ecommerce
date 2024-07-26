@@ -1,0 +1,124 @@
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/mixins";
+.latest-product {
+  margin: 130px 0 60px;
+  .latest_btn {
+    button {
+      position: relative;
+      color: $third-color;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border: none;
+      background: none;
+      transition: 0.4s;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #3f509e;
+        z-index: -1;
+        transition: 0.4s;
+      }
+      &:hover,
+      &.active-btn {
+        color: $white;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .latest_item {
+    transition: 0.3s;
+    -webkit-animation: fadeIn 3s;
+    animation: fadeIn 3s;
+    &:hover {
+      transform: scale(1.03);
+      .latest-pro {
+        .icon-latest {
+          z-index: 1;
+        }
+      }
+    }
+    .latest-pro {
+      height: 450px;
+      .latest-img {
+        height: 90%;
+        background-color: #f6f7fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 300px;
+          max-width: 350px;
+        }
+      }
+      .vector {
+        width: 84px;
+        max-height: 56px;
+        left: 0;
+        top: 0;
+      }
+      .hint-sale {
+        color: #fff;
+        left: 30px;
+        transform: rotate(-20deg);
+        top: 13px;
+      }
+      .icon-latest {
+        left: 24px;
+        bottom: 38px;
+        z-index: -1;
+        transition: 0.3s;
+        a {
+          transition: 0.3s;
+          padding: 5px;
+          margin-top: 5px;
+          border-radius: 50%;
+          svg {
+            color: #2f1ac4;
+            transition: 0.3s;
+          }
+          &:hover {
+            background-color: #eeeffb;
+            svg {
+              color: #2f1ac4;
+            }
+          }
+        }
+      }
+      .latest-text {
+        h2,
+        h3 {
+          color: $third-color;
+          font-family: $font-family-Josefin;
+          font-size: $fs-16;
+          font-weight: 400;
+          del {
+            color: #fb2448;
+          }
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,50 @@
+<div class="Trending-Products" *ngIf="home">
+  <div class="container">
+    <div class="title-head">Trending Products</div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let trendPro of home">
+        <div class="card border-0 trendPro">
+          <div class="card-img-top trendImg">
+            <img src="{{ trendPro.trendImg }}" class="mw-100" alt="Title" />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">{{ trendPro.trendTitle }}</h4>
+            <div
+              class="saletrend d-flex justify-content-center align-items-center"
+            >
+              <p class="sale-new">{{ trendPro.saleNew }}</p>
+              <p class="sale-old">{{ trendPro.saleOld }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row trend-offer">
+      <div class="col-lg-4 col-md-6 col-12" *ngFor="let amont of homeAmont">
+        <div class="amont-offer h-100 {{ amont.class1 }}">
+          <div class="title-offer">{{ amont.titleOffer }}</div>
+          <a class="link-offer" href="">{{ amont.linkOffer }}</a>
+          <div class="img-offer">
+            <img src="{{ amont.imgOffer }}" class="mw-100" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 ps-lg-3 h-100">
+        <div class="Trending-products-list d-flex flex-column">
+          <div
+            class="list d-flex justify-content-start align-items-center"
+            *ngFor="let list of homeTrendList"
+          >
+            <div class="list-img">
+              <img src="{{ list.listImg }}" class="mw-100" alt="" />
+            </div>
+            <div class="list-body">
+              <p class="list-title m-0">{{ list.listTitle }}</p>
+              <p class="list-sale m-0">{{ list.listSale }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
