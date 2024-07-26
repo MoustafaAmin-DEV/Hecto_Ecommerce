@@ -1,0 +1,47 @@
+@import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/glubal-rules";
+@import "../../../../../assets/scss/vars";
+h3 {
+  color: $third_color;
+  font-family: $font-family-Josefin;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  @include mdwidth {
+    font-size: 30px;
+  }
+}
+.contactWay {
+  margin-top: 26px;
+  .col {
+    margin-bottom: 49px;
+  }
+  .circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+  }
+  .cir1 {
+    background-color: #5726df;
+  }
+  .cir2 {
+    background-color: #fb2e86;
+  }
+  .cir3 {
+    background-color: #ffb265;
+  }
+  .cir4 {
+    background-color: #1be982;
+  }
+  p {
+    color: #8a8fb9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px; /* 160% */
+  }
+}

@@ -17,6 +17,8 @@ import { RegisterComponent } from './views/shared/auth/register/register.compone
 import { LoginComponent } from './views/shared/auth/login/login.component';
 import { ResetPasswordComponent } from './views/shared/auth/reset-password/reset-password.component';
 import { AuthClassGuard } from './views/shared/services/auth/auth-class.guard';
+import { AboutModule } from './views/about/about.module';
+import { AboutComponent } from './views/about/about.component';
 
 const routes: Routes = [
   {
@@ -51,6 +53,12 @@ const routes: Routes = [
     loadChildren: () =>
       import('./views/pages/pages.module').then(() => PagesModule),
     component: PagesComponent,
+  },
+  {
+    path: 'about',
+    loadChildren: () =>
+      import('./views/about/about.module').then(() => AboutModule),
+    component: AboutComponent,
   },
   {
     path: 'products/:id',

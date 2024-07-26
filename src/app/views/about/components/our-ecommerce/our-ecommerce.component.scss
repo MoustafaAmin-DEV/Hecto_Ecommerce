@@ -1,0 +1,43 @@
+@import "../../../../../assets/scss/mixins.scss";
+@import "../../../../../assets/scss/vars.scss";
+@import "../../../../../assets/scss/glubal-rules.scss";
+
+.ourEcommerce {
+  margin-top: 119px;
+  .image {
+    img {
+      background-color: $third-color;
+      padding-bottom: 19px;
+      padding-left: 15px;
+      border-radius: 7px;
+    }
+  }
+  h3 {
+    color: $third-color;
+    font-family: $font-family-Josefin;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    margin-bottom: 14px;
+    @include mdwidth {
+      font-size: 27px;
+    }
+  }
+  p {
+    color: #8a8fb9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px; /* 160% */
+    margin-bottom: 25px;
+  }
+  button {
+    width: 157px;
+    height: 44px;
+    background-color: #fb2e86;
+    color: #fff;
+    font-family: $font-family-Josefin;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px; /*160%*/
+  }
+}

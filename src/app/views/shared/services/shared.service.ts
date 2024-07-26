@@ -48,4 +48,7 @@ export class SharedService {
   ProductDetails(id: string) {
     return this.http.get(`${this.urlProduct}/${id}`);
   }
+  dataAbout() {
+    return this.http.get(`${this.urlHome}/about`);
+  }
 }

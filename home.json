@@ -434,5 +434,27 @@
       "cateTittle": "Mini LCW Chair",
       "cateSale": "$56.00"
     }
+  ],
+  "about": [
+    {
+      "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+      "titleOffer": "Free Delivery",
+      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+    },
+    {
+      "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+      "titleOffer": "100% Cash Back",
+      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+    },
+    {
+      "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+      "titleOffer": "Quality Product",
+      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+    },
+    {
+      "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+      "titleOffer": "24/7 Support",
+      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+    }
   ]
 }

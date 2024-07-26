@@ -1,0 +1,47 @@
+@import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/vars";
+@import "../../../../../assets/scss/glubal-rules";
+h3 {
+  color: $third_color;
+  font-family: $font-family-Josefin;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  @include mdwidth {
+    font-size: 30px;
+  }
+}
+form {
+  input {
+    height: 45px;
+    padding-left: 11px;
+    &::placeholder {
+      color: #8a8fb9;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.16px;
+      padding-left: 11px;
+    }
+  }
+  textarea {
+    height: 166px;
+    resize: none;
+    &::placeholder {
+      color: #8a8fb9;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.16px;
+      padding-left: 11px;
+    }
+  }
+  button {
+    width: 157px;
+    height: 44px;
+    background-color: #fb2e86;
+    color: #fff;
+    font-family: $font-family-Josefin;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px; /* 160% */
+  }
+}
