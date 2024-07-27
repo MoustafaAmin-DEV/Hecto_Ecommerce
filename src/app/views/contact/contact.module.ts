@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './contact.component';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../Shared/shared.module';
 import { InfoAboutComponent } from './components/info-about/info-about.component';
 import { ContactWayComponent } from './components/contact-way/contact-way.component';
 import { FormComponent } from './components/form/form.component';
@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
 })
 export class ContactModule {}

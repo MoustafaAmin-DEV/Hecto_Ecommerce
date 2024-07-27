@@ -1,6 +1,4 @@
 @import "../../../../../assets/scss/mixins";
-@import "../../../../../assets/scss/vars";
-@import "../../../../../assets/scss/vars";
 
 .top-categories {
   margin-bottom: 136px;
@@ -20,7 +18,7 @@
           &.active,
           &:hover {
             span {
-              background-color: $secondry-color;
+              background-color: var(--accent-color);
             }
           }
 
@@ -29,8 +27,8 @@
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            background-color: $white;
-            border: 1px solid $secondry-color;
+            background-color: var(--white);
+            border: 1px solid var(--accent-color);
           }
         }
       }
@@ -41,8 +39,8 @@
     padding: 8px 18px;
     transition: 0.4s;
     z-index: -1;
-    color: $white;
-    font-family: $font-family-Josefin;
+    color: var(--white);
+    font-family: var(--font-family-josefin);
     font-size: 12px;
     font-weight: 400;
     border-radius: 2px;
@@ -54,7 +52,7 @@
 
   .cate-bg {
     transition: 0.4s;
-    background-color: $main-color;
+    background-color: var(--secondary-color);
     border-radius: 55%;
   }
 
@@ -90,16 +88,16 @@
   }
 
   .card-title {
-    color: $third-color;
-    font-family: $font-family-Josefin;
+    color: var(--primary-color);
+    font-family: var(--font-family-josefin);
     font-size: 20px;
     font-weight: 400;
   }
 
   .card-text {
-    color: $third-color;
-    font-family: $font-family-Josefin;
-    font-size: $fs-16;
+    color: var(--primary-color);
+    font-family: var(--font-family-josefin);
+    font-size: var(--font-size-medium);
     font-weight: 400;
   }
 }

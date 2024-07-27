@@ -1,26 +1,24 @@
-@import "../../../../../assets/scss/mixins.scss";
-@import "../../../../../assets/scss/vars.scss";
-@import "../../../../../assets/scss/glubal-rules.scss";
+@import "../../../../../assets/scss/mixins";
 .ourFeatures {
   margin-top: 135px;
   margin-bottom: 135px;
   .title-head {
     color: #000;
-    font-family: $font-family-Josefin;
+    font-family: var(--font-family-josefin);
     font-size: 42px;
     font-weight: 700;
     line-height: 25.6px; /* 60.952% */
     text-align: center;
     margin-bottom: 45px;
-    @include smwidth {
-      font-size: 38px;
+    @include respond-to(small) {
+      margin-bottom: 45px;
     }
   }
   .card {
     .item-Offer {
       min-height: 320px;
       box-shadow: 0px 8px 20px 0px rgba(49, 32, 138, 0.05);
-      @include smwidth {
+      @include respond-to(small) {
         width: 300px;
       }
       img,
@@ -28,14 +26,14 @@
         margin-bottom: 22px;
       }
       h3 {
-        color: $third-color;
-        font-family: $font-family-Josefin;
+        color: var(--primary-color);
+        font-family: var(--font-family-josefin);
         font-size: 22px;
         font-weight: 600;
       }
       p {
         color: #1a0b5b4d;
-        font-size: $fs-16;
+        font-size: var(--font-size-medium);
         font-weight: 700;
       }
     }

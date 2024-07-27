@@ -1,6 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 // ### Reset ###
 html,
-body,
 span,
 applet,
 object,
@@ -78,7 +91,6 @@ mark,
 audio,
 video {
   border: none;
-  font: inherit;
   font-size: 100%;
   margin: 0;
   padding: 0;

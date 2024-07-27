@@ -1,13 +1,9 @@
-@import "../../../../../assets/scss/vars";
+@import "../../../assets/scss/mixins";
 
-@import "../../../../../assets/scss/mixins";
-
-@import "../../../../../assets/scss/glubal-rules";
-
-// strat heading-bar
+// start heading-bar
 
 .heading-bar {
-  background-color: $main-color;
+  background-color: var(--secondary-color);
 
   .row {
     height: 44px;
@@ -15,8 +11,8 @@
     p,
     a {
       color: #f1f1f1;
-      font-family: $font-family-Josefin;
-      font-size: $fs-16;
+      font-family: var(--font-family-josefin);
+      font-size: var(--font-size-medium);
 
       font-weight: 600;
 
@@ -27,11 +23,11 @@
 
     .logo {
       p {
-        color: $white;
-        font-family: $font-family-Josefin;
+        color: var(--white);
+        font-family: var(--font-family-josefin);
         font-size: 34px;
         font-weight: 700;
-        @include smwidth {
+        @include respond-to(small) {
           font-size: 30px;
         }
       }
@@ -41,7 +37,7 @@
       .envelope {
         margin-right: 48px;
 
-        @include mdwidth {
+        @include respond-to(medium) {
           margin-right: 10px;
         }
 
@@ -56,7 +52,7 @@
         }
       }
 
-      @include smwidth {
+      @include respond-to(small) {
         display: none;
       }
     }
@@ -82,16 +78,16 @@
             margin: 0 10px;
 
             a {
-              font-family: $font-family-Josefin;
-              font-size: $fs-14;
+              font-family: var(--font-family-josefin);
+              font-size: var(--font-size-small);
 
               font-weight: 600;
-              color: $black;
+              color: var(--black);
               border-radius: 6px;
 
               &:hover {
-                background-color: $main-color;
-                color: $white;
+                background-color: var(--secondary-color);
+                color: var(--white);
                 transition: 0.4s;
               }
             }
@@ -112,7 +108,7 @@
   .logo {
     p {
       color: #0d0e43;
-      font-family: $font-family-Josefin;
+      font-family: var(--font-family-josefin);
       font-size: 34px;
 
       font-weight: 700;
@@ -126,7 +122,7 @@
       .nav-link {
         color: #0d0e43;
 
-        font-size: $fs-16;
+        font-size: var(--font-size-medium);
 
         font-weight: 400;
         line-height: 20px;
@@ -135,7 +131,7 @@
       }
 
       .active {
-        color: $secondry-color;
+        color: var(--accent-color);
       }
     }
   }
@@ -152,13 +148,13 @@
 
     .search-icon {
       width: 51px;
-      background-color: $secondry-color;
+      background-color: var(--accent-color);
       cursor: pointer;
 
       svg {
         width: 24px;
         height: 24px;
-        color: $white;
+        color: var(--white);
       }
     }
   }
@@ -170,14 +166,14 @@
 .offcanvas {
   width: calc(100% - 50%);
 
-  @include smwidth {
+  @include respond-to(small) {
     width: calc(100% - 30%);
   }
 
   .offcanvas-header {
     h5 {
-      color: $main-color;
-      font-family: $font-family-Josefin;
+      color: var(--secondary-color);
+      font-family: var(--font-family-josefin);
       font-size: 30px;
 
       font-weight: 700;
@@ -189,8 +185,8 @@
       ul {
         a {
           color: #0d0e43;
-          font-family: $font-family-Josefin;
-          font-size: $fs-16;
+          font-family: var(--font-family-josefin);
+          font-size: var(--font-size-medium);
 
           font-weight: 400;
         }
@@ -199,30 +195,30 @@
 
     .icon {
       svg {
-        color: $main-color;
+        color: var(--secondary-color);
       }
     }
 
     .nav {
       a {
         color: #0d0e43;
-        font-family: $font-family-Josefin;
-        font-size: $fs-16;
+        font-family: var(--font-family-josefin);
+        font-size: var(--font-size-medium);
         font-weight: 400;
       }
 
       .active {
-        color: $secondry-color;
+        color: var(--accent-color);
       }
     }
 
     p {
       color: #0d0e43;
-      font-family: $font-family-Josefin;
-      font-size: $fs-16;
+      font-family: var(--font-family-josefin);
+      font-size: var(--font-size-medium);
       font-weight: 600;
       svg {
-        color: $main-color;
+        color: var(--secondary-color);
       }
     }
   }

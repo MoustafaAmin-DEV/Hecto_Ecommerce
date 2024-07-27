@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { SharedService } from '../../services/shared.service';
+import { SharedService } from '../../Shared/sevices/shared.service';
 
 @Component({
   selector: 'app-footer',

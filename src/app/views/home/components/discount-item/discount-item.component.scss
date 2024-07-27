@@ -1,5 +1,4 @@
 @import "../../../../../assets/scss/mixins";
-@import "../../../../../assets/scss/vars";
 .discount-content {
   margin: 150px 0 79px !important;
   ::ng-deep {
@@ -12,7 +11,7 @@
         top: 0;
         left: 50%;
         transform: translate(-50%);
-        @include smwidth {
+        @include respond-to(small) {
           top: -50px;
         }
         .owl-dot {
@@ -85,7 +84,7 @@
   .discount-item {
     .item-text {
       h2 {
-        color: $third-color;
+        color: var(--primary-color);
         font-family: Josefin Sans;
         font-size: 35px;
         font-weight: 700;

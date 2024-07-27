@@ -14,7 +14,7 @@ import { DiscountItemComponent } from './components/discount-item/discount-item.
 import { LeatestBlogComponent } from './components/leatest-blog/leatest-blog.component';
 import { NewslaterComponent } from './components/newslater/newslater.component';
 import { TopCategoriesComponent } from './components/top-categories/top-categories.component';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../Shared/shared.module';
 
 @NgModule({
   declarations: [

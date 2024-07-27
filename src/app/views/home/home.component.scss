@@ -1,15 +1,14 @@
-@import "../../../assets/scss/vars";
 @import "../../../assets/scss/mixins";
 ::ng-deep {
   .title-head {
-    color: $third-color;
-    font-family: $font-family-Josefin;
+    color: var(--primary-color);
+    font-family: var(--font-family-josefin);
     font-size: 42px;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 45px;
-    @include smwidth {
+    @include respond-to(small) {
       font-size: 38px;
     }
   }
