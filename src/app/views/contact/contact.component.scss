@@ -1,11 +1,9 @@
-@import "../../../assets/scss/vars.scss";
 @import "../../../assets/scss/mixins.scss";
-@import "../../../assets/scss/glubal-rules.scss";
 .contact {
   margin-top: 120px;
   .box {
     margin-bottom: 120px;
-    @include mdwidth {
+    @include respond-to(medium) {
       margin-bottom: 90px;
     }
   }

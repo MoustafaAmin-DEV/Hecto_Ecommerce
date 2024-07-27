@@ -1,6 +1,4 @@
-@import "../../../../../assets/scss/vars";
 @import "../../../../../assets/scss/mixins";
-@import "../../../../../assets/scss/glubal-rules";
 
 .newslater {
   height: 462px;
@@ -12,15 +10,15 @@
   .title {
     p {
       text-align: center;
-      color: $third-color;
-      font-family: $font-family-Josefin;
+      color: var(--primary-color);
+      font-family: var(--font-family-josefin);
       font-size: 35px;
       font-weight: 700;
       line-height: 155%;
       /* 54.25px */
       letter-spacing: 0.525px;
 
-      @include smwidth {
+      @include respond-to(small) {
         font-size: 30px;
       }
     }
@@ -29,9 +27,9 @@
   .btn {
     margin-top: 28px;
     padding: 16px 34px;
-    background-color: $secondry-color;
-    color: $white;
-    font-family: $font-family-Josefin;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-family: var(--font-family-josefin);
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.34px;

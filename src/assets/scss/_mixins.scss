@@ -1,25 +1,53 @@
-// mixins
-
-@mixin smwidth {
-  @media (max-width: 576px) {
-    @content;
+// Mixins for responsive design
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == xlarge {
+    @media (max-width: 1200px) {
+      @content;
+    }
   }
 }
 
-@mixin mdwidth {
-  @media (max-width: 768px) {
-    @content;
-  }
+// Mixin for flexbox centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin lgwidth {
-  @media (max-width: 992px) {
-    @content;
-  }
+// Mixin for setting font size
+@mixin font-size($size) {
+  font-size: $size;
 }
 
-@mixin xlgwidth {
-  @media (max-width: 1200px) {
-    @content;
-  }
+// Mixin for setting margin and padding
+@mixin spacing($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+// Mixin for border radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Mixin for box shadow
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Mixin for transition
+@mixin transition($properties, $duration, $timing-function: ease) {
+  transition: $properties $duration $timing-function;
 }

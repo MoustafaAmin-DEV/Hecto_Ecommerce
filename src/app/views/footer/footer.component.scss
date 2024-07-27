@@ -1,41 +1,39 @@
-@import "../../../../../assets/scss/vars";
-@import "../../../../../assets/scss/mixins";
-@import "../../../../../assets/scss/glubal-rules";
+@import "../../../assets/scss/mixins";
 
 footer {
   background-color: #eeeffb;
   padding: 100px 0;
 
-  @include smwidth {
+  @include respond-to(small) {
     padding: 10px 0;
   }
 
   h1 {
-    color: $black;
-    font-family: $font-family-Josefin;
+    color: var(--black);
+    font-family: var(--font-family-josefin);
     font-size: 38px;
     font-weight: 700;
   }
 
   .sign-up {
-    background-color: $white;
+    background-color: var(--white);
     height: 44px;
     border-radius: 3px;
     margin-bottom: 25px;
     width: 377px;
-    @include lgwidth {
+    @include respond-to(large) {
       width: 350px;
     }
 
     input {
       color: #8a8fb9;
-      font-size: $fs-16;
+      font-size: var(--font-size-medium);
       font-weight: 400;
       opacity: 0.45;
     }
 
     .sign {
-      background-color: $secondry-color;
+      background-color: var(--accent-color);
       height: 100%;
       border-radius: 3px;
       display: flex;
@@ -44,8 +42,8 @@ footer {
 
       p {
         color: #eeeffb;
-        font-family: $font-family-roboto;
-        font-size: $fs-16;
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-medium);
         font-weight: 500;
       }
     }
@@ -54,14 +52,14 @@ footer {
   p {
     padding-bottom: 10px;
     color: #8a8fb9;
-    font-size: $fs-16;
+    font-size: var(--font-size-medium);
     font-weight: 400;
   }
 
   h5 {
     margin-bottom: 25px;
     color: #8a8fb9;
-    font-family: $font-family-Josefin;
+    font-family: var(--font-family-josefin);
     font-size: 22px;
     font-weight: 600;
   }
@@ -69,7 +67,7 @@ footer {
   ul {
     li {
       color: #8a8fb9;
-      font-size: $fs-16;
+      font-size: var(--font-size-medium);
       font-weight: 400;
       padding-bottom: 21px;
     }
@@ -88,7 +86,7 @@ footer {
 
   p {
     color: #9da0ae;
-    font-size: $fs-16;
+    font-size: var(--font-size-medium);
     font-weight: 600;
     @media (max-width: 787px) {
       margin-bottom: 15px !important;
@@ -100,16 +98,16 @@ footer {
       margin-right: 11px;
 
       a {
-        background-color: $third-color;
+        background-color: var(--primary-color);
         border-radius: 50%;
         padding: 5px;
 
-        @include smwidth {
+        @include respond-to(small) {
           padding: 2px;
         }
 
         svg {
-          color: $white;
+          color: var(--white);
         }
       }
     }

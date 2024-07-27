@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import {
   ReactiveFormConfig,
   RxwebValidators,
 } from '@rxweb/reactive-form-validators';
-import { AuthService } from '../../services/auth/auth.service';
+import { AuthService } from '../../../Shared/sevices/auth/auth.service';
 import { Router } from '@angular/router';
 
 @Component({

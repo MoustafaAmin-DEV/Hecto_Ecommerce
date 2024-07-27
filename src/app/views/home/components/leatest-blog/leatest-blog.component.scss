@@ -1,7 +1,4 @@
-@import "../../../../../assets/scss/vars";
 @import "../../../../../assets/scss/mixins";
-@import "../../../../../assets/scss/glubal-rules";
-
 .leatest-blog {
   margin: 130px 0;
 
@@ -21,28 +18,28 @@
       }
 
       .pen {
-        color: $secondry-color;
+        color: var(--accent-color);
       }
 
       p {
         padding-left: 4px;
-        color: $third-color;
-        font-family: $font-family-Josefin;
-        font-size: $fs-14;
+        color: var(--primary-color);
+        font-family: var(--font-family-josefin);
+        font-size: var(--font-size-small);
         font-weight: 400;
       }
     }
 
     .card-title {
       margin-top: 31px;
-      font-family: $font-family-Josefin;
+      font-family: var(--font-family-josefin);
       font-size: 18px;
       font-weight: 700;
     }
 
     .card-text {
       color: #72718f;
-      font-size: $fs-16;
+      font-size: var(--font-size-medium);
       font-weight: 400;
       line-height: 30px;
       margin-top: 17px;
@@ -50,18 +47,18 @@
     }
 
     a {
-      font-size: $fs-16;
+      font-size: var(--font-size-medium);
       font-weight: 400;
       line-height: 30px;
       text-decoration-line: underline;
     }
 
     .leatestColor1 {
-      color: $third-color;
+      color: var(--primary-color);
     }
 
     .leatestColor2 {
-      color: $secondry-color;
+      color: var(--accent-color);
     }
   }
 }

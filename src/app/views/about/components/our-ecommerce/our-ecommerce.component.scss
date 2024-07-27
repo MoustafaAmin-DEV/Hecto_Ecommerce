@@ -1,25 +1,22 @@
 @import "../../../../../assets/scss/mixins.scss";
-@import "../../../../../assets/scss/vars.scss";
-@import "../../../../../assets/scss/glubal-rules.scss";
-
 .ourEcommerce {
   margin-top: 119px;
   .image {
     img {
-      background-color: $third-color;
+      background-color: var(--primary-color);
       padding-bottom: 19px;
       padding-left: 15px;
       border-radius: 7px;
     }
   }
   h3 {
-    color: $third-color;
-    font-family: $font-family-Josefin;
+    color: var(--primary-color);
+    font-family: var(--font-family-josefin);
     font-size: 36px;
     font-weight: 700;
     line-height: 48px; /* 133.333% */
     margin-bottom: 14px;
-    @include mdwidth {
+    @include respond-to(medium) {
       font-size: 27px;
     }
   }
@@ -35,7 +32,7 @@
     height: 44px;
     background-color: #fb2e86;
     color: #fff;
-    font-family: $font-family-Josefin;
+    font-family: var(--font-family-josefin);
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px; /*160%*/

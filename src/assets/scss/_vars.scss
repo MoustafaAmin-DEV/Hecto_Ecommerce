@@ -1,10 +1,34 @@
-// vars
-$main-color: #7e33e0;
-$secondry-color: #fb2e86;
-$third-color: #151875;
-$white: #fff;
-$black: #000;
-$fs-14: 14px;
-$fs-16: 16px;
-$font-family-roboto: Roboto;
-$font-family-Josefin: Josefin Sans;
+:root {
+  // variables for colors
+
+  --accent-color: #fb2e86;
+  --accent-text-color: #fb2e86;
+  --accent-bg-color: #fb2e86;
+  --primary-color: #151875;
+  --primary-text-color: #151875;
+  --primary-bg-color: #151875;
+  --secondary-color: #7e33e0;
+  --secondary-text-color: #7e33e0;
+  --secondary-bg-color: #7e33e0;
+  --white: #ffffff;
+  --white-text: #ffffff;
+  --white-bg: #ffffff;
+  --black: #000000;
+  --black-text: #000000;
+  --black-bg: #000000;
+
+  // variables for fonts size
+
+  --font-size-xsmall: 12px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-xlarge: 22px;
+  --font-size-xxlarge: 35px;
+  --font-size-xxxlarge: 42px;
+
+  // variables for font family
+
+  --font-family-roboto: "Roboto", sans-serif;
+  --font-family-josefin: "Josefin Sans", sans-serif;
+}

@@ -1,4 +1,3 @@
-@import "../../../../../assets/scss/vars";
 @import "../../../../../assets/scss/mixins";
 
 .Trending-Products {
@@ -25,9 +24,9 @@
 
     .card-body {
       .card-title {
-        color: $third-color;
+        color: var(--primary-color);
         text-align: center;
-        font-size: $fs-16;
+        font-size: var(--font-size-medium);
         font-weight: 700;
         line-height: 25.6px;
         /* 160% */
@@ -36,17 +35,17 @@
       .saletrend {
         .sale-new {
           margin-right: 12px;
-          color: $third-color;
+          color: var(--primary-color);
           /* Caption\ */
-          font-family: $font-family-Josefin;
-          font-size: $fs-14;
+          font-family: var(--font-family-josefin);
+          font-size: var(--font-size-small);
           font-weight: 400;
         }
 
         .sale-old {
           color: rgba(21, 24, 117, 0.3);
           /* price cut */
-          font-family: $font-family-Josefin;
+          font-family: var(--font-family-josefin);
           font-size: 12px;
           font-weight: 400;
         }
@@ -66,16 +65,16 @@
 
   .title-offer {
     margin-bottom: 11px;
-    color: $third-color;
-    font-family: $font-family-Josefin;
+    color: var(--primary-color);
+    font-family: var(--font-family-josefin);
     font-size: 26px;
     font-weight: 600;
   }
 
   .link-offer {
-    color: $secondry-color;
+    color: var(--accent-color);
     text-align: center;
-    font-size: $fs-16;
+    font-size: var(--font-size-medium);
     font-weight: 600;
     text-decoration-line: underline;
   }
@@ -114,18 +113,18 @@
       padding-left: 9px;
 
       .list-title {
-        color: $third-color;
+        color: var(--primary-color);
         text-align: center;
         /* button text */
-        font-family: $font-family-Josefin;
-        font-size: $fs-16;
+        font-family: var(--font-family-josefin);
+        font-size: var(--font-size-medium);
         font-weight: 600;
       }
 
       .list-sale {
-        color: $third-color;
+        color: var(--primary-color);
         /* price cut */
-        font-family: $font-family-Josefin;
+        font-family: var(--font-family-josefin);
         font-size: 12px;
         font-weight: 400;
       }

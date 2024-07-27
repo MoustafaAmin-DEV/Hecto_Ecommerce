@@ -1,11 +1,10 @@
-@import "../../../../../assets/scss/vars";
 @import "../../../../../assets/scss/mixins";
 .latest-product {
   margin: 130px 0 60px;
   .latest_btn {
     button {
       position: relative;
-      color: $third-color;
+      color: var(--primary-color);
       font-size: 18px;
       font-weight: 600;
       padding: 8px 16px;
@@ -25,7 +24,7 @@
       }
       &:hover,
       &.active-btn {
-        color: $white;
+        color: var(--white);
         &::before {
           width: 100%;
         }
@@ -94,9 +93,9 @@
       .latest-text {
         h2,
         h3 {
-          color: $third-color;
-          font-family: $font-family-Josefin;
-          font-size: $fs-16;
+          color: var(--primary-color);
+          font-family: var(--font-family-josefin);
+          font-size: var(--font-size-medium);
           font-weight: 400;
           del {
             color: #fb2448;

@@ -1,13 +1,12 @@
 @import "../../../../../assets/scss/mixins";
-@import "../../../../../assets/scss/glubal-rules";
-@import "../../../../../assets/scss/vars";
+
 h3 {
   color: $third_color;
-  font-family: $font-family-Josefin;
+  font-family: var(--font-family-josefin);
   font-size: 36px;
   font-weight: 700;
   line-height: 48px; /* 133.333% */
-  @include mdwidth {
+  @include respond-to(medium) {
     font-size: 30px;
   }
 }

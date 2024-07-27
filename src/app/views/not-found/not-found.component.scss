@@ -1,6 +1,4 @@
-@import "../../../assets/scss/vars.scss";
 @import "../../../assets/scss/mixins.scss";
-@import "../../../assets/scss/glubal-rules.scss";
 
 .not-found {
   margin-bottom: 124px;
@@ -17,8 +15,8 @@
     text-align: center;
 
     p {
-      color: $third-color;
-      font-family: $font-family-Josefin;
+      color: var(--primary-color);
+      font-family: var(--font-family-josefin);
       font-size: 24px;
       font-weight: 700;
     }
@@ -26,10 +24,10 @@
     .not-btn {
       margin-top: 62px;
       padding: 9px 30px;
-      background-color: $secondry-color;
-      color: $white;
-      font-family: $font-family-Josefin;
-      font-size: $fs-16;
+      background-color: var(--accent-color);
+      color: var(--white);
+      font-family: var(--font-family-josefin);
+      font-size: var(--font-size-medium);
       font-weight: 400;
       line-height: 25.6px;
       /* 160% */
