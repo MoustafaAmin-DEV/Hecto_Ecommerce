@@ -1,0 +1,15 @@
+@import "../../../assets/scss/mixins";
+::ng-deep {
+  .title-head {
+    color: var(--primary-color);
+    font-family: var(--font-family-josefin);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 45px;
+    @include respond-to(small) {
+      font-size: 38px;
+    }
+  }
+}
