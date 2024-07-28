@@ -1,6 +1,6 @@
 <div class="top-categories" *ngIf="homePage">
   <div class="container">
-    <div class="title-head">Top Categories</div>
+    <div class="title-head">{{ homePage.topCateTittle }}</div>
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let catePro of homePage.catePro">
         <div class="card cate border-0">

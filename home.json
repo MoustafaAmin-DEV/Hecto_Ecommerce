@@ -26,6 +26,12 @@
     ]
   },
   "homePage": {
+    "DisItemTittle": "Discount Item",
+    "feaProTittle": "featured products",
+    "latProTittle": "latest products",
+    "leatBlogTittle": "Leatest Blog ",
+    "secOfferTittle": "What Shopex Offer!",
+    "topCateTittle": "Top Categories",
     "slider": [
       {
         "hint": "Best Furniture For Your Castle....",
