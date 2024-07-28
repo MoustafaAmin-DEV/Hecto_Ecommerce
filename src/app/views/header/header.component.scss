@@ -1,6 +1,7 @@
 @import "../../../assets/scss/mixins";
+@import "../../../assets/scss/glubal-rules.scss";
 
-// start heading-bar
+// strat heading-bar
 
 .heading-bar {
   background-color: var(--secondary-color);
@@ -13,23 +14,19 @@
       color: #f1f1f1;
       font-family: var(--font-family-josefin);
       font-size: var(--font-size-medium);
-
       font-weight: 600;
-
       svg {
         width: 16px;
       }
     }
 
     .logo {
-      p {
-        color: var(--white);
-        font-family: var(--font-family-josefin);
-        font-size: 34px;
-        font-weight: 700;
-        @include respond-to(small) {
-          font-size: 30px;
-        }
+      color: var(--white);
+      font-family: var(--font-family-josefin);
+      font-size: 34px;
+      font-weight: 700;
+      @include respond-to(small) {
+        font-size: 30px;
       }
     }
 
@@ -123,7 +120,7 @@
         color: #0d0e43;
 
         font-size: var(--font-size-medium);
-
+        cursor: pointer;
         font-weight: 400;
         line-height: 20px;
         cursor: pointer;
@@ -170,15 +167,15 @@
     width: calc(100% - 30%);
   }
 
-  .offcanvas-header {
-    h5 {
-      color: var(--secondary-color);
-      font-family: var(--font-family-josefin);
-      font-size: 30px;
+  // .offcanvas-header {
+  //   h5 {
+  //     color: var(--secondary-color);
+  //     font-family: var(--font-family-josefin);
+  //     font-size: 30px;
 
-      font-weight: 700;
-    }
-  }
+  //     font-weight: 700;
+  //   }
+  // }
 
   .offcanvas-body {
     .link {
@@ -187,21 +184,43 @@
           color: #0d0e43;
           font-family: var(--font-family-josefin);
           font-size: var(--font-size-medium);
-
+          cursor: pointer;
           font-weight: 400;
+        }
+        .lang {
+          li {
+            padding: 0 10px;
+            a {
+              font-family: var(--font-family-josefin);
+              font-size: var(--font-size-small);
+              font-weight: 600;
+              color: var(--black);
+              border-radius: 6px;
+
+              &:hover {
+                background-color: var(--secondary-color);
+                color: var(--white);
+                transition: 0.4s;
+              }
+            }
+          }
         }
       }
     }
 
     .icon {
-      svg {
-        color: var(--secondary-color);
+      a {
+        cursor: pointer;
+        svg {
+          color: var(--secondary-color);
+        }
       }
     }
 
     .nav {
       a {
         color: #0d0e43;
+        cursor: pointer;
         font-family: var(--font-family-josefin);
         font-size: var(--font-size-medium);
         font-weight: 400;

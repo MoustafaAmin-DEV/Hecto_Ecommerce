@@ -39,6 +39,9 @@ export class SharedService {
   dataFooter() {
     return this.http.get(`${this.urlHome}/footer`);
   }
+  dataHeader() {
+    return this.http.get(`${this.urlHome}/header`);
+  }
   dataLeatestBlog() {
     return this.http.get(`${this.urlHome}/leatestBlog`);
   }
@@ -49,6 +52,6 @@ export class SharedService {
     return this.http.get(`${this.urlProduct}/${id}`);
   }
   dataAbout() {
-    return this.http.get(`${this.urlHome}/about`);
+    return this.http.get(`${this.urlHome}/ourfeatures`);
   }
 }

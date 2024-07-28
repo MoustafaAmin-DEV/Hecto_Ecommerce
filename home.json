@@ -1,4 +1,30 @@
 {
+  "header": {
+    "emailAdress": "mhhasanul@gmail.com",
+    "phoneNum": "(12345)67890",
+    "langENG": "English",
+    "langARB": "Arabic",
+    "langSPA": "Spanish",
+    "coinUSD": "USD",
+    "coinEGP": "EGP",
+    "coinIQD": "IQD",
+    "loginAcc": "Login",
+    "regAcc": "Register",
+    "logoutAcc": "Logout",
+    "wishlist": "Wishlist",
+    "fag": "Fag",
+    "nanLink": [
+      {
+        "link1": "Home",
+        "link2": "Pages",
+        "link3": "Products",
+        "link4": "About",
+        "link5": "Blog",
+        "link6": "Shop",
+        "link7": "Contact"
+      }
+    ]
+  },
   "slider": [
     {
       "hint": "Best Furniture For Your Castle....",
@@ -435,7 +461,7 @@
       "cateSale": "$56.00"
     }
   ],
-  "about": [
+  "ourfeatures": [
     {
       "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
       "titleOffer": "Free Delivery",
