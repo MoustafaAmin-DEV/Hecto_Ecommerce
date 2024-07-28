@@ -1,6 +1,6 @@
-<div class="slider" *ngIf="home">
+<div class="slider" *ngIf="homePage">
   <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide *ngFor="let slide of home">
+    <ng-template carouselSlide *ngFor="let slide of homePage.slider">
       <div class="position-relative">
         <div class="container">
           <div class="slide-content align-items-center d-flex pb-5">

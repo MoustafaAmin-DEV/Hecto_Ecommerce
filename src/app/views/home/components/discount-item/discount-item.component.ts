@@ -24,5 +24,5 @@ export class DiscountItemComponent {
     nav: false,
   };
 
-  @Input() public home: any;
+  @Input() public homePage: any;
 }

@@ -1,10 +1,10 @@
-<div class="leatest-blog" *ngIf="home">
+<div class="leatest-blog" *ngIf="homePage">
   <div class="container">
     <div class="title-head">Leatest Blog</div>
     <div class="row">
       <div
         class="col-lg-4 col-md-6 col-12 leatPro"
-        *ngFor="let leatPro of home"
+        *ngFor="let leatPro of homePage.leatestBlog"
       >
         <div class="card border-0">
           <img
@@ -15,7 +15,7 @@
           <div class="card-body">
             <div
               class="leatestInfo d-flex align-items-center"
-              *ngFor="let info of home.leatestInfo"
+              *ngFor="let info of homePage.leatestInfo"
             >
               <div class="info d-flex">
                 <i class="pen fa-solid fa-pen-nib fa-fw"></i>

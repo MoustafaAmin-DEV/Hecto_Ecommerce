@@ -1,8 +1,8 @@
-<div class="discount-content" *ngIf="home">
+<div class="discount-content" *ngIf="homePage">
   <div class="title-head">Discount Item</div>
   <div class="discount">
     <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide *ngFor="let disPro of home">
+      <ng-template carouselSlide *ngFor="let disPro of homePage.discountItem">
         <div class="container">
           <div class="discount-item">
             <div

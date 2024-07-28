@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./latest-products.component.scss'],
 })
 export class LatestProductsComponent {
-  @Input() public home: any;
+  @Input() public homePage: any;
 
   public productType: string = 'newArrivals';
 

@@ -8,7 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./top-categories.component.scss'],
 })
 export class TopCategoriesComponent {
-  @Input() public home: any;
+  @Input() public homePage: any;
 
   customOptions: OwlOptions = {
     loop: true,
