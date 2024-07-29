@@ -433,6 +433,11 @@
           "listSale": "$32.00"
         }
       ]
+    },
+    "trndPro": {
+      "tittle": "Unique Features Of leatest & Trending Poducts",
+      "namePro": "B&B Italian Sofa",
+      "pricePro": "$32.00"
     }
   },
   "aboutPage": {
@@ -459,43 +464,50 @@
       }
     ]
   },
-  "footer": [
-    {
-      "titleFooter": "Catagories",
-      "list": [
-        {
-          "listTitle1": "Laptops & Computers",
-          "listTitle2": "Cameras & Photography",
-          "listTitle3": "Smart Phones & Tablets",
-          "listTitle4": "Video Games & Consoles",
-          "listTitle5": "Waterproof Headphones"
-        }
-      ]
-    },
-    {
-      "titleFooter": "Customer Care",
-      "list": [
-        {
-          "listTitle1": "My Account",
-          "listTitle2": "Discount",
-          "listTitle3": "Returns",
-          "listTitle4": "Orders History",
-          "listTitle5": "Order Tracking"
-        }
-      ]
-    },
-    {
-      "titleFooter": "Pages",
-      "list": [
-        {
-          "listTitle1": "Blog",
-          "listTitle2": "Browse the Shop",
-          "listTitle3": "Category",
-          "listTitle4": "Pre-Built Pages",
-          "listTitle5": "Visual Composer Elements",
-          "listTitle6": "WooCommerce Pages"
-        }
-      ]
-    }
-  ]
+  "footer": {
+    "placeholder": "Enter Email Address",
+    "btnFooter": "Sign Up",
+    "contactInfo": "Contact Info",
+    "contactDES": "17 Princess Road, London, Greater London NW1 8JR, UK",
+    "copyRight": "©Webecy - All Rights Reserved",
+    "listFooter": [
+      {
+        "titleFooter": "Catagories",
+        "list": [
+          {
+            "listTitle1": "Laptops & Computers",
+            "listTitle2": "Cameras & Photography",
+            "listTitle3": "Smart Phones & Tablets",
+            "listTitle4": "Video Games & Consoles",
+            "listTitle5": "Waterproof Headphones"
+          }
+        ]
+      },
+      {
+        "titleFooter": "Customer Care",
+        "list": [
+          {
+            "listTitle1": "My Account",
+            "listTitle2": "Discount",
+            "listTitle3": "Returns",
+            "listTitle4": "Orders History",
+            "listTitle5": "Order Tracking"
+          }
+        ]
+      },
+      {
+        "titleFooter": "Pages",
+        "list": [
+          {
+            "listTitle1": "Blog",
+            "listTitle2": "Browse the Shop",
+            "listTitle3": "Category",
+            "listTitle4": "Pre-Built Pages",
+            "listTitle5": "Visual Composer Elements",
+            "listTitle6": "WooCommerce Pages"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -4,25 +4,29 @@
       <div
         class="col-xl-4 col-lg-5 col-md-6 col-12 mb-4 mb-md-0 px-2 me-0 me-xl-4"
       >
-        <h1>Hekto</h1>
+        <div class="logo mb-3">
+          <a routerLink="/"
+            ><img src="../../../../../assets/images/home/logo.svg" alt=""
+          /></a>
+        </div>
         <div
           class="sign-up d-flex justify-content-between align-items-center p-1"
         >
           <input
             type="email"
             class="border-0 ms-2"
-            placeholder="Enter Email Address"
+            placeholder="{{ dataFooter.placeholder }}"
           />
           <div class="sign text-center">
-            <p class="p-0">Sign Up</p>
+            <p class="p-0">{{ dataFooter.btnFooter }}</p>
           </div>
         </div>
-        <p class="m-0">Contact Info</p>
-        <p class="m-0">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+        <p class="m-0">{{ dataFooter.contactInfo }}</p>
+        <p class="m-0">{{ dataFooter.contactDES }}</p>
       </div>
       <div
         class="col-xl-2 col-lg-3 col-md-6 col-12"
-        *ngFor="let item of dataFooter"
+        *ngFor="let item of dataFooter.listFooter"
       >
         <h5>{{ item.titleFooter }}</h5>
         <ul class="text-start" *ngFor="let list of item.list">
@@ -52,7 +56,7 @@
 <div class="copyRight d-flex align-items-center py-3 py-sm-0">
   <div class="container">
     <div class="copyRight">
-      <p>©Webecy - All Rights Reserved</p>
+      <p>{{ dataFooter.copyRight }}</p>
       <ul class="d-flex align-items-center">
         <li>
           <a href=""><i class="fa-brands fa-facebook-f fa-fw"></i></a>
