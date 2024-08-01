@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./featured-products.component.scss'],
 })
 export class FeaturedProductsComponent {
-  @Input() public home: any;
+  @Input() public homePage: any;
 
   customOptions: OwlOptions = {
     loop: true,

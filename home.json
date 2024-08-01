@@ -1,460 +1,513 @@
 {
-  "slider": [
-    {
-      "hint": "Best Furniture For Your Castle....",
-      "titleSlider": "New Furniture Collection Trends in 2020",
-      "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
-      "imgslider": "../../../../../assets/images/home/slider1.png"
-    },
-    {
-      "hint": "Best Furniture For Your Castle....",
-      "titleSlider": "New Furniture Collection Trends in 2020",
-      "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
-      "imgslider": "../../../../../assets/images/home/slider2.png"
-    },
-    {
-      "hint": "Best Furniture For Your Castle....",
-      "titleSlider": "New Furniture Collection Trends in 2020",
-      "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing  in phasellus non in justo.",
-      "imgslider": "../../../../../assets/images/home/slider3.png"
-    }
-  ],
-  "featuredPro": [
-    {
-      "id": 1,
-      "featImg": "../../../../../assets/images/home/image 1168.png",
-      "titleFeat": "Cantilever chair",
-      "codeFeat": "Code - Y523201",
-      "saleFeat": "42.00"
-    },
-    {
-      "id": 2,
-      "featImg": "../../../../../assets/images/home/image 1.png",
-      "titleFeat": "Folding chair",
-      "codeFeat": "Code - Z524501",
-      "saleFeat": "75.00"
-    },
-    {
-      "id": 3,
-      "featImg": "../../../../../assets/images/home/image 1169.png",
-      "titleFeat": "Chaise longue",
-      "codeFeat": "Code - H929801",
-      "saleFeat": "93.00"
-    },
-    {
-      "id": 4,
-      "featImg": "../../../../../assets/images/home/image 3.png",
-      "titleFeat": "Adirondack chair",
-      "codeFeat": "Code - Y263291",
-      "saleFeat": "60.50"
-    },
-    {
-      "id": 5,
-      "featImg": "../../../../../assets/images/home/image 1171.png",
-      "titleFeat": "Aeron chair",
-      "codeFeat": "Code - Y628205",
-      "saleFeat": "87.06"
-    }
-  ],
-  "latestPro": {
-    "newArrivals": [
+  "header": {
+    "emailAdress": "mhhasanul@gmail.com",
+    "phoneNum": "(12345)67890",
+    "langENG": "English",
+    "langARB": "Arabic",
+    "langSPA": "Spanish",
+    "coinUSD": "USD",
+    "coinEGP": "EGP",
+    "coinIQD": "IQD",
+    "loginAcc": "Login",
+    "regAcc": "Register",
+    "logoutAcc": "Logout",
+    "wishlist": "Wishlist",
+    "fag": "Fag",
+    "nanLink": [
       {
-        "latestImg": "../../../../../assets/images/home/image 1166.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Hot",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "100.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 15.png",
-        "imgvector": "",
-        "latestBanner": "",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "120.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 1168.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "New",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "84.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 23.png",
-        "imgvector": "",
-        "latestBanner": "",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "200.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 11.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "New",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "60.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 3.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Sale",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "250.00",
-        "latestOffer": "15.10"
-      }
-    ],
-    "BestSeller": [
-      {
-        "latestImg": "../../../../../assets/images/home/image 1169.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "New",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "621.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 23.png",
-        "imgvector": "",
-        "latestBanner": "",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "190.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 11.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Hot",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "235.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 3.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Sale",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "250.00",
-        "latestOffer": "15.10"
-      }
-    ],
-    "Featured": [
-      {
-        "latestImg": "../../../../../assets/images/home/image 11.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Hot",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "100.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 1168.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "New",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "84.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 23.png",
-        "imgvector": "",
-        "latestBanner": "",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "200.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 11.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "New",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "60.00",
-        "latestOffer": "15.10"
-      }
-    ],
-    "SpecialOffer": [
-      {
-        "latestImg": "../../../../../assets/images/home/image 15.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Hot",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "100.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 11.png",
-        "imgvector": "",
-        "latestBanner": "",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "120.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 23.png",
-        "imgvector": "",
-        "latestBanner": "",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "200.00",
-        "latestOffer": "15.10"
-      },
-      {
-        "latestImg": "../../../../../assets/images/home/image 3.png",
-        "imgvector": "../../../../../assets/images/home/Vector 1.png",
-        "latestBanner": "Sale",
-        "latestTitel": "Comfort Handy Craft",
-        "latestSale": "250.00",
-        "latestOffer": "15.10"
+        "link1": "Home",
+        "link2": "Pages",
+        "link3": "Products",
+        "link4": "About",
+        "link5": "Blog",
+        "link6": "Shop",
+        "link7": "Contact"
       }
     ]
   },
-  "trendingPro": [
-    {
-      "trendImg": "../../../../../assets/images/home/image 1171.png",
-      "trendTitle": "Cantilever chair",
-      "saleNew": "$26.00 ",
-      "saleOld": "$42.00"
-    },
-    {
-      "trendImg": "../../../../../assets/images/home/image 1170.png",
-      "trendTitle": "Cantilever chair",
-      "saleNew": "$26.00 ",
-      "saleOld": "$42.00"
-    },
-    {
-      "trendImg": "../../../../../assets/images/home/image 31.png",
-      "trendTitle": "Cantilever chair",
-      "saleNew": "$26.00 ",
-      "saleOld": "$42.00"
-    },
-    {
-      "trendImg": "../../../../../assets/images/home/image 11.png",
-      "trendTitle": "Cantilever chair",
-      "saleNew": "$26.00 ",
-      "saleOld": "$42.00"
-    }
-  ],
-  "amontOffer": [
-    {
-      "titleOffer": "23% off in all products",
-      "linkOffer": "Shop Now",
-      "imgOffer": "../../../../../assets/images/home/image 1162.png",
-      "class1": "img1"
-    },
-    {
-      "titleOffer": "23% off in all products",
-      "linkOffer": "View Collection",
-      "imgOffer": "../../../../../assets/images/home/image 1161.png",
-      "class1": "img2"
-    }
-  ],
-  "trendList": [
-    {
-      "listImg": "../../../../../assets/images//home/image 30.png",
-      "listTitle": "Executive Seat chair",
-      "listSale": "$32.00"
-    },
-    {
-      "listImg": "../../../../../assets/images//home/image 19.png",
-      "listTitle": "Executive Seat chair",
-      "listSale": "$32.00"
-    },
-    {
-      "listImg": "../../../../../assets/images//home/image 28.png",
-      "listTitle": "Executive Seat chair",
-      "listSale": "$32.00"
-    }
-  ],
-  "secOffer": [
-    {
-      "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
-      "titleOffer": "24/7 Support",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    },
-    {
-      "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
-      "titleOffer": "24/7 Support",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    },
-    {
-      "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
-      "titleOffer": "24/7 Support",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    },
-    {
-      "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
-      "titleOffer": "24/7 Support",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    }
-  ],
-  "discountItem": [
-    {
-      "discountTitle": "20% Discount Of All Products",
-      "typePro": "Eams Sofa Compact",
-      "descriptionPro": "Round armrests, soft lines and an inviting upholstery give this wing chair a soft embracing feel.",
-      "featPro": [
+  "homePage": {
+    "DisItemTittle": "Discount Item",
+    "feaProTittle": "featured products",
+    "latProTittle": "latest products",
+    "leatBlogTittle": "Leatest Blog ",
+    "secOfferTittle": "What Shopex Offer!",
+    "topCateTittle": "Top Categories",
+    "slider": [
+      {
+        "hint": "Best Furniture For Your Castle....",
+        "titleSlider": "New Furniture Collection Trends in 2020",
+        "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
+        "imgslider": "../../../../../assets/images/home/slider1.png",
+        "btnShop": "Shop Now"
+      },
+      {
+        "hint": "Best Furniture For Your Castle....",
+        "titleSlider": "New Furniture Collection Trends in 2020",
+        "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
+        "imgslider": "../../../../../assets/images/home/slider2.png",
+        "btnShop": "Shop Now"
+      },
+      {
+        "hint": "Best Furniture For Your Castle....",
+        "titleSlider": "New Furniture Collection Trends in 2020",
+        "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing  in phasellus non in justo.",
+        "imgslider": "../../../../../assets/images/home/slider3.png",
+        "btnShop": "Shop Now"
+      }
+    ],
+    "featuredPro": [
+      {
+        "id": 1,
+        "featImg": "../../../../../assets/images/home/image 1168.png",
+        "titleFeat": "Cantilever chair",
+        "codeFeat": "Code - Y523201",
+        "saleFeat": "42.00"
+      },
+      {
+        "id": 2,
+        "featImg": "../../../../../assets/images/home/image 1.png",
+        "titleFeat": "Folding chair",
+        "codeFeat": "Code - Z524501",
+        "saleFeat": "75.00"
+      },
+      {
+        "id": 3,
+        "featImg": "../../../../../assets/images/home/image 1169.png",
+        "titleFeat": "Chaise longue",
+        "codeFeat": "Code - H929801",
+        "saleFeat": "93.00"
+      },
+      {
+        "id": 4,
+        "featImg": "../../../../../assets/images/home/image 3.png",
+        "titleFeat": "Adirondack chair",
+        "codeFeat": "Code - Y263291",
+        "saleFeat": "60.50"
+      },
+      {
+        "id": 5,
+        "featImg": "../../../../../assets/images/home/image 1171.png",
+        "titleFeat": "Aeron chair",
+        "codeFeat": "Code - Y628205",
+        "saleFeat": "87.06"
+      }
+    ],
+    "latestPro": {
+      "newArrivals": [
         {
-          "feat1": "Material expose like metals",
-          "feat2": "Clear lines and geomatric figures",
-          "feat3": "Simple neutral colours.",
-          "feat4": "Material expose like metals"
+          "latestImg": "../../../../../assets/images/home/image 1166.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Hot",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "100.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 15.png",
+          "imgvector": "",
+          "latestBanner": "",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "120.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 1168.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "New",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "84.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 23.png",
+          "imgvector": "",
+          "latestBanner": "",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "200.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 11.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "New",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "60.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 3.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Sale",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "250.00",
+          "latestOffer": "15.10"
         }
       ],
-      "imagPro": "../../../../../assets/images/home/chair1.png"
-    },
-    {
-      "discountTitle": "35% Discount Of some Products",
-      "typePro": "POÄNG Armchair frame",
-      "descriptionPro": "Wood is the material most commonly associated with IKEA furniture, and for good reasons",
-      "featPro": [
+      "BestSeller": [
         {
-          "feat1": "100% polypropylene",
-          "feat2": "Layer-glued wood veneer, Birch veneer.",
-          "feat3": "100% polyester (min. 80% recycled)",
-          "feat4": "Wipe clean with a damp cloth."
+          "latestImg": "../../../../../assets/images/home/image 1169.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "New",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "621.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 23.png",
+          "imgvector": "",
+          "latestBanner": "",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "190.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 11.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Hot",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "235.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 3.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Sale",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "250.00",
+          "latestOffer": "15.10"
         }
       ],
-      "imagPro": "../../../../../assets/images/home/chair1.png"
-    },
-    {
-      "discountTitle": "10% Discount Of All Products",
-      "typePro": "TULLSTA Armchair cover",
-      "descriptionPro": "A range of coordinated covers makes it easy for you to give your furniture a new look.",
-      "featPro": [
+      "Featured": [
         {
-          "feat1": "Polyurethane foam 20 kg/cu.m.",
-          "feat2": "Solid beech, Clear acrylic lacquer",
-          "feat3": "55% cotton, 45% polyester",
-          "feat4": "Solid wood, Particleboard, 100%solid"
+          "latestImg": "../../../../../assets/images/home/image 11.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Hot",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "100.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 1168.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "New",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "84.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 23.png",
+          "imgvector": "",
+          "latestBanner": "",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "200.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 11.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "New",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "60.00",
+          "latestOffer": "15.10"
         }
       ],
-      "imagPro": "../../../../../assets/images/home/chair1.png"
-    }
-  ],
-  "footer": [
-    {
-      "titleFooter": "Catagories",
-      "list": [
+      "SpecialOffer": [
         {
-          "listTitle1": "Laptops & Computers",
-          "listTitle2": "Cameras & Photography",
-          "listTitle3": "Smart Phones & Tablets",
-          "listTitle4": "Video Games & Consoles",
-          "listTitle5": "Waterproof Headphones"
+          "latestImg": "../../../../../assets/images/home/image 15.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Hot",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "100.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 11.png",
+          "imgvector": "",
+          "latestBanner": "",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "120.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 23.png",
+          "imgvector": "",
+          "latestBanner": "",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "200.00",
+          "latestOffer": "15.10"
+        },
+        {
+          "latestImg": "../../../../../assets/images/home/image 3.png",
+          "imgvector": "../../../../../assets/images/home/Vector 1.png",
+          "latestBanner": "Sale",
+          "latestTitel": "Comfort Handy Craft",
+          "latestSale": "250.00",
+          "latestOffer": "15.10"
         }
       ]
     },
-    {
-      "titleFooter": "Customer Care",
-      "list": [
+    "leatestBlog": [
+      {
+        "leatestImg": "../../../../../assets/images/home/JIUjvqe2ZHg.png",
+        "leatestInfo": [
+          {
+            "name": "SaberAli",
+            "date": "21 August,2020"
+          }
+        ],
+        "leatestTilttle": "Top esssential Trends in 2021",
+        "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+        "leatestLink": "Read More",
+        "leatestClass": "leatestColor1"
+      },
+      {
+        "leatestImg": "../../../../../assets/images/home/2dcYhvbHV-M.png",
+        "leatestInfo": [
+          {
+            "name": "Surfauxion",
+            "date": "21 August,2020"
+          }
+        ],
+        "leatestTilttle": "Top esssential Trends in 2021",
+        "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+        "leatestLink": "Read More",
+        "leatestClass": "leatestColor2"
+      },
+      {
+        "leatestImg": "../../../../../assets/images/home/dcYhvbHV-M.png",
+        "leatestInfo": [
+          {
+            "name": "SaberAli",
+            "date": "21 August,2020"
+          }
+        ],
+        "leatestTilttle": "Top esssential Trends in 2021",
+        "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+        "leatestLink": "Read More",
+        "leatestClass": "leatestColor1"
+      }
+    ],
+    "discountItem": [
+      {
+        "discountTitle": "20% Discount Of All Products",
+        "typePro": "Eams Sofa Compact",
+        "descriptionPro": "Round armrests, soft lines and an inviting upholstery give this wing chair a soft embracing feel.",
+        "featPro": [
+          {
+            "feat1": "Material expose like metals",
+            "feat2": "Clear lines and geomatric figures",
+            "feat3": "Simple neutral colours.",
+            "feat4": "Material expose like metals"
+          }
+        ],
+        "imagPro": "../../../../../assets/images/home/chair1.png"
+      },
+      {
+        "discountTitle": "35% Discount Of some Products",
+        "typePro": "POÄNG Armchair frame",
+        "descriptionPro": "Wood is the material most commonly associated with IKEA furniture, and for good reasons",
+        "featPro": [
+          {
+            "feat1": "100% polypropylene",
+            "feat2": "Layer-glued wood veneer, Birch veneer.",
+            "feat3": "100% polyester (min. 80% recycled)",
+            "feat4": "Wipe clean with a damp cloth."
+          }
+        ],
+        "imagPro": "../../../../../assets/images/home/chair1.png"
+      },
+      {
+        "discountTitle": "10% Discount Of All Products",
+        "typePro": "TULLSTA Armchair cover",
+        "descriptionPro": "A range of coordinated covers makes it easy for you to give your furniture a new look.",
+        "featPro": [
+          {
+            "feat1": "Polyurethane foam 20 kg/cu.m.",
+            "feat2": "Solid beech, Clear acrylic lacquer",
+            "feat3": "55% cotton, 45% polyester",
+            "feat4": "Solid wood, Particleboard, 100%solid"
+          }
+        ],
+        "imagPro": "../../../../../assets/images/home/chair1.png"
+      }
+    ],
+    "secOffer": [
+      {
+        "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+        "titleOffer": "24/7 Support",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      },
+      {
+        "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+        "titleOffer": "24/7 Support",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      },
+      {
+        "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+        "titleOffer": "24/7 Support",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      },
+      {
+        "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+        "titleOffer": "24/7 Support",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      }
+    ],
+    "catePro": [
+      {
+        "cateImg": "../../../../../assets/images/home/image 20.png",
+        "cateTittle": "Mini LCW Chair",
+        "cateSale": "$56.00"
+      },
+      {
+        "cateImg": "../../../../../assets/images/home/image 1168.png",
+        "cateTittle": "Mini LCW Chair",
+        "cateSale": "$56.00"
+      },
+      {
+        "cateImg": "../../../../../assets/images/home/image 1171.png",
+        "cateTittle": "Mini LCW Chair",
+        "cateSale": "$56.00"
+      },
+      {
+        "cateImg": "../../../../../assets/images/home/image 20.png",
+        "cateTittle": "Mini LCW Chair",
+        "cateSale": "$56.00"
+      }
+    ],
+    "trendingProducts": {
+      "trendingPro": [
         {
-          "listTitle1": "My Account",
-          "listTitle2": "Discount",
-          "listTitle3": "Returns",
-          "listTitle4": "Orders History",
-          "listTitle5": "Order Tracking"
+          "trendImg": "../../../../../assets/images/home/image 1171.png",
+          "trendTitle": "Cantilever chair",
+          "saleNew": "$26.00 ",
+          "saleOld": "$42.00"
+        },
+        {
+          "trendImg": "../../../../../assets/images/home/image 1170.png",
+          "trendTitle": "Cantilever chair",
+          "saleNew": "$26.00 ",
+          "saleOld": "$42.00"
+        },
+        {
+          "trendImg": "../../../../../assets/images/home/image 31.png",
+          "trendTitle": "Cantilever chair",
+          "saleNew": "$26.00 ",
+          "saleOld": "$42.00"
+        },
+        {
+          "trendImg": "../../../../../assets/images/home/image 11.png",
+          "trendTitle": "Cantilever chair",
+          "saleNew": "$26.00 ",
+          "saleOld": "$42.00"
+        }
+      ],
+      "amontOffer": [
+        {
+          "titleOffer": "23% off in all products",
+          "linkOffer": "Shop Now",
+          "imgOffer": "../../../../../assets/images/home/image 1162.png",
+          "class1": "img1"
+        },
+        {
+          "titleOffer": "23% off in all products",
+          "linkOffer": "View Collection",
+          "imgOffer": "../../../../../assets/images/home/image 1161.png",
+          "class1": "img2"
+        }
+      ],
+      "trendList": [
+        {
+          "listImg": "../../../../../assets/images//home/image 30.png",
+          "listTitle": "Executive Seat chair",
+          "listSale": "$32.00"
+        },
+        {
+          "listImg": "../../../../../assets/images//home/image 19.png",
+          "listTitle": "Executive Seat chair",
+          "listSale": "$32.00"
+        },
+        {
+          "listImg": "../../../../../assets/images//home/image 28.png",
+          "listTitle": "Executive Seat chair",
+          "listSale": "$32.00"
         }
       ]
     },
-    {
-      "titleFooter": "Pages",
-      "list": [
-        {
-          "listTitle1": "Blog",
-          "listTitle2": "Browse the Shop",
-          "listTitle3": "Category",
-          "listTitle4": "Pre-Built Pages",
-          "listTitle5": "Visual Composer Elements",
-          "listTitle6": "WooCommerce Pages"
-        }
-      ]
+    "trndPro": {
+      "tittle": "Unique Features Of leatest & Trending Poducts",
+      "namePro": "B&B Italian Sofa",
+      "pricePro": "$32.00"
     }
-  ],
-  "leatestBlog": [
-    {
-      "leatestImg": "../../../../../assets/images/home/JIUjvqe2ZHg.png",
-      "leatestInfo": [
-        {
-          "name": "SaberAli",
-          "date": "21 August,2020"
-        }
-      ],
-      "leatestTilttle": "Top esssential Trends in 2021",
-      "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      "leatestLink": "Read More",
-      "leatestClass": "leatestColor1"
-    },
-    {
-      "leatestImg": "../../../../../assets/images/home/2dcYhvbHV-M.png",
-      "leatestInfo": [
-        {
-          "name": "Surfauxion",
-          "date": "21 August,2020"
-        }
-      ],
-      "leatestTilttle": "Top esssential Trends in 2021",
-      "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      "leatestLink": "Read More",
-      "leatestClass": "leatestColor2"
-    },
-    {
-      "leatestImg": "../../../../../assets/images/home/dcYhvbHV-M.png",
-      "leatestInfo": [
-        {
-          "name": "SaberAli",
-          "date": "21 August,2020"
-        }
-      ],
-      "leatestTilttle": "Top esssential Trends in 2021",
-      "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      "leatestLink": "Read More",
-      "leatestClass": "leatestColor1"
-    }
-  ],
-  "catePro": [
-    {
-      "cateImg": "../../../../../assets/images/home/image 20.png",
-      "cateTittle": "Mini LCW Chair",
-      "cateSale": "$56.00"
-    },
-    {
-      "cateImg": "../../../../../assets/images/home/image 1168.png",
-      "cateTittle": "Mini LCW Chair",
-      "cateSale": "$56.00"
-    },
-    {
-      "cateImg": "../../../../../assets/images/home/image 1171.png",
-      "cateTittle": "Mini LCW Chair",
-      "cateSale": "$56.00"
-    },
-    {
-      "cateImg": "../../../../../assets/images/home/image 20.png",
-      "cateTittle": "Mini LCW Chair",
-      "cateSale": "$56.00"
-    }
-  ],
-  "about": [
-    {
-      "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
-      "titleOffer": "Free Delivery",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    },
-    {
-      "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
-      "titleOffer": "100% Cash Back",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    },
-    {
-      "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
-      "titleOffer": "Quality Product",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    },
-    {
-      "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
-      "titleOffer": "24/7 Support",
-      "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-    }
-  ]
+  },
+  "aboutPage": {
+    "ourfeatures": [
+      {
+        "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+        "titleOffer": "Free Delivery",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      },
+      {
+        "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+        "titleOffer": "100% Cash Back",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      },
+      {
+        "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+        "titleOffer": "Quality Product",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      },
+      {
+        "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+        "titleOffer": "24/7 Support",
+        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      }
+    ]
+  },
+  "footer": {
+    "placeholder": "Enter Email Address",
+    "btnFooter": "Sign Up",
+    "contactInfo": "Contact Info",
+    "contactDES": "17 Princess Road, London, Greater London NW1 8JR, UK",
+    "copyRight": "©Webecy - All Rights Reserved",
+    "listFooter": [
+      {
+        "titleFooter": "Catagories",
+        "list": [
+          {
+            "listTitle1": "Laptops & Computers",
+            "listTitle2": "Cameras & Photography",
+            "listTitle3": "Smart Phones & Tablets",
+            "listTitle4": "Video Games & Consoles",
+            "listTitle5": "Waterproof Headphones"
+          }
+        ]
+      },
+      {
+        "titleFooter": "Customer Care",
+        "list": [
+          {
+            "listTitle1": "My Account",
+            "listTitle2": "Discount",
+            "listTitle3": "Returns",
+            "listTitle4": "Orders History",
+            "listTitle5": "Order Tracking"
+          }
+        ]
+      },
+      {
+        "titleFooter": "Pages",
+        "list": [
+          {
+            "listTitle1": "Blog",
+            "listTitle2": "Browse the Shop",
+            "listTitle3": "Category",
+            "listTitle4": "Pre-Built Pages",
+            "listTitle5": "Visual Composer Elements",
+            "listTitle6": "WooCommerce Pages"
+          }
+        ]
+      }
+    ]
+  }
 }

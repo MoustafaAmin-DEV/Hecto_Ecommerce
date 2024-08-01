@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./leatest-blog.component.scss'],
 })
 export class LeatestBlogComponent {
-  @Input() public home: any;
+  @Input() public homePage: any;
 }

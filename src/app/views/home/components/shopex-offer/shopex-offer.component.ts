@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./shopex-offer.component.scss'],
 })
 export class ShopexOfferComponent {
-  @Input() public home: any;
+  @Input() public homePage: any;
 }

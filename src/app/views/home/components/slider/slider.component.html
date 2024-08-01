@@ -1,6 +1,6 @@
-<div class="slider" *ngIf="home">
+<div class="slider" *ngIf="homePage">
   <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide *ngFor="let slide of home">
+    <ng-template carouselSlide *ngFor="let slide of homePage.slider">
       <div class="position-relative">
         <div class="container">
           <div class="slide-content align-items-center d-flex pb-5">
@@ -10,10 +10,10 @@
                 <h2 class="title-slider">
                   {{ slide.titleSlider }}
                 </h2>
-                <p class="description-slider pe-sm-5">
+                <p class="description-slider pe-sm-5 mb-3">
                   {{ slide.descriptionSlider }}
                 </p>
-                <a href="#" class="btn btn-shop">Shop Now</a>
+                <a href="#" class="btn btn-shop">{{ slide.btnShop }}</a>
                 <div class="img-Lamp position-absolute d-none d-lg-block">
                   <img
                     src="../../../../../assets/images/home/image 32.png"

@@ -1,15 +1,11 @@
-<app-slider [home]="dataSlider"></app-slider>
-<app-featured-products [home]="dataFeaturedPro"></app-featured-products>
-<app-latest-products [home]="dataLatestPro"></app-latest-products>
-<app-shopex-offer [home]="dataSecOffer"></app-shopex-offer>
+<app-slider [homePage]="datahomePage"></app-slider>
+<app-featured-products [homePage]="datahomePage"></app-featured-products>
+<app-latest-products [homePage]="datahomePage"></app-latest-products>
+<app-shopex-offer [homePage]="datahomePage"></app-shopex-offer>
 <app-trend-pro></app-trend-pro>
-<app-trending-products
-  [home]="dataTrendingPro"
-  [homeAmont]="dataAmontOffer"
-  [homeTrendList]="dataTrendList"
-></app-trending-products>
-<app-discount-item [home]="dataDiscountItem"></app-discount-item>
-<app-top-categories [home]="dataCatePro"></app-top-categories>
+<app-trending-products [homePage]="datahomePage"></app-trending-products>
+<app-discount-item [homePage]="datahomePage"></app-discount-item>
+<app-top-categories [homePage]="datahomePage"></app-top-categories>
 <app-newslater></app-newslater>
 <app-image-companies></app-image-companies>
-<app-leatest-blog [home]="dataLeatestBlog"></app-leatest-blog>
+<app-leatest-blog [homePage]="datahomePage"></app-leatest-blog>

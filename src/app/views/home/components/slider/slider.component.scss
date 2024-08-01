@@ -48,7 +48,7 @@
           }
           .description-slider {
             color: #8a8fb9;
-            font-size: 16px;
+            font-size: var(--font-size-medium);
             font-weight: 700;
             line-height: 1.6;
             @include respond-to(small) {

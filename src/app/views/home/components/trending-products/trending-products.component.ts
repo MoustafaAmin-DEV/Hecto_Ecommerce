@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./trending-products.component.scss'],
 })
 export class TrendingProductsComponent {
-  @Input() public home: any;
-  @Input() public homeAmont: any;
-  @Input() public homeTrendList: any;
+  @Input() public homePage: any;
+  // @Input() public homeAmont: any;
+  // @Input() public homeTrendList: any;
 }

@@ -1,8 +1,11 @@
-<div class="Trending-Products" *ngIf="home">
+<div class="Trending-Products" *ngIf="homePage">
   <div class="container">
     <div class="title-head">Trending Products</div>
     <div class="row">
-      <div class="col-lg-3 col-md-6 col-12" *ngFor="let trendPro of home">
+      <div
+        class="col-lg-3 col-md-6 col-12"
+        *ngFor="let trendPro of homePage.trendingProducts.trendingPro"
+      >
         <div class="card border-0 trendPro">
           <div class="card-img-top trendImg">
             <img src="{{ trendPro.trendImg }}" class="mw-100" alt="Title" />
@@ -20,7 +23,10 @@
       </div>
     </div>
     <div class="row trend-offer">
-      <div class="col-lg-4 col-md-6 col-12" *ngFor="let amont of homeAmont">
+      <div
+        class="col-lg-4 col-md-6 col-12"
+        *ngFor="let amont of homePage.trendingProducts.amontOffer"
+      >
         <div class="amont-offer h-100 {{ amont.class1 }}">
           <div class="title-offer">{{ amont.titleOffer }}</div>
           <a class="link-offer" href="">{{ amont.linkOffer }}</a>
@@ -33,7 +39,7 @@
         <div class="Trending-products-list d-flex flex-column">
           <div
             class="list d-flex justify-content-start align-items-center"
-            *ngFor="let list of homeTrendList"
+            *ngFor="let list of homePage.trendingProducts.trendList"
           >
             <div class="list-img">
               <img src="{{ list.listImg }}" class="mw-100" alt="" />
