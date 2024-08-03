@@ -10,12 +10,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class navbarComponent implements OnInit {
-  public datanavbar: any;
   isLogin: boolean = false;
   currentLang: string;
   constructor(
     private _AuthService: AuthService,
-    public apiService: SharedService,
     private languageService: LanguageService
   ) {
     this.currentLang = this.languageService.getCurrentLang();
@@ -28,10 +26,6 @@ export class navbarComponent implements OnInit {
       } else {
         this.isLogin = false;
       }
-    });
-    this.apiService.datanavbar().subscribe((data) => {
-      this.datanavbar = data;
-      console.log(this.datanavbar);
     });
     this.currentLang = this.languageService.getCurrentLang();
   }

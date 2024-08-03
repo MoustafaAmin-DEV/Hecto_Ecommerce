@@ -1,6 +1,6 @@
 <!-- start heading-bar -->
 
-<div class="heading-bar" *ngIf="datanavbar">
+<!-- <div class="heading-bar">
   <div class="container">
     <div class="row d-flex justify-content-between align-content-center">
       <div class="col-lg-6 col-8 d-sm-none d-block">
@@ -16,14 +16,14 @@
             <p>
               <span
                 ><i class="fa-regular fa-envelope"></i>
-                {{ datanavbar.emailAdress }}</span
+                {{ navbar.emailAdress | translate }}</span
               >
             </p>
           </div>
           <div class="phone">
             <p>
               <span><i class="fa-solid fa-phone-volume"></i></span
-              >{{ datanavbar.phoneNum }}
+              >{{ navbar.phoneNum | translate }}
             </p>
           </div>
         </div>
@@ -35,7 +35,8 @@
         <ul class="nav">
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-              >{{ datanavbar.langENG }} <i class="fa-solid fa-chevron-down"></i>
+              >{{ navbar.langENG | translate }}
+              <i class="fa-solid fa-chevron-down"></i>
               <ul
                 class="shadow dropdown-menu p-0 border-0 rounded-0 position-absolute"
               >
@@ -45,7 +46,7 @@
                     href="#"
                     (click)="switchLanguage('en')"
                   >
-                    {{ datanavbar.langENG }}
+                    {{ navbar.langENG | translate }}
                   </button>
                 </li>
                 <li class="py-1 text-center">
@@ -54,12 +55,12 @@
                     href="#"
                     (click)="switchLanguage('ar')"
                   >
-                    {{ datanavbar.langARB }}
+                    {{ navbar.langARB | translate }}
                   </button>
                 </li>
                 <li class="py-1 text-center">
                   <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ datanavbar.langSPA }}</a
+                    {{ navbar.langSPA | translate }}</a
                   >
                 </li>
               </ul>
@@ -67,24 +68,24 @@
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-              >{{ datanavbar.coinUSD }}
+              >{{ navbar.coinUSD | translate }}
               <i class="fa-solid fa-chevron-down"></i>
               <ul
                 class="shadow dropdown-menu p-0 border-0 rounded-0 position-absolute"
               >
                 <li class="ms-2 py-1 text-center">
                   <a class="dropdown-item pt-2 pb-2 pe-0" href="#">
-                    {{ datanavbar.coinUSD }}</a
+                    {{ navbar.coinUSD | translate }}</a
                   >
                 </li>
                 <li class="ms-2 me-2 py-2 text-center">
                   <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ datanavbar.coinEGP }}</a
+                    {{ navbar.coinEGP | translate }}</a
                   >
                 </li>
                 <li class="ms-2 me-2 py-2 text-center">
                   <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ datanavbar.coinIQD }}
+                    {{ navbar.coinIQD | translate }}
                   </a>
                 </li>
               </ul>
@@ -92,22 +93,25 @@
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="!isLogin">
             <a class="nav-link" [routerLink]="['/', currentLang, 'login']"
-              >{{ datanavbar.loginAcc }} <i class="fa-regular fa-user"></i
+              >{{ navbar.loginAcc | translate }}
+              <i class="fa-regular fa-user"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="!isLogin">
             <a class="nav-link" [routerLink]="['/', currentLang, 'register']"
-              >{{ datanavbar.regAcc }} <i class="fa-regular fa-user"></i
+              >{{ navbar.regAcc | translate }} <i class="fa-regular fa-user"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" (click)="callLogout()"
-              >{{ datanavbar.logoutAcc }} <i class="fa-regular fa-user"></i
+              >{{ navbar.logoutAcc | translate }}
+              <i class="fa-regular fa-user"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" href="#"
-              >{{ datanavbar.wishlist }}<i class="wish fa-regular fa-heart"></i
+              >{{ navbar.wishlist | translate
+              }}<i class="wish fa-regular fa-heart"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
@@ -129,12 +133,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- end heading-bar -->
 <!-- start nav-bar -->
 
-<div class="nav-bar d-sm-block d-none">
+<!-- <div class="nav-bar d-sm-block d-none">
   <div class="container">
     <div class="d-flex align-content-center justify-content-between">
       <div class="logo d-flex align-items-center">
@@ -143,13 +147,14 @@
         /></a>
       </div>
       <div class="d-lg-block d-none align-self-center">
-        <ul class="nav" *ngFor="let link of datanavbar.nanLink">
+        <ul class="nav" *ngFor="let link of navbar.nanLink">
           <li class="nav-item" *ngIf="isLogin">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'home']"
               routerLinkActive="active"
-              >{{ link.link1 }} <i class="fa-solid fa-chevron-down"></i
+              >{{ link.link1 | translate }}
+              <i class="fa-solid fa-chevron-down"></i
             ></a>
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -158,7 +163,7 @@
               [routerLink]="['/', currentLang, 'pages']"
               routerLinkActive="active"
             >
-              {{ link.link2 }}</a
+              {{ link.link2 | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -166,7 +171,7 @@
               class="nav-link"
               [routerLink]="['/', currentLang, 'products']"
               routerLinkActive="active"
-              >{{ link.link3 }}</a
+              >{{ link.link3 | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -175,7 +180,7 @@
               [routerLink]="['/', currentLang, 'about']"
               routerLinkActive="active"
             >
-              {{ link.link4 }}</a
+              {{ link.link4 | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -183,7 +188,7 @@
               class="nav-link"
               [routerLink]="['/', currentLang, 'blog']"
               routerLinkActive="active"
-              >{{ link.link5 }}
+              >{{ link.link5 | translate }}
             </a>
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -192,7 +197,7 @@
               [routerLink]="['/', currentLang, 'shop']"
               routerLinkActive="active"
             >
-              {{ link.link6 }}</a
+              {{ link.link6 | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -200,7 +205,7 @@
               class="nav-link"
               [routerLink]="['/', currentLang, 'contact']"
               routerLinkActive="active"
-              >{{ link.link7 }}</a
+              >{{ link.link7 | translate }}</a
             >
           </li>
         </ul>
@@ -223,12 +228,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- end nav-bar -->
 <!-- sart offcanvas  -->
 
-<div
+<!-- <div
   class="offcanvas offcanvas-start"
   *ngIf="isLogin"
   tabindex="-1"
@@ -253,34 +258,36 @@
       <ul class="p-0 d-flex justify-content-center align-items-center">
         <li class="nav-item mx-md-3 mx-2">
           <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-            >{{ datanavbar.langENG }} <i class="fa-solid fa-chevron-down"></i>
+            >{{ navbar.langENG | translate }}
+            <i class="fa-solid fa-chevron-down"></i>
             <ul
               class="shadow lang dropdown-menu p-0 border-0 rounded-0 position-absolute"
             >
               <li class="py-1 text-center">
                 <a class="dropdown-item pt-2 pb-2 pe-0" href="#">
-                  {{ datanavbar.langENG }}
+                  {{ navbar.langENG | translate }}
                 </a>
               </li>
               <li class="py-1 text-center">
                 <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                  {{ datanavbar.langARB }}</a
+                  {{ navbar.langARB | translate }}</a
                 >
               </li>
               <li class="py-1 text-center">
                 <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                  {{ datanavbar.langSPA }}</a
+                  {{ navbar.langSPA | translate }}</a
                 >
               </li>
             </ul>
           </a>
         </li>
         <li class="mx-md-3 mx-2">
-          <a> {{ datanavbar.fag }} </a>
+          <a> {{ navbar.fag | translate }} </a>
         </li>
         <li class="nav-item mx-md-3 mx-2" *ngIf="isLogin">
           <a class="nav-link" (click)="callLogout()"
-            >{{ datanavbar.logoutAcc }} <i class="fa-regular fa-user"></i
+            >{{ navbar.logoutAcc | translate }}
+            <i class="fa-regular fa-user"></i
           ></a>
         </li>
       </ul>
@@ -302,11 +309,7 @@
         </li>
       </ul>
     </div>
-    <div
-      class="nav mt-5"
-      *ngFor="let link of datanavbar.nanLink"
-      ngIf="datanavbar"
-    >
+    <div class="nav mt-5" *ngFor="let link of navbar.nanLink" ngIf="navbar">
       <ul
         class="ps-3 d-flex flex-column justify-content-sm-start align-items-start"
       >
@@ -315,7 +318,8 @@
             class="nav-link"
             [routerLink]="['/', currentLang, 'home']"
             routerLinkActive="active"
-            >{{ link.link1 }} <i class="ms-2 i fa-solid fa-caret-right"></i
+            >{{ link.link1 | translate }}
+            <i class="ms-2 i fa-solid fa-caret-right"></i
           ></a>
         </li>
         <li class="nav-item mb-3">
@@ -324,7 +328,7 @@
             [routerLink]="['/', currentLang, 'pages']"
             routerLinkActive="active"
           >
-            {{ link.link2 }}</a
+            {{ link.link2 | translate }}</a
           >
         </li>
         <li class="nav-item mb-3">
@@ -332,7 +336,7 @@
             class="nav-link"
             [routerLink]="['/', currentLang, 'products']"
             routerLinkActive="active"
-            >{{ link.link3 }}</a
+            >{{ link.link3 | translate }}</a
           >
         </li>
         <li class="nav-item mb-3">
@@ -341,7 +345,7 @@
             [routerLink]="['/', currentLang, 'about']"
             routerLinkActive="active"
           >
-            {{ link.link4 }}</a
+            {{ link.link4 | translate }}</a
           >
         </li>
         <li class="nav-item mb-3">
@@ -349,7 +353,7 @@
             class="nav-link"
             [routerLink]="['/', currentLang, 'blog']"
             routerLinkActive="active"
-            >{{ link.link5 }}
+            >{{ link.link5 | translate }}
           </a>
         </li>
         <li class="nav-item mb-3">
@@ -358,7 +362,7 @@
             [routerLink]="['/', currentLang, 'shop']"
             routerLinkActive="active"
           >
-            {{ link.link6 }}</a
+            {{ link.link6 | translate }}</a
           >
         </li>
         <li class="nav-item mb-3">
@@ -366,18 +370,19 @@
             class="nav-link"
             [routerLink]="['/', currentLang, 'contact']"
             routerLinkActive="active"
-            >{{ link.link7 }}</a
+            >{{ link.link7 | translate }}</a
           >
         </li>
       </ul>
     </div>
     <p class="mt-5">
-      <i class="fa-regular fa-envelope"></i> {{ datanavbar.emailAdress }}
+      <i class="fa-regular fa-envelope"></i>
+      {{ navbar.emailAdress | translate }}
     </p>
     <p class="mt-2">
-      <i class="fa-solid fa-phone-volume"></i> {{ datanavbar.phoneNum }}
+      <i class="fa-solid fa-phone-volume"></i> {{ navbar.phoneNum | translate }}
     </p>
   </div>
-</div>
+</div> -->
 
 <!--end  offcanvas  -->
