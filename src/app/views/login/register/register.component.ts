@@ -10,7 +10,7 @@ import {
   ReactiveFormConfig,
   RxwebValidators,
 } from '@rxweb/reactive-form-validators';
-import { AuthService } from '../../../Shared/sevices/auth/auth.service';
+import { AuthService } from '../../../Shared/services/auth/auth.service';
 import { Router } from '@angular/router';
 
 @Component({

@@ -1,0 +1,26 @@
+{
+  "HOME": {
+    "TITLE": "Welcome to the Home Page",
+    "DESCRIPTION": "This is the home page of our application."
+  },
+  "ABOUT": {
+    "TITLE": "About Us",
+    "DESCRIPTION": "This is the about page of our application."
+  },
+  "CONTACT": {
+    "TITLE": "Contact Us",
+    "DESCRIPTION": "This is the contact page of our application."
+  },
+  "BLOG": {
+    "TITLE": "Blog",
+    "DESCRIPTION": "This is the blog page of our application."
+  },
+  "PRODUCT_LIST": {
+    "TITLE": "Product List",
+    "DESCRIPTION": "This is the product list page of our application."
+  },
+  "NOT_FOUND": {
+    "TITLE": "Page Not Found",
+    "DESCRIPTION": "The page you are looking for does not exist."
+  }
+}

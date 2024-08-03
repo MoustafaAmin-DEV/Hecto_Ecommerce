@@ -2,6 +2,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { HttpClient } from '@angular/common/http';
+import { LanguageService } from 'src/app/Shared/services/language/language.service';
 
 @Component({
   selector: 'app-slider',
@@ -10,8 +11,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SliderComponent implements OnInit {
   @Input() public homePage: any;
-
-  constructor() {}
+  currentLang: string;
+  constructor(private languageService: LanguageService) {
+    this.currentLang = this.languageService.getCurrentLang();
+  }
 
   customOptions: OwlOptions = {
     loop: true,

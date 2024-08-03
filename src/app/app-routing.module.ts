@@ -13,77 +13,77 @@ import { ContactModule } from './views/contact/contact.module';
 import { ContactComponent } from './views/contact/contact.component';
 import { HomeComponent } from './views/home/home.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
-import { RegisterComponent } from './views/authentication/register/register.component';
-import { LoginComponent } from './views/authentication/login/login.component';
-import { ResetPasswordComponent } from './views/authentication/reset-password/reset-password.component';
-import { AuthClassGuard } from './Shared/sevices/auth/auth-class.guard';
+import { RegisterComponent } from './views/login/register/register.component';
+import { LoginComponent } from './views/login/login/login.component';
+import { ResetPasswordComponent } from './views/login/reset-password/reset-password.component';
+import { AuthClassGuard } from './Shared/services/auth/auth-class.guard';
 import { AboutModule } from './views/about/about.module';
 import { AboutComponent } from './views/about/about.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/en/home',
     pathMatch: 'full',
   },
   {
-    path: 'home',
+    path: ':lang/home',
     canActivate: [AuthClassGuard],
     loadChildren: () =>
       import('./views/home/home.module').then(() => HomeModule),
     component: HomeComponent,
   },
   {
-    path: 'shop',
+    path: ':lang/shop',
     canActivate: [AuthClassGuard],
     loadChildren: () =>
       import('./views/shop/shop.module').then(() => ShopModule),
     component: ShopComponent,
   },
   {
-    path: 'blog',
+    path: ':lang/blog',
     canActivate: [AuthClassGuard],
     loadChildren: () =>
       import('./views/blog/blog.module').then(() => BlogModule),
     component: BlogComponent,
   },
   {
-    path: 'pages',
+    path: ':lang/pages',
     canActivate: [AuthClassGuard],
     loadChildren: () =>
       import('./views/pages/pages.module').then(() => PagesModule),
     component: PagesComponent,
   },
   {
-    path: 'about',
+    path: ':lang/about',
     loadChildren: () =>
       import('./views/about/about.module').then(() => AboutModule),
     component: AboutComponent,
   },
   {
-    path: 'products/:id',
+    path: ':lang/products/:id',
     canActivate: [AuthClassGuard],
     loadChildren: () =>
       import('./views/products/products.module').then(() => ProductsModule),
     component: ProductsComponent,
   },
   {
-    path: 'contact',
+    path: ':lang/contact',
     canActivate: [AuthClassGuard],
     loadChildren: () =>
       import('./views/contact/contact.module').then(() => ContactModule),
     component: ContactComponent,
   },
   {
-    path: 'register',
+    path: ':lang/register',
     component: RegisterComponent,
   },
   {
-    path: 'login',
+    path: ':lang/login',
     component: LoginComponent,
   },
   {
-    path: 'resetPassword',
+    path: ':lang/resetPassword',
     component: ResetPasswordComponent,
   },
   { path: '**', component: NotFoundComponent },

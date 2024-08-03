@@ -15,6 +15,7 @@ import { LeatestBlogComponent } from './components/leatest-blog/leatest-blog.com
 import { NewslaterComponent } from './components/newslater/newslater.component';
 import { TopCategoriesComponent } from './components/top-categories/top-categories.component';
 import { SharedModule } from '../../Shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,12 @@ import { SharedModule } from '../../Shared/shared.module';
     NewslaterComponent,
     TopCategoriesComponent,
   ],
-  imports: [CommonModule, HomeRoutingModule, CarouselModule, SharedModule],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    CarouselModule,
+    SharedModule,
+    TranslateModule,
+  ],
 })
 export class HomeModule {}

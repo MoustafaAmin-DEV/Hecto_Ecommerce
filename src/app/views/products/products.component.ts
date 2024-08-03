@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { SharedService } from '../../Shared/sevices/shared.service';
+import { SharedService } from '../../Shared/services/shared.service';
 
 @Component({
   selector: 'app-products',

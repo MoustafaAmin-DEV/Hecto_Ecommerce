@@ -12,6 +12,19 @@ body {
   padding: 0;
 }
 
+[dir="rtl"] {
+  body {
+    direction: rtl;
+    text-align: right;
+  }
+}
+[dir="ltr"] {
+  body {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
 // ### Reset ###
 html,
 span,

@@ -4,12 +4,13 @@
       <div class="position-relative">
         <div class="container">
           <div class="slide-content align-items-center d-flex pb-5">
-            <div class="row align-items-center flex-column-reverse flex-lg-row">
+            <div
+              class="row align-items-center flex-column-reverse flex-lg-row"
+              [ngClass]="currentLang === 'ar' ? 'flex-row-reverse' : ''"
+            >
               <div class="col-lg-7 col-12 item-text mb-5">
                 <span class="hint mb-2 d-block">{{ slide.hint }}</span>
-                <h2 class="title-slider">
-                  {{ slide.titleSlider }}
-                </h2>
+                <h2 class="title-slider">{{ slide.titleSlider }}mostafa</h2>
                 <p class="description-slider pe-sm-5 mb-3">
                   {{ slide.descriptionSlider }}
                 </p>
