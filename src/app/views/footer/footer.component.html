@@ -1,4 +1,4 @@
-<!-- <footer>
+<footer>
   <div class="container">
     <div class="row">
       <div
@@ -15,18 +15,18 @@
           <input
             type="email"
             class="border-0 ms-2"
-            placeholder="{{ footer.placeholder | translate }}"
+            placeholder="{{ 'footer.placeholder' | translate }}"
           />
           <div class="sign text-center">
-            <p class="p-0">{{ footer.btnFooter | translate }}</p>
+            <p class="p-0">{{ "footer.btnFooter" | translate }}</p>
           </div>
         </div>
-        <p class="m-0">{{ footer.contactInfo | translate }}</p>
-        <p class="m-0">{{ footer.contactDES | translate }}</p>
+        <p class="m-0">{{ "footer.contactInfo" | translate }}</p>
+        <p class="m-0">{{ "footer.contactDES" | translate }}</p>
       </div>
       <div
         class="col-xl-2 col-lg-3 col-md-6 col-12"
-        *ngFor="let item of footer.listFooter"
+        *ngFor="let item of 'footer.listFooter' | translate"
       >
         <h5>{{ item.titleFooter | translate }}</h5>
         <ul class="text-start" *ngFor="let list of item.list">
@@ -56,7 +56,7 @@
 <div class="copyRight d-flex align-items-center py-3 py-sm-0">
   <div class="container">
     <div class="copyRight">
-      <p>{{ footer.copyRight | translate }}</p>
+      <p>{{ "footer.copyRight" | translate }}</p>
       <ul class="d-flex align-items-center">
         <li>
           <a href=""><i class="fa-brands fa-facebook-f fa-fw"></i></a>
@@ -70,4 +70,4 @@
       </ul>
     </div>
   </div>
-</div> -->
+</div>

@@ -19,17 +19,6 @@
         width: 16px;
       }
     }
-
-    .logo {
-      color: var(--white);
-      font-family: var(--font-family-josefin);
-      font-size: 34px;
-      font-weight: 700;
-      @include respond-to(small) {
-        font-size: 30px;
-      }
-    }
-
     .head-left {
       .envelope {
         margin-right: 48px;
@@ -54,6 +43,16 @@
       }
     }
 
+    .logo {
+      color: var(--white);
+      font-family: var(--font-family-josefin);
+      font-size: 34px;
+      font-weight: 700;
+      @include respond-to(small) {
+        font-size: 30px;
+      }
+    }
+
     .nav {
       .nav-item {
         margin-right: 17px;
@@ -75,6 +74,19 @@
             margin: 0 10px;
 
             a {
+              font-family: var(--font-family-josefin);
+              font-size: var(--font-size-small);
+              font-weight: 600;
+              color: var(--black);
+              border-radius: 6px;
+
+              &:hover {
+                background-color: var(--secondary-color);
+                color: var(--white);
+                transition: 0.4s;
+              }
+            }
+            button {
               font-family: var(--font-family-josefin);
               font-size: var(--font-size-small);
 
@@ -115,6 +127,10 @@
   .nav {
     .nav-item {
       margin-right: 35px;
+
+      @media (min-width: 992px) and (max-width: 1182px) {
+        margin-right: 20px;
+      }
 
       .nav-link {
         color: #0d0e43;
@@ -161,20 +177,21 @@
 //start offcanvas
 
 .offcanvas {
+  padding: 15px;
   width: calc(100% - 50%);
 
   @include respond-to(small) {
     width: calc(100% - 30%);
   }
 
-  // .offcanvas-navbar {
-  //   h5 {
-  //     color: var(--secondary-color);
-  //     font-family: var(--font-family-josefin);
-  //     font-size: 30px;
+  // .offcanvas-header {
+  // h5 {
+  //   color: var(--secondary-color);
+  //   font-family: var(--font-family-josefin);
+  //   font-size: 30px;
 
-  //     font-weight: 700;
-  //   }
+  //   font-weight: 700;
+  // }
   // }
 
   .offcanvas-body {
@@ -190,7 +207,7 @@
         .lang {
           li {
             padding: 0 10px;
-            a {
+            button {
               font-family: var(--font-family-josefin);
               font-size: var(--font-size-small);
               font-weight: 600;
@@ -244,3 +261,29 @@
 }
 
 //end offcanvas
+// ar styles
+body[dir="rtl"] {
+  .head-left {
+    .envelope {
+      margin-left: 48px;
+
+      @include respond-to(medium) {
+        margin-right: 10px;
+      }
+
+      span {
+        padding-right: 10px;
+      }
+    }
+
+    .phone {
+      span {
+        padding-right: 12px;
+      }
+    }
+
+    @include respond-to(small) {
+      display: none;
+    }
+  }
+}

@@ -9,9 +9,7 @@ export class SharedService {
   public urlProduct = 'http://localhost:3000/featuredPro';
 
   constructor(private http: HttpClient) {}
-  datanavbar() {
-    return this.http.get(`${this.urlHome}/navbar`);
-  }
+
   datahomePage() {
     return this.http.get(`${this.urlHome}/homePage`);
   }
@@ -20,8 +18,5 @@ export class SharedService {
   }
   dataAboutPage() {
     return this.http.get(`${this.urlHome}/aboutPage`);
-  }
-  dataFooter() {
-    return this.http.get(`${this.urlHome}/footer`);
   }
 }
