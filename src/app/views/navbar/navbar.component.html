@@ -1,6 +1,6 @@
 <!-- start heading-bar -->
 
-<!-- <div class="heading-bar">
+<div class="heading-bar">
   <div class="container">
     <div class="row d-flex justify-content-between align-content-center">
       <div class="col-lg-6 col-8 d-sm-none d-block">
@@ -16,14 +16,14 @@
             <p>
               <span
                 ><i class="fa-regular fa-envelope"></i>
-                {{ navbar.emailAdress | translate }}</span
+                {{ "navbar.emailAdress" | translate }}</span
               >
             </p>
           </div>
           <div class="phone">
             <p>
               <span><i class="fa-solid fa-phone-volume"></i></span
-              >{{ navbar.phoneNum | translate }}
+              >{{ "navbar.phoneNum" | translate }}
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@
         <ul class="nav">
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-              >{{ navbar.langENG | translate }}
+              >{{ "navbar.langENG" | translate }}
               <i class="fa-solid fa-chevron-down"></i>
               <ul
                 class="shadow dropdown-menu p-0 border-0 rounded-0 position-absolute"
@@ -46,7 +46,7 @@
                     href="#"
                     (click)="switchLanguage('en')"
                   >
-                    {{ navbar.langENG | translate }}
+                    {{ "navbar.langENG" | translate }}
                   </button>
                 </li>
                 <li class="py-1 text-center">
@@ -55,37 +55,32 @@
                     href="#"
                     (click)="switchLanguage('ar')"
                   >
-                    {{ navbar.langARB | translate }}
+                    {{ "navbar.langARB" | translate }}
                   </button>
-                </li>
-                <li class="py-1 text-center">
-                  <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ navbar.langSPA | translate }}</a
-                  >
                 </li>
               </ul>
             </a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-              >{{ navbar.coinUSD | translate }}
+              >{{ "navbar.coinUSD" | translate }}
               <i class="fa-solid fa-chevron-down"></i>
               <ul
                 class="shadow dropdown-menu p-0 border-0 rounded-0 position-absolute"
               >
                 <li class="ms-2 py-1 text-center">
                   <a class="dropdown-item pt-2 pb-2 pe-0" href="#">
-                    {{ navbar.coinUSD | translate }}</a
+                    {{ "navbar.coinUSD" | translate }}</a
                   >
                 </li>
                 <li class="ms-2 me-2 py-2 text-center">
                   <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ navbar.coinEGP | translate }}</a
+                    {{ "navbar.coinEGP" | translate }}</a
                   >
                 </li>
                 <li class="ms-2 me-2 py-2 text-center">
                   <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ navbar.coinIQD | translate }}
+                    {{ "navbar.coinIQD" | translate }}
                   </a>
                 </li>
               </ul>
@@ -93,24 +88,25 @@
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="!isLogin">
             <a class="nav-link" [routerLink]="['/', currentLang, 'login']"
-              >{{ navbar.loginAcc | translate }}
+              >{{ "navbar.loginAcc" | translate }}
               <i class="fa-regular fa-user"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="!isLogin">
             <a class="nav-link" [routerLink]="['/', currentLang, 'register']"
-              >{{ navbar.regAcc | translate }} <i class="fa-regular fa-user"></i
+              >{{ "navbar.regAcc " | translate }}
+              <i class="fa-regular fa-user"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" (click)="callLogout()"
-              >{{ navbar.logoutAcc | translate }}
+              >{{ "navbar.logoutAcc" | translate }}
               <i class="fa-regular fa-user"></i
             ></a>
           </li>
           <li class="nav-item d-lg-block d-none" *ngIf="isLogin">
             <a class="nav-link" href="#"
-              >{{ navbar.wishlist | translate
+              >{{ "navbar.wishlist" | translate
               }}<i class="wish fa-regular fa-heart"></i
             ></a>
           </li>
@@ -133,12 +129,12 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- end heading-bar -->
 <!-- start nav-bar -->
 
-<!-- <div class="nav-bar d-sm-block d-none">
+<div class="nav-bar d-sm-block d-none">
   <div class="container">
     <div class="d-flex align-content-center justify-content-between">
       <div class="logo d-flex align-items-center">
@@ -147,7 +143,7 @@
         /></a>
       </div>
       <div class="d-lg-block d-none align-self-center">
-        <ul class="nav" *ngFor="let link of navbar.nanLink">
+        <ul class="nav" *ngFor="let link of 'navbar.nanLink' | translate">
           <li class="nav-item" *ngIf="isLogin">
             <a
               class="nav-link"
@@ -228,19 +224,19 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- end nav-bar -->
 <!-- sart offcanvas  -->
 
-<!-- <div
+<div
   class="offcanvas offcanvas-start"
   *ngIf="isLogin"
   tabindex="-1"
   id="offcanvasExample"
   aria-labelledby="offcanvasExampleLabel"
 >
-  <div class="offcanvas-navbar">
+  <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasLabel">
       <a [routerLink]="['/', currentLang, 'home']"
         ><img src="../../../../../assets/images/home/logo.svg" alt=""
@@ -258,35 +254,38 @@
       <ul class="p-0 d-flex justify-content-center align-items-center">
         <li class="nav-item mx-md-3 mx-2">
           <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-            >{{ navbar.langENG | translate }}
+            >{{ "navbar.langENG" | translate }}
             <i class="fa-solid fa-chevron-down"></i>
             <ul
               class="shadow lang dropdown-menu p-0 border-0 rounded-0 position-absolute"
             >
               <li class="py-1 text-center">
-                <a class="dropdown-item pt-2 pb-2 pe-0" href="#">
-                  {{ navbar.langENG | translate }}
-                </a>
+                <button
+                  class="dropdown-item pt-2 pb-2 pe-0"
+                  href="#"
+                  (click)="switchLanguage('en')"
+                >
+                  {{ "navbar.langENG" | translate }}
+                </button>
               </li>
               <li class="py-1 text-center">
-                <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                  {{ navbar.langARB | translate }}</a
+                <button
+                  class="dropdown-item pt-2 pb-2 ps-1 pe-0"
+                  href="#"
+                  (click)="switchLanguage('ar')"
                 >
-              </li>
-              <li class="py-1 text-center">
-                <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                  {{ navbar.langSPA | translate }}</a
-                >
+                  {{ "navbar.langARB" | translate }}
+                </button>
               </li>
             </ul>
           </a>
         </li>
         <li class="mx-md-3 mx-2">
-          <a> {{ navbar.fag | translate }} </a>
+          <a> {{ "navbar.fag" | translate }} </a>
         </li>
         <li class="nav-item mx-md-3 mx-2" *ngIf="isLogin">
           <a class="nav-link" (click)="callLogout()"
-            >{{ navbar.logoutAcc | translate }}
+            >{{ "navbar.logoutAcc" | translate }}
             <i class="fa-regular fa-user"></i
           ></a>
         </li>
@@ -309,7 +308,7 @@
         </li>
       </ul>
     </div>
-    <div class="nav mt-5" *ngFor="let link of navbar.nanLink" ngIf="navbar">
+    <div class="nav mt-5" *ngFor="let link of 'navbar.nanLink' | translate">
       <ul
         class="ps-3 d-flex flex-column justify-content-sm-start align-items-start"
       >
@@ -377,12 +376,13 @@
     </div>
     <p class="mt-5">
       <i class="fa-regular fa-envelope"></i>
-      {{ navbar.emailAdress | translate }}
+      {{ "navbar.emailAdress" | translate }}
     </p>
     <p class="mt-2">
-      <i class="fa-solid fa-phone-volume"></i> {{ navbar.phoneNum | translate }}
+      <i class="fa-solid fa-phone-volume"></i>
+      {{ "navbar.phoneNum" | translate }}
     </p>
   </div>
-</div> -->
+</div>
 
 <!--end  offcanvas  -->

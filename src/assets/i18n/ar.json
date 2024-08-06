@@ -22,5 +22,77 @@
   "NOT_FOUND": {
     "TITLE": "الصفحة غير موجودة",
     "DESCRIPTION": "الصفحة التي تبحث عنها غير موجودة."
+  },
+  "navbar": {
+    "emailAdress": "mhhasanul@gmail.com",
+    "phoneNum": "(12345)67890",
+    "langENG": "اللغة الأنجليزية",
+    "langARB": "اللغة العربية",
+    "langSPA": "اللغة الأسبانية",
+    "coinUSD": "الدولار الأميريكي",
+    "coinEGP": "الجنيه المصري",
+    "coinIQD": "الدينار العراقي",
+    "loginAcc": "تسجيل الدخول ",
+    "regAcc": "انشاء حساب",
+    "logoutAcc": "تسجيل الخروج",
+    "wishlist": "المفضلة",
+    "fag": "Fag",
+    "nanLink": [
+      {
+        "link1": "الرئيسية",
+        "link2": "الصفحات",
+        "link3": "المنتجات",
+        "link4": "نبذة عنا ",
+        "link5": "المدونة",
+        "link6": "التسوق",
+        "link7": "تواصل معنا"
+      }
+    ]
+  },
+  "footer": {
+    "placeholder": "أدخل عنوان البريد الالكتروني",
+    "btnFooter": "اشتراك",
+    "contactInfo": "معلومات الاتصال",
+    "contactDES": "17 Princess Road, London, Greater London NW1 8JR, UK",
+    "copyRight": "©Webecy - All Rights Reserved",
+    "listFooter": [
+      {
+        "titleFooter": "الفئات",
+        "list": [
+          {
+            "listTitle1": "أجهزة الحواسيب وأجهزة الكمبيوتر",
+            "listTitle2": "الكاميرات والتصوير الفوتوغرافي",
+            "listTitle3": "الهواتف الذكية والأجهزة اللوحية",
+            "listTitle4": "ألعاب الفيديو وأجهزة التحكم",
+            "listTitle5": "سماعات مقاومة للماء"
+          }
+        ]
+      },
+      {
+        "titleFooter": "Customer Care",
+        "list": [
+          {
+            "listTitle1": "My Account",
+            "listTitle2": "Discount",
+            "listTitle3": "Returns",
+            "listTitle4": "Orders History",
+            "listTitle5": "Order Tracking"
+          }
+        ]
+      },
+      {
+        "titleFooter": "الصفحات",
+        "list": [
+          {
+            "listTitle1": "Blog",
+            "listTitle2": "Browse the Shop",
+            "listTitle3": "Category",
+            "listTitle4": "Pre-Built Pages",
+            "listTitle5": "Visual Composer Elements",
+            "listTitle6": "WooCommerce Pages"
+          }
+        ]
+      }
+    ]
   }
 }
