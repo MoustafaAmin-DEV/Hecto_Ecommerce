@@ -29,7 +29,7 @@
         *ngFor="let item of 'footer.listFooter' | translate"
       >
         <h5>{{ item.titleFooter | translate }}</h5>
-        <ul class="text-start" *ngFor="let list of item.list">
+        <ul *ngFor="let list of item.list">
           <li>
             <a>{{ list.listTitle1 | translate }}</a>
           </li>

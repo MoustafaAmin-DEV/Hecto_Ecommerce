@@ -1,6 +1,6 @@
 <div class="leatest-blog" *ngIf="homePage">
   <div class="container">
-    <div class="title-head">{{ homePage.leatBlogTittle }}</div>
+    <div class="title-head">{{ "homePage.leatBlogTittle" | translate }}</div>
     <div class="row">
       <div
         class="col-lg-4 col-md-6 col-12 leatPro"
@@ -15,7 +15,7 @@
           <div class="card-body">
             <div
               class="leatestInfo d-flex align-items-center"
-              *ngFor="let info of homePage.leatestInfo"
+              *ngFor="let info of homePage.leatestBlog.leatestInfo"
             >
               <div class="info d-flex">
                 <i class="pen fa-solid fa-pen-nib fa-fw"></i>

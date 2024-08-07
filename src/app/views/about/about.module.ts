@@ -7,6 +7,7 @@ import { OurClientComponent } from './components/our-client/our-client.component
 import { OurEcommerceComponent } from './components/our-ecommerce/our-ecommerce.component';
 import { OurFeaturesComponent } from './components/our-features/our-features.component';
 import { SharedModule } from '../../Shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { SharedModule } from '../../Shared/shared.module';
     OurEcommerceComponent,
     OurFeaturesComponent,
   ],
-  imports: [CommonModule, AboutRoutingModule, SharedModule],
+  imports: [CommonModule, AboutRoutingModule, SharedModule, TranslateModule],
 })
 export class AboutModule {}

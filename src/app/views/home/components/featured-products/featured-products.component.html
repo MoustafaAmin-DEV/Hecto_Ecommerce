@@ -1,6 +1,6 @@
 <div class="featured-products" *ngIf="homePage">
   <div class="container">
-    <div class="title-head">{{ homePage.feaProTittle }}</div>
+    <div class="title-head">{{ "homePage.feaProTittle" | translate }}</div>
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let featPro of homePage.featuredPro">
         <div class="m-2">

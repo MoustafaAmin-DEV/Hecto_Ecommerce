@@ -1,7 +1,23 @@
 {
-  "HOME": {
+  "homePage": {
+    "DisItemTittle": "بند الخصم",
+    "feaProTittle": "المنتجات المميزة",
+    "latProTittle": "المنتجات الحديثة",
+    "leatBlogTittle": "أحدث مدونة",
+    "secOfferTittle": "What Shopex Offer!",
+    "topCateTittle": "أهم الفئات",
     "TITLE": "مرحبًا بك في الصفحة الرئيسية",
-    "DESCRIPTION": "هذه هي الصفحة الرئيسية لتطبيقنا."
+    "DESCRIPTION": "هذه هي الصفحة الرئيسية لتطبيقنا.",
+    "slider": { "btnShop": "تسوق الآن" },
+    "trendPro": {
+      "tittle": "ميزات فريدة من نوعها لأحدث المنتجات الرائجة والأكثر رواجًا",
+      "leatest1": "All frames constructed with hardwood solids and laminates",
+      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner<br />blocks and machine nails",
+      "leatest3": "Arms, backs and seats are structurally reinforced",
+      "btn": "أضف إلى السلة",
+      "namePro": "كنبة إيطالية B&B",
+      "pricePro": "32.00"
+    }
   },
   "ABOUT": {
     "TITLE": "معلومات عنا",
@@ -37,17 +53,13 @@
     "logoutAcc": "تسجيل الخروج",
     "wishlist": "المفضلة",
     "fag": "Fag",
-    "nanLink": [
-      {
-        "link1": "الرئيسية",
-        "link2": "الصفحات",
-        "link3": "المنتجات",
-        "link4": "نبذة عنا ",
-        "link5": "المدونة",
-        "link6": "التسوق",
-        "link7": "تواصل معنا"
-      }
-    ]
+    "Home": "الرئيسية",
+    "Pages": "الصفحات",
+    "Products": "المنتجات",
+    "About": "نبذة عنا ",
+    "Blog": "المدونة",
+    "Shop": "التسوق",
+    "Contact": "تواصل معنا"
   },
   "footer": {
     "placeholder": "أدخل عنوان البريد الالكتروني",

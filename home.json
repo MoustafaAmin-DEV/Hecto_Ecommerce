@@ -1,18 +1,11 @@
 {
   "homePage": {
-    "DisItemTittle": "Discount Item",
-    "feaProTittle": "featured products",
-    "latProTittle": "latest products",
-    "leatBlogTittle": "Leatest Blog ",
-    "secOfferTittle": "What Shopex Offer!",
-    "topCateTittle": "Top Categories",
     "slider": [
       {
         "hint": "Best Furniture For Your Castle....",
         "titleSlider": "New Furniture Collection Trends in 2020",
         "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
-        "imgslider": "../../../../../assets/images/home/slider1.png",
-        "btnShop": "Shop Now"
+        "imgslider": "../../../../../assets/images/home/slider1.png"
       }
     ],
     "featuredPro": [
@@ -393,11 +386,6 @@
           "listSale": "$32.00"
         }
       ]
-    },
-    "trndPro": {
-      "tittle": "Unique Features Of leatest & Trending Poducts",
-      "namePro": "B&B Italian Sofa",
-      "pricePro": "$32.00"
     }
   },
   "aboutPage": {

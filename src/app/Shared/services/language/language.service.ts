@@ -42,5 +42,6 @@ export class LanguageService {
   private updateDirection(language: string): void {
     const htmlTag = document.getElementsByTagName('html')[0] as HTMLHtmlElement;
     htmlTag.dir = language === 'ar' ? 'rtl' : 'ltr';
+    htmlTag.lang = language;
   }
 }

@@ -1,7 +1,24 @@
 {
-  "HOME": {
+  "homePage": {
+    "DisItemTittle": "Discount Item",
+    "feaProTittle": "featured products",
+    "latProTittle": "latest products",
+    "leatBlogTittle": "Leatest Blog ",
+    "secOfferTittle": "What Shopex Offer!",
+    "topCateTittle": "Top Categories",
+    "trendingProTittle": "Trending Products",
     "TITLE": "Welcome to the Home Page",
-    "DESCRIPTION": "This is the home page of our application."
+    "DESCRIPTION": "This is the home page of our application.",
+    "slider": { "btnShop": "Shop Now" },
+    "trendPro": {
+      "tittle": "Unique Features Of leatest & Trending Poducts",
+      "leatest1": "All frames constructed with hardwood solids and laminates",
+      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner<br />blocks and machine nails",
+      "leatest3": "Arms, backs and seats are structurally reinforced",
+      "btn": "Add To Cart",
+      "namePro": "B&B Italian Sofa",
+      "pricePro": "32.00"
+    }
   },
   "ABOUT": {
     "TITLE": "About Us",
@@ -37,17 +54,13 @@
     "logoutAcc": "Logout",
     "wishlist": "Wishlist",
     "fag": "Fag",
-    "nanLink": [
-      {
-        "link1": "Home",
-        "link2": "Pages",
-        "link3": "Products",
-        "link4": "About",
-        "link5": "Blog",
-        "link6": "Shop",
-        "link7": "Contact"
-      }
-    ]
+    "Home": "Home",
+    "Pages": "Pages",
+    "Products": "Products",
+    "About": "About",
+    "Blog": "Blog",
+    "Shop": "Shop",
+    "Contact": "Contact"
   },
   "footer": {
     "placeholder": "Enter Email Address",

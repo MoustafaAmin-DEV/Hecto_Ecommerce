@@ -10,7 +10,7 @@
           /></a>
         </div>
       </div>
-      <div class="head-left col-lg-6 col-8">
+      <div class="head-left d-flex col-lg-6 col-8">
         <div class="d-flex align-items-center" *ngIf="isLogin">
           <div class="envelope">
             <p>
@@ -143,13 +143,13 @@
         /></a>
       </div>
       <div class="d-lg-block d-none align-self-center">
-        <ul class="nav" *ngFor="let link of 'navbar.nanLink' | translate">
+        <ul class="nav">
           <li class="nav-item" *ngIf="isLogin">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'home']"
               routerLinkActive="active"
-              >{{ link.link1 | translate }}
+              >{{ "navbar.Home" | translate }}
               <i class="fa-solid fa-chevron-down"></i
             ></a>
           </li>
@@ -159,7 +159,7 @@
               [routerLink]="['/', currentLang, 'pages']"
               routerLinkActive="active"
             >
-              {{ link.link2 | translate }}</a
+              {{ "navbar.Pages" | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -167,7 +167,7 @@
               class="nav-link"
               [routerLink]="['/', currentLang, 'products']"
               routerLinkActive="active"
-              >{{ link.link3 | translate }}</a
+              >{{ "navbar.Products" | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -176,7 +176,7 @@
               [routerLink]="['/', currentLang, 'about']"
               routerLinkActive="active"
             >
-              {{ link.link4 | translate }}</a
+              {{ "navbar.About" | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -184,7 +184,7 @@
               class="nav-link"
               [routerLink]="['/', currentLang, 'blog']"
               routerLinkActive="active"
-              >{{ link.link5 | translate }}
+              >{{ "navbar.Blog" | translate }}
             </a>
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -193,7 +193,7 @@
               [routerLink]="['/', currentLang, 'shop']"
               routerLinkActive="active"
             >
-              {{ link.link6 | translate }}</a
+              {{ "navbar.Shop" | translate }}</a
             >
           </li>
           <li class="nav-item" *ngIf="isLogin">
@@ -201,7 +201,7 @@
               class="nav-link"
               [routerLink]="['/', currentLang, 'contact']"
               routerLinkActive="active"
-              >{{ link.link7 | translate }}</a
+              >{{ "navbar.Contact" | translate }}</a
             >
           </li>
         </ul>
@@ -308,68 +308,68 @@
         </li>
       </ul>
     </div>
-    <div class="nav mt-5" *ngFor="let link of 'navbar.nanLink' | translate">
+    <div class="nav mt-5">
       <ul
         class="ps-3 d-flex flex-column justify-content-sm-start align-items-start"
       >
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'home']"
             routerLinkActive="active"
-            >{{ link.link1 | translate }}
+            >{{ "navbar.Home" | translate }}
             <i class="ms-2 i fa-solid fa-caret-right"></i
           ></a>
         </li>
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'pages']"
             routerLinkActive="active"
           >
-            {{ link.link2 | translate }}</a
+            {{ "navbar.Pages" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'products']"
             routerLinkActive="active"
-            >{{ link.link3 | translate }}</a
+            >{{ "navbar.Products" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'about']"
             routerLinkActive="active"
           >
-            {{ link.link4 | translate }}</a
+            {{ "navbar.About" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'blog']"
             routerLinkActive="active"
-            >{{ link.link5 | translate }}
+            >{{ "navbar.Blog" | translate }}
           </a>
         </li>
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'shop']"
             routerLinkActive="active"
           >
-            {{ link.link6 | translate }}</a
+            {{ "navbar.Shop" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3">
+        <li class="nav-item mb-3" *ngIf="isLogin">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'contact']"
             routerLinkActive="active"
-            >{{ link.link7 | translate }}</a
+            >{{ "navbar.Contact" | translate }}</a
           >
         </li>
       </ul>
