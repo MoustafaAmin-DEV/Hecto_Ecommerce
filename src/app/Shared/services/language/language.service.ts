@@ -34,13 +34,15 @@ export class LanguageService {
     this.updateDirection(language);
     const currentUrl = this.router.url.split('/').slice(2).join('/');
     this.router.navigate([`/${language}/${currentUrl}`]).then(() => {
-      this.isLoading.next(false); // Hide loader after navigation
-      this.location.go(`/${language}/${currentUrl}`); // Update URL
-      window.location.reload(); // Reload the page
+      this.isLoading.next(false);
+      this.location.go(`/${language}/${currentUrl}`);
+      window.location.reload();
     });
   }
   private updateDirection(language: string): void {
-    const htmlTag = document.getElementsByTagName('html')[0] as HTMLHtmlElement;
-    htmlTag.dir = language === 'ar' ? 'rtl' : 'ltr';
+    const htmlTag = document.documentElement;
+    const bodyTag = document.body;
+    htmlTag.setAttribute('lang', language);
+    bodyTag.setAttribute('dir', language === 'ar' ? 'rtl' : 'ltr');
   }
 }

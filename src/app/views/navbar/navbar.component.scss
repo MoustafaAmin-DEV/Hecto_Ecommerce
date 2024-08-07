@@ -21,8 +21,7 @@
     }
     .head-left {
       .envelope {
-        margin-right: 48px;
-
+        margin-inline-end: 48px;
         @include respond-to(medium) {
           margin-right: 10px;
         }
