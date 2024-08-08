@@ -213,47 +213,6 @@
         }
       ]
     },
-    "leatestBlog": [
-      {
-        "leatestImg": "../../../../../assets/images/home/JIUjvqe2ZHg.png",
-        "leatestInfo": [
-          {
-            "name": "SaberAli",
-            "date": "21 August,2020"
-          }
-        ],
-        "leatestTilttle": "Top esssential Trends in 2021",
-        "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-        "leatestLink": "Read More",
-        "leatestClass": "leatestColor1"
-      },
-      {
-        "leatestImg": "../../../../../assets/images/home/2dcYhvbHV-M.png",
-        "leatestInfo": [
-          {
-            "name": "Surfauxion",
-            "date": "21 August,2020"
-          }
-        ],
-        "leatestTilttle": "Top esssential Trends in 2021",
-        "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-        "leatestLink": "Read More",
-        "leatestClass": "leatestColor2"
-      },
-      {
-        "leatestImg": "../../../../../assets/images/home/dcYhvbHV-M.png",
-        "leatestInfo": [
-          {
-            "name": "SaberAli",
-            "date": "21 August,2020"
-          }
-        ],
-        "leatestTilttle": "Top esssential Trends in 2021",
-        "leatestDescription": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-        "leatestLink": "Read More",
-        "leatestClass": "leatestColor1"
-      }
-    ],
     "discountItem": [
       {
         "discountTitle": "20% Discount Of All Products",

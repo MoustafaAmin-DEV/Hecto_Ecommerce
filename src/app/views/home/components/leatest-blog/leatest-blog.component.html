@@ -2,36 +2,104 @@
   <div class="container">
     <div class="title-head">{{ "homePage.leatBlogTittle" | translate }}</div>
     <div class="row">
-      <div
-        class="col-lg-4 col-md-6 col-12 leatPro"
-        *ngFor="let leatPro of homePage.leatestBlog"
-      >
+      <div class="col-lg-4 col-md-6 col-12 leatPro">
         <div class="card border-0">
           <img
             class="card-img-top mw-100"
-            src="{{ leatPro.leatestImg }}"
+            src="../../../../../assets/images/home/JIUjvqe2ZHg.png"
             alt="Title"
           />
           <div class="card-body">
-            <div
-              class="leatestInfo d-flex align-items-center"
-              *ngFor="let info of homePage.leatestBlog.leatestInfo"
-            >
+            <div class="leatestInfo d-flex align-items-center">
               <div class="info d-flex">
                 <i class="pen fa-solid fa-pen-nib fa-fw"></i>
-                <p>{{ info.name }}</p>
+                <p>
+                  {{ "homePage.leatestBlog.name1" | translate }}
+                </p>
               </div>
               <div class="d-flex">
                 <i class="date fa-regular fa-calendar-days fa-fw"></i>
-                <p>{{ info.date }}</p>
+                <p>
+                  {{ "homePage.leatestBlog.date1" | translate }}
+                </p>
               </div>
             </div>
-            <h4 class="card-title {{ leatPro.leatestClass }}">
-              {{ leatPro.leatestTilttle }}
+            <h4 class="card-title leatestColor1">
+              {{ "homePage.leatestBlog.leatestTilttle1" | translate }}
             </h4>
-            <p class="card-text">{{ leatPro.leatestDescription }}</p>
-            <a class="{{ leatPro.leatestClass }}" href="">{{
-              leatPro.leatestLink
+            <p class="card-text">
+              {{ "homePage.leatestBlog.leatestDescription1" | translate }}
+            </p>
+            <a class="leatestColor1" href="">{{
+              "homePage.leatestBlog.leatestLink" | translate
+            }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 leatPro">
+        <div class="card border-0">
+          <img
+            class="card-img-top mw-100"
+            src="../../../../../assets/images/home/2dcYhvbHV-M.png"
+            alt="Title"
+          />
+          <div class="card-body">
+            <div class="leatestInfo d-flex align-items-center">
+              <div class="info d-flex">
+                <i class="pen fa-solid fa-pen-nib fa-fw"></i>
+                <p>
+                  {{ "homePage.leatestBlog.name2" | translate }}
+                </p>
+              </div>
+              <div class="d-flex">
+                <i class="date fa-regular fa-calendar-days fa-fw"></i>
+                <p>
+                  {{ "homePage.leatestBlog.date2" | translate }}
+                </p>
+              </div>
+            </div>
+            <h4 class="card-title leatestColor2">
+              {{ "homePage.leatestBlog.leatestTilttle2" | translate }}
+            </h4>
+            <p class="card-text">
+              {{ "homePage.leatestBlog.leatestDescription2" | translate }}
+            </p>
+            <a class="leatestColor2" href="">{{
+              "homePage.leatestBlog.leatestLink" | translate
+            }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 leatPro">
+        <div class="card border-0">
+          <img
+            class="card-img-top mw-100"
+            src="../../../../../assets/images/home/dcYhvbHV-M.png"
+            alt="Title"
+          />
+          <div class="card-body">
+            <div class="leatestInfo d-flex align-items-center">
+              <div class="info d-flex">
+                <i class="pen fa-solid fa-pen-nib fa-fw"></i>
+                <p>
+                  {{ "homePage.leatestBlog.name1" | translate }}
+                </p>
+              </div>
+              <div class="d-flex">
+                <i class="date fa-regular fa-calendar-days fa-fw"></i>
+                <p>
+                  {{ "homePage.leatestBlog.date1" | translate }}
+                </p>
+              </div>
+            </div>
+            <h4 class="card-title leatestColor1">
+              {{ "homePage.leatestBlog.leatestTilttle1" | translate }}
+            </h4>
+            <p class="card-text">
+              {{ "homePage.leatestBlog.leatestDescription1" | translate }}
+            </p>
+            <a class="leatestColor1" href="">{{
+              "homePage.leatestBlog.leatestLink" | translate
             }}</a>
           </div>
         </div>
