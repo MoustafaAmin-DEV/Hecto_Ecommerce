@@ -30,9 +30,14 @@
       "pricePro": "32.00"
     }
   },
-  "ABOUT": {
-    "TITLE": "معلومات عنا",
-    "DESCRIPTION": "هذه هي صفحة المعلومات الخاصة بتطبيقنا."
+  "aboutPage": {
+    "TITLE": "About Us",
+    "DESCRIPTION": "This is the about page of our application.",
+    "ourEcommerce": {
+      "title": "Know About Our Ecomerce Business, History",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "btn": "Contact us"
+    }
   },
   "CONTACT": {
     "TITLE": "اتصل بنا",
