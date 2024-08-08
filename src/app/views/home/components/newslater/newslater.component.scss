@@ -1,5 +1,7 @@
 @import "../../../../../assets/scss/mixins";
-
+.container {
+  white-space: pre-line;
+}
 .newslater {
   height: 462px;
   background-image: url("../../../../../assets/images/home/Rectangle\ 102.png");

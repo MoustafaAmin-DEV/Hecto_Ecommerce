@@ -9,28 +9,28 @@
             [ngClass]="{ 'active-btn': productType === 'newArrivals' }"
             (click)="setProductType('newArrivals')"
           >
-            New Arrival
+            {{ "homePage.latestPro.newArrivals" | translate }}
           </button>
           <button
             class="Best_Seller mb-3 me-2 me-md-4"
             [ngClass]="{ 'active-btn': productType === 'BestSeller' }"
             (click)="setProductType('BestSeller')"
           >
-            Best Seller
+            {{ "homePage.latestPro.BestSeller" | translate }}
           </button>
           <button
             class="Featured mb-3 me-2 me-md-4"
             [ngClass]="{ 'active-btn': productType === 'Featured' }"
             (click)="setProductType('Featured')"
           >
-            Featured
+            {{ "homePage.latestPro.featured" | translate }}
           </button>
           <button
             class="Special_Offer mb-3 me-2 me-md-4"
             [ngClass]="{ 'active-btn': productType === 'SpecialOffer' }"
             (click)="setProductType('SpecialOffer')"
           >
-            Special Offer
+            {{ "homePage.latestPro.SpecialOffer" | translate }}
           </button>
         </div>
       </div>
