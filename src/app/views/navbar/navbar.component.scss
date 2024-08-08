@@ -124,13 +124,11 @@
     .nav-item {
       // margin-right: 35px;
 
-      @media (min-width: 992px) and (max-width: 1182px) {
-        margin-right: 20px;
-      }
+      // @media (min-width: 992px) and (max-width: 1182px) {
+      //   margin-right: 20px;
+      // }
 
       .nav-link {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
         color: #0d0e43;
         font-size: var(--font-size-medium);
         cursor: pointer;

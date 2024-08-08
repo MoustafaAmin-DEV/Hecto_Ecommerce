@@ -231,12 +231,15 @@
 
 <div
   class="offcanvas offcanvas-start"
+  [ngClass]="currentLang === 'ar' ? 'offcanvas-end' : ''"
   *ngIf="isLogin"
   tabindex="-1"
   id="offcanvasExample"
   aria-labelledby="offcanvasExampleLabel"
 >
-  <div class="offcanvas-header">
+  <div
+    class="offcanvas-header d-flex justify-content-between align-content-center"
+  >
     <h5 class="offcanvas-title" id="offcanvasLabel">
       <a [routerLink]="['/', currentLang, 'home']"
         ><img src="../../../../../assets/images/home/logo.svg" alt=""
@@ -244,7 +247,7 @@
     </h5>
     <button
       type="button"
-      class="btn-close"
+      class="btn-close m-0"
       data-bs-dismiss="offcanvas"
       aria-label="Close"
     ></button>
