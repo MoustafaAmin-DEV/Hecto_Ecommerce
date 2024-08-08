@@ -10,10 +10,21 @@
     "TITLE": "Welcome to the Home Page",
     "DESCRIPTION": "This is the home page of our application.",
     "slider": { "btnShop": "Shop Now" },
+    "featuredPro": { "viewDetails": "View Details" },
+    "latestPro": {
+      "newArrivals": "New Arrival",
+      "BestSeller": "  Best Seller",
+      "featured": "Featured",
+      "SpecialOffer": "Special Offer"
+    },
+    "newslater": {
+      "tittle": "Get Leatest Update By Subscribe\n 0ur Newslater",
+      "Shopnow": "Shop Now"
+    },
     "trendPro": {
       "tittle": "Unique Features Of leatest & Trending Poducts",
       "leatest1": "All frames constructed with hardwood solids and laminates",
-      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner<br />blocks and machine nails",
+      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner\nblocks and machine nails",
       "leatest3": "Arms, backs and seats are structurally reinforced",
       "btn": "Add To Cart",
       "namePro": "B&B Italian Sofa",

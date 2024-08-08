@@ -9,10 +9,21 @@
     "TITLE": "مرحبًا بك في الصفحة الرئيسية",
     "DESCRIPTION": "هذه هي الصفحة الرئيسية لتطبيقنا.",
     "slider": { "btnShop": "تسوق الآن" },
+    "featuredPro": { "viewDetails": "عرض التفاصيل" },
+    "latestPro": {
+      "newArrivals": "وصل حديثاً",
+      "BestSeller": "الأكثر مبيعاً",
+      "featured": "مميز",
+      "SpecialOffer": "عرض خاص"
+    },
+    "newslater": {
+      "tittle": "Get Leatest Update By Subscribe\n 0ur Newslater",
+      "Shopnow": "Shop Now"
+    },
     "trendPro": {
       "tittle": "ميزات فريدة من نوعها لأحدث المنتجات الرائجة والأكثر رواجًا",
       "leatest1": "All frames constructed with hardwood solids and laminates",
-      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner<br />blocks and machine nails",
+      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner\n blocks and machine nails",
       "leatest3": "Arms, backs and seats are structurally reinforced",
       "btn": "أضف إلى السلة",
       "namePro": "كنبة إيطالية B&B",
