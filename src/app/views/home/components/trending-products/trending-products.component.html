@@ -23,15 +23,37 @@
       </div>
     </div>
     <div class="row trend-offer">
-      <div
-        class="col-lg-4 col-md-6 col-12"
-        *ngFor="let amont of homePage.trendingProducts.amontOffer"
-      >
-        <div class="amont-offer h-100 {{ amont.class1 }}">
-          <div class="title-offer">{{ amont.titleOffer }}</div>
-          <a class="link-offer" href="">{{ amont.linkOffer }}</a>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="amont-offer h-100 img1">
+          <div class="title-offer">
+            {{ "homePage.trendingProducts.amontOffer.titleOffer1" | translate }}
+          </div>
+          <a class="link-offer" href="">{{
+            "homePage.trendingProducts.amontOffer.linkOffer1" | translate
+          }}</a>
           <div class="img-offer">
-            <img src="{{ amont.imgOffer }}" class="mw-100" alt="" />
+            <img
+              src="../../../../../assets/images/home/image 1162.png"
+              class="mw-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="amont-offer h-100 img2">
+          <div class="title-offer">
+            {{ "homePage.trendingProducts.amontOffer.titleOffer2" | translate }}
+          </div>
+          <a class="link-offer" href="">{{
+            "homePage.trendingProducts.amontOffer.linkOffer2" | translate
+          }}</a>
+          <div class="img-offer">
+            <img
+              src="../../../../../assets/images/home/image 1161.png"
+              class="mw-100"
+              alt=""
+            />
           </div>
         </div>
       </div>

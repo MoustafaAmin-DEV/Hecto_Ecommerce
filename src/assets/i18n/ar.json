@@ -38,6 +38,14 @@
       "btn": "أضف إلى السلة",
       "namePro": "كنبة إيطالية B&B",
       "pricePro": "32.00"
+    },
+    "trendingProducts": {
+      "amontOffer": {
+        "titleOffer1": "23% off in all products",
+        "linkOffer1": "Shop Now",
+        "titleOffer2": "23% off in all products",
+        "linkOffer2": "View Collection"
+      }
     }
   },
   "aboutPage": {
@@ -122,12 +130,12 @@
         "titleFooter": "الصفحات",
         "list": [
           {
-            "listTitle1": "Blog",
-            "listTitle2": "Browse the Shop",
-            "listTitle3": "Category",
-            "listTitle4": "Pre-Built Pages",
-            "listTitle5": "Visual Composer Elements",
-            "listTitle6": "WooCommerce Pages"
+            "listTitle1": "Home",
+            "listTitle2": "About",
+            "listTitle3": "Contact",
+            "listTitle4": "Pages",
+            "listTitle5": "Blog",
+            "listTitle6": "Shop"
           }
         ]
       }

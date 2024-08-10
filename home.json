@@ -328,20 +328,6 @@
           "saleOld": "$42.00"
         }
       ],
-      "amontOffer": [
-        {
-          "titleOffer": "23% off in all products",
-          "linkOffer": "Shop Now",
-          "imgOffer": "../../../../../assets/images/home/image 1162.png",
-          "class1": "img1"
-        },
-        {
-          "titleOffer": "23% off in all products",
-          "linkOffer": "View Collection",
-          "imgOffer": "../../../../../assets/images/home/image 1161.png",
-          "class1": "img2"
-        }
-      ],
       "trendList": [
         {
           "listImg": "../../../../../assets/images//home/image 30.png",
