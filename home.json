@@ -370,5 +370,58 @@
         "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
       }
     ]
+  },
+  "shopPage": {
+    "shop": [
+      {
+        "prd_img": "../../../../../assets/images/shop list/1.png",
+        "prd_name": "Accumsan tincidunt",
+        "price_new": "35.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      },
+      {
+        "prd_img": "../../../../../assets/images/shop list/2.png",
+        "prd_name": "In nulla",
+        "price_new": "37.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      },
+      {
+        "prd_img": "../../../../../assets/images/shop list/3.png",
+        "prd_name": "Vel sem",
+        "price_new": "39.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      },
+      {
+        "prd_img": "../../../../../assets/images/shop list/4.png",
+        "prd_name": "Porttitor cum",
+        "price_new": "41.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      },
+      {
+        "prd_img": "../../../../../assets/images/shop list/5.png",
+        "prd_name": "Nunc in",
+        "price_new": "42.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      },
+      {
+        "prd_img": "../../../../../assets/images/shop list/6.png",
+        "prd_name": "Vitae facilisis",
+        "price_new": "20.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      },
+      {
+        "prd_img": "../../../../../assets/images/shop list/7.png",
+        "prd_name": "Curabitur lectus",
+        "price_new": "19.0",
+        "price_old": "42.00",
+        "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+      }
+    ]
   }
 }

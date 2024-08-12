@@ -6,9 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ImageCompaniesComponent } from '../Shared/components/image-companies/image-companies.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
+import { FilterPipe } from './pipe/filter.pipe';
+import { SortPipe } from './pipe/sort.pipe';
 
 @NgModule({
-  declarations: [ImageCompaniesComponent],
+  declarations: [ImageCompaniesComponent, FilterPipe, SortPipe],
   imports: [
     CommonModule,
     CarouselModule,
@@ -17,6 +19,6 @@ import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
     RouterModule,
     HttpClientModule,
   ],
-  exports: [ImageCompaniesComponent],
+  exports: [ImageCompaniesComponent, FilterPipe, SortPipe],
 })
 export class SharedModule {}
