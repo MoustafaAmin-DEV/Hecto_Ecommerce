@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../Shared/services/auth/auth.service';
-import { SharedService } from 'src/app/Shared/services/shared.service';
 import { LanguageService } from 'src/app/Shared/services/language/language.service';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',

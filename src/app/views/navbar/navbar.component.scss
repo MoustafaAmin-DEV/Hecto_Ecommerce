@@ -40,51 +40,52 @@
       }
     }
 
-    .nav {
-      .nav-item {
-        // margin-right: 17px;
+    .head-right {
+      li {
         cursor: pointer;
+        a {
+          padding: 10px;
+          svg {
+            width: 16px;
+            height: 16px;
+          }
 
-        svg {
-          width: 16px;
-          height: 16px;
-        }
+          .wish {
+            padding-left: 3px;
+          }
 
-        .wish {
-          padding-left: 3px;
-        }
+          ul {
+            min-width: 8rem !important;
 
-        ul {
-          min-width: 8rem !important;
+            li {
+              margin: 0 10px;
 
-          li {
-            margin: 0 10px;
+              a {
+                font-family: var(--font-family-josefin);
+                font-size: var(--font-size-small);
+                font-weight: 600;
+                color: var(--black);
+                border-radius: 6px;
 
-            a {
-              font-family: var(--font-family-josefin);
-              font-size: var(--font-size-small);
-              font-weight: 600;
-              color: var(--black);
-              border-radius: 6px;
-
-              &:hover {
-                background-color: var(--secondary-color);
-                color: var(--white);
-                transition: 0.4s;
+                &:hover {
+                  background-color: var(--secondary-color);
+                  color: var(--white);
+                  transition: 0.4s;
+                }
               }
-            }
-            button {
-              font-family: var(--font-family-josefin);
-              font-size: var(--font-size-small);
+              button {
+                font-family: var(--font-family-josefin);
+                font-size: var(--font-size-small);
 
-              font-weight: 600;
-              color: var(--black);
-              border-radius: 6px;
+                font-weight: 600;
+                color: var(--black);
+                border-radius: 6px;
 
-              &:hover {
-                background-color: var(--secondary-color);
-                color: var(--white);
-                transition: 0.4s;
+                &:hover {
+                  background-color: var(--secondary-color);
+                  color: var(--white);
+                  transition: 0.4s;
+                }
               }
             }
           }
@@ -92,13 +93,7 @@
       }
     }
     .logo {
-      color: var(--white);
-      font-family: var(--font-family-josefin);
-      font-size: 34px;
-      font-weight: 700;
-      @include respond-to(small) {
-        font-size: 30px;
-      }
+      margin-top: 4px;
     }
   }
 }
@@ -110,27 +105,10 @@
   height: 40px;
   margin: 19px 0;
 
-  .logo {
-    p {
-      color: #0d0e43;
-      font-family: var(--font-family-josefin);
-      font-size: 34px;
-
-      font-weight: 700;
-    }
-  }
-
   .nav {
     .nav-item {
-      // margin-right: 35px;
-
-      @media (min-width: 992px) and (max-width: 1182px) {
-        margin-right: 20px;
-      }
-
       .nav-link {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
+        padding: 10px !important;
         color: #0d0e43;
         font-size: var(--font-size-medium);
         cursor: pointer;
@@ -174,7 +152,6 @@
 //start offcanvas
 
 .offcanvas {
-  padding: 15px;
   width: calc(100% - 50%);
 
   @include respond-to(small) {

@@ -19,4 +19,7 @@ export class SharedService {
   dataAboutPage() {
     return this.http.get(`${this.urlHome}/aboutPage`);
   }
+  dataShopPage() {
+    return this.http.get(`${this.urlHome}/shopPage`);
+  }
 }

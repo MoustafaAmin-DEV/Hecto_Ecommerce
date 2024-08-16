@@ -24,29 +24,76 @@
         <p class="m-0">{{ "footer.contactInfo" | translate }}</p>
         <p class="m-0">{{ "footer.contactDES" | translate }}</p>
       </div>
-      <div
-        class="col-xl-2 col-lg-3 col-md-6 col-12"
-        *ngFor="let item of 'footer.listFooter' | translate"
-      >
-        <h5>{{ item.titleFooter | translate }}</h5>
-        <ul *ngFor="let list of item.list">
+      <div class="col-xl-2 col-lg-3 col-md-6 col-12">
+        <h5>{{ "footer.Catagories.CatagoriesTitle" | translate }}</h5>
+        <ul>
           <li>
-            <a>{{ list.listTitle1 | translate }}</a>
+            <a>{{ "footer.Catagories.cateList.cateList1" | translate }}</a>
           </li>
           <li>
-            <a>{{ list.listTitle2 | translate }}</a>
+            <a>{{ "footer.Catagories.cateList.cateList2" | translate }}</a>
           </li>
           <li>
-            <a>{{ list.listTitle3 | translate }}</a>
+            <a>{{ "footer.Catagories.cateList.cateList3" | translate }}</a>
           </li>
           <li>
-            <a>{{ list.listTitle4 | translate }}</a>
+            <a>{{ "footer.Catagories.cateList.cateList4" | translate }}</a>
           </li>
           <li>
-            <a>{{ list.listTitle5 | translate }}</a>
+            <a>{{ "footer.Catagories.cateList.cateList5" | translate }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-6 col-12">
+        <h5>{{ "footer.customer.customerTitle" | translate }}</h5>
+        <ul>
+          <li>
+            <a>{{
+              "footer.customer.customerList.customerList1" | translate
+            }}</a>
           </li>
           <li>
-            <a>{{ list.listTitle6 | translate }}</a>
+            <a>{{
+              "footer.customer.customerList.customerList2" | translate
+            }}</a>
+          </li>
+          <li>
+            <a>{{
+              "footer.customer.customerList.customerList3" | translate
+            }}</a>
+          </li>
+          <li>
+            <a>{{
+              "footer.customer.customerList.customerList4" | translate
+            }}</a>
+          </li>
+          <li>
+            <a>{{
+              "footer.customer.customerList.customerList5" | translate
+            }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-6 col-12">
+        <h5>{{ "footer.pages.pagesTitle" | translate }}</h5>
+        <ul>
+          <li>
+            <a>{{ "footer.pages.pageList.pageList1" | translate }}</a>
+          </li>
+          <li>
+            <a>{{ "footer.pages.pageList.pageList2" | translate }}</a>
+          </li>
+          <li>
+            <a>{{ "footer.pages.pageList.pageList3" | translate }}</a>
+          </li>
+          <li>
+            <a>{{ "footer.pages.pageList.pageList4" | translate }}</a>
+          </li>
+          <li>
+            <a>{{ "footer.pages.pageList.pageList5" | translate }}</a>
+          </li>
+          <li>
+            <a>{{ "footer.pages.pageList.pageList6" | translate }}</a>
           </li>
         </ul>
       </div>

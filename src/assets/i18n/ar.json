@@ -6,22 +6,56 @@
     "leatBlogTittle": "أحدث مدونة",
     "secOfferTittle": "What Shopex Offer!",
     "topCateTittle": "أهم الفئات",
-    "TITLE": "مرحبًا بك في الصفحة الرئيسية",
-    "DESCRIPTION": "هذه هي الصفحة الرئيسية لتطبيقنا.",
+    "trendingProTittle": "Trending Products",
     "slider": { "btnShop": "تسوق الآن" },
+    "featuredPro": { "viewDetails": "عرض التفاصيل" },
+    "latestPro": {
+      "newArrivals": "وصل حديثاً",
+      "BestSeller": "الأكثر مبيعاً",
+      "featured": "مميز",
+      "SpecialOffer": "عرض خاص"
+    },
+    "leatestBlog": {
+      "name1": "SaberAli",
+      "date1": "21 August,2020",
+      "leatestTilttle1": "Top esssential Trends in 2021",
+      "leatestDescription1": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "leatestLink": "Read More",
+      "name2": "Surfauxion",
+      "date2": "21 August,2020",
+      "leatestTilttle2": "Top esssential Trends in 2021",
+      "leatestDescription2": "More off this less hello samlande lied much over tightly circa horse taped mightly"
+    },
+    "newslater": {
+      "tittle": "Get Leatest Update By Subscribe\n 0ur Newslater",
+      "Shopnow": "Shop Now"
+    },
     "trendPro": {
       "tittle": "ميزات فريدة من نوعها لأحدث المنتجات الرائجة والأكثر رواجًا",
       "leatest1": "All frames constructed with hardwood solids and laminates",
-      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner<br />blocks and machine nails",
+      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner\n blocks and machine nails",
       "leatest3": "Arms, backs and seats are structurally reinforced",
       "btn": "أضف إلى السلة",
       "namePro": "كنبة إيطالية B&B",
       "pricePro": "32.00"
+    },
+    "trendingProducts": {
+      "amontOffer": {
+        "titleOffer1": "23% off in all products",
+        "linkOffer1": "Shop Now",
+        "titleOffer2": "23% off in all products",
+        "linkOffer2": "View Collection"
+      }
     }
   },
-  "ABOUT": {
-    "TITLE": "معلومات عنا",
-    "DESCRIPTION": "هذه هي صفحة المعلومات الخاصة بتطبيقنا."
+  "aboutPage": {
+    "TITLE": "About Us",
+    "DESCRIPTION": "This is the about page of our application.",
+    "ourEcommerce": {
+      "title": "Know About Our Ecomerce Business, History",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "btn": "Contact us"
+    }
   },
   "CONTACT": {
     "TITLE": "اتصل بنا",
@@ -96,12 +130,12 @@
         "titleFooter": "الصفحات",
         "list": [
           {
-            "listTitle1": "Blog",
-            "listTitle2": "Browse the Shop",
-            "listTitle3": "Category",
-            "listTitle4": "Pre-Built Pages",
-            "listTitle5": "Visual Composer Elements",
-            "listTitle6": "WooCommerce Pages"
+            "listTitle1": "Home",
+            "listTitle2": "About",
+            "listTitle3": "Contact",
+            "listTitle4": "Pages",
+            "listTitle5": "Blog",
+            "listTitle6": "Shop"
           }
         ]
       }

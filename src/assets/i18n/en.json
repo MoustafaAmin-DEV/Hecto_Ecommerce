@@ -7,22 +7,55 @@
     "secOfferTittle": "What Shopex Offer!",
     "topCateTittle": "Top Categories",
     "trendingProTittle": "Trending Products",
-    "TITLE": "Welcome to the Home Page",
-    "DESCRIPTION": "This is the home page of our application.",
     "slider": { "btnShop": "Shop Now" },
+    "featuredPro": { "viewDetails": "View Details" },
+    "latestPro": {
+      "newArrivals": "New Arrival",
+      "BestSeller": "  Best Seller",
+      "featured": "Featured",
+      "SpecialOffer": "Special Offer"
+    },
+    "leatestBlog": {
+      "name1": "SaberAli",
+      "date1": "21 August,2020",
+      "leatestTilttle1": "Top esssential Trends in 2021",
+      "leatestDescription1": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "leatestLink": "Read More",
+      "name2": "Surfauxion",
+      "date2": "21 August,2020",
+      "leatestTilttle2": "Top esssential Trends in 2021",
+      "leatestDescription2": "More off this less hello samlande lied much over tightly circa horse taped mightly"
+    },
+    "newslater": {
+      "tittle": "Get Leatest Update By Subscribe\n 0ur Newslater",
+      "Shopnow": "Shop Now"
+    },
     "trendPro": {
       "tittle": "Unique Features Of leatest & Trending Poducts",
       "leatest1": "All frames constructed with hardwood solids and laminates",
-      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner<br />blocks and machine nails",
+      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner\nblocks and machine nails",
       "leatest3": "Arms, backs and seats are structurally reinforced",
       "btn": "Add To Cart",
       "namePro": "B&B Italian Sofa",
       "pricePro": "32.00"
+    },
+    "trendingProducts": {
+      "amontOffer": {
+        "titleOffer1": "23% off in all products",
+        "linkOffer1": "Shop Now",
+        "titleOffer2": "23% off in all products",
+        "linkOffer2": "View Collection"
+      }
     }
   },
-  "ABOUT": {
+  "aboutPage": {
     "TITLE": "About Us",
-    "DESCRIPTION": "This is the about page of our application."
+    "DESCRIPTION": "This is the about page of our application.",
+    "ourEcommerce": {
+      "title": "Know About Our Ecomerce Business, History",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "btn": "Contact us"
+    }
   },
   "CONTACT": {
     "TITLE": "Contact Us",
@@ -68,44 +101,36 @@
     "contactInfo": "Contact Info",
     "contactDES": "17 Princess Road, London, Greater London NW1 8JR, UK",
     "copyRight": "©Webecy - All Rights Reserved",
-    "listFooter": [
-      {
-        "titleFooter": "Catagories",
-        "list": [
-          {
-            "listTitle1": "Laptops & Computers",
-            "listTitle2": "Cameras & Photography",
-            "listTitle3": "Smart Phones & Tablets",
-            "listTitle4": "Video Games & Consoles",
-            "listTitle5": "Waterproof Headphones"
-          }
-        ]
-      },
-      {
-        "titleFooter": "Customer Care",
-        "list": [
-          {
-            "listTitle1": "My Account",
-            "listTitle2": "Discount",
-            "listTitle3": "Returns",
-            "listTitle4": "Orders History",
-            "listTitle5": "Order Tracking"
-          }
-        ]
-      },
-      {
-        "titleFooter": "Pages",
-        "list": [
-          {
-            "listTitle1": "Blog",
-            "listTitle2": "Browse the Shop",
-            "listTitle3": "Category",
-            "listTitle4": "Pre-Built Pages",
-            "listTitle5": "Visual Composer Elements",
-            "listTitle6": "WooCommerce Pages"
-          }
-        ]
+    "Catagories": {
+      "CatagoriesTitle": "Catagories",
+      "cateList": {
+        "cateList1": "Laptops & Computers",
+        "cateList2": "Cameras & Photography",
+        "cateList3": "Smart Phones & Tablets",
+        "cateList4": "Video Games & Consoles",
+        "cateList5": "Waterproof Headphones"
       }
-    ]
+    },
+    "customer": {
+      "customerTitle": "Customer Care",
+      "customerList": {
+        "customerList1": "My Account",
+        "customerList2": "Discount",
+        "customerList3": "Returns",
+        "customerList4": "Orders History",
+        "customerList5": "Order Tracking"
+      }
+    },
+    "pages": {
+      "pagesTitle": "Pages",
+      "pageList": {
+        "pageList1": "Home",
+        "pageList2": "About",
+        "pageList3": "Contact",
+        "pageList4": "Pages",
+        "pageList5": "Blog",
+        "pageList6": "Shop"
+      }
+    }
   }
 }
