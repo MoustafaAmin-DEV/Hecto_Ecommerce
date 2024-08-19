@@ -1,4 +1,7 @@
 @import "../../../../../assets/scss/mixins";
+
+//start slider
+
 .slider {
   background-color: #f2f0ff;
   ::ng-deep {
@@ -37,7 +40,7 @@
             font-weight: 700;
           }
           .title-slider {
-            color: #000;
+            color: var(--black);
             font-family: var(--font-family-josefin);
             font-size: 53px;
             font-weight: 700;
@@ -59,7 +62,7 @@
             border-radius: 2px;
             padding: 16px 40px;
             background: var(--accent-color);
-            color: #fff;
+            color: var(--white);
             font-family: var(--font-family-josefin);
             font-size: 17px;
             font-weight: 600;
@@ -99,6 +102,43 @@
                 max-width: 100px;
                 max-height: 100px;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//end slider
+//start style for rtl
+:host-context([dir="rtl"]) {
+  .slider {
+    ::ng-deep {
+      .owl-carousel {
+        .slide-content {
+          .item-text {
+            .hint {
+              font-size: var(--font-size-xlarge);
+            }
+            .title-slider {
+              font-family: var(--font-family-lateef);
+              font-size: 53px;
+
+              @include respond-to(small) {
+                font-size: 27px;
+              }
+            }
+            .description-slider {
+              font-size: var(--font-size-medium);
+
+              @include respond-to(small) {
+                font-size: var(--font-size-small);
+              }
+            }
+
+            .img-Lamp {
+              right: 0;
             }
           }
         }

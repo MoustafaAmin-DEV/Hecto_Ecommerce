@@ -1,5 +1,7 @@
 @import "../../../../../assets/scss/mixins";
 
+//start trend-content
+
 .container {
   white-space: pre-line;
 }
@@ -21,7 +23,7 @@
     h3 {
       color: #151875;
       font-family: var(--font-family-josefin);
-      font-size: 35px;
+      font-size: var(--font-size-xxlarge);
       font-weight: 700;
       margin-bottom: 30px;
     }
@@ -66,7 +68,7 @@
         border-radius: 2px;
         background: #fb2e86;
         margin-right: 19px;
-        color: #fff;
+        color: var(--white);
         font-family: var(--font-family-josefin);
         font-size: 17px;
         font-weight: 600;
@@ -84,6 +86,51 @@
           color: var(--primary-color);
           font-size: var(--font-size-small);
           font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+//end trend-content
+//start style for rtl
+
+:host-context([dir="rtl"]) {
+  .trend-content {
+    .img-trend {
+      .Ellipse {
+        right: 15px;
+      }
+    }
+    .trend-text {
+      h3 {
+        font-family: var(--font-family-lateef);
+        font-size: var(--font-size-xxxlarge);
+      }
+      ul {
+        padding-right: 23px;
+        li {
+          font-size: var(--font-size-xlarge);
+          &::before {
+            content: "";
+            right: -23px;
+          }
+        }
+      }
+      .btn-cart {
+        a {
+          margin-left: 19px;
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-large);
+        }
+        .title-hint {
+          span:first-child {
+            font-family: var(--font-family-lateef);
+            font-size: var(--font-size-xlarge);
+          }
+          span:last-child {
+            font-size: var(--font-size-xlarge);
+          }
         }
       }
     }

@@ -1,4 +1,7 @@
 @import "../../../../../assets/scss/mixins";
+
+//start newslater
+
 .container {
   white-space: pre-line;
 }
@@ -14,7 +17,7 @@
       text-align: center;
       color: var(--primary-color);
       font-family: var(--font-family-josefin);
-      font-size: 35px;
+      font-size: var(--font-size-xxlarge);
       font-weight: 700;
       line-height: 155%;
       /* 54.25px */
@@ -35,5 +38,17 @@
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.34px;
+  }
+}
+
+//end newslater
+//start style for rtl
+:host-context([dir="rtl"]) {
+  .newslater {
+    .title {
+      p {
+        font-family: var(--font-family-lateef);
+      }
+    }
   }
 }

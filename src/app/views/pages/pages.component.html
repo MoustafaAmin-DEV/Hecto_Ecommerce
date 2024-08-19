@@ -1,5 +1,5 @@
 <div class="main-wrapper">
-  <div class="container">
+  <div class="container" *ngIf="dataShopPage">
     <div class="main-title">
       <h1>Furniture Shop List</h1>
     </div>
@@ -13,11 +13,9 @@
     </div>
 
     <div class="item-list">
-      <div class="item">
+      <div class="item" *ngFor="let item of dataShopPage.shop">
         <div class="item-img">
-          <img
-            src="../../../assets/images/products details/Rectangle 128.png"
-          />
+          <img src="{{ item.prd_img }}" />
           <div class="icon-list">
             <button type="button">
               <i class="fas fa-sync-alt"></i>
@@ -37,9 +35,7 @@
             <span class="old-price">$275.60</span>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            fugiat quod corporis delectus sequi laudantium molestias vero
-            distinctio, qui numquam dolore, corrupti, enim consectetur cum?
+            {{ item.prd_title }}
           </p>
           <button type="button" class="add-btn">add to cart</button>
         </div>

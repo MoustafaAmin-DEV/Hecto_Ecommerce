@@ -1,6 +1,6 @@
 <div class="latest-product" *ngIf="homePage">
   <div class="container">
-    <div class="title-head">{{ "homePage.latProTittle" | translate }}</div>
+    <div class="title-head">{{ "HOME.latProTittle" | translate }}</div>
     <div class="row justify-content-center">
       <div class="col-12">
         <div class="latest_btn d-flex justify-content-center flex-wrap mb-5">
@@ -9,28 +9,28 @@
             [ngClass]="{ 'active-btn': productType === 'newArrivals' }"
             (click)="setProductType('newArrivals')"
           >
-            {{ "homePage.latestPro.newArrivals" | translate }}
+            {{ "HOME.latestPro.newArrivals" | translate }}
           </button>
           <button
             class="Best_Seller mb-3 me-2 me-md-4"
             [ngClass]="{ 'active-btn': productType === 'BestSeller' }"
             (click)="setProductType('BestSeller')"
           >
-            {{ "homePage.latestPro.BestSeller" | translate }}
+            {{ "HOME.latestPro.BestSeller" | translate }}
           </button>
           <button
             class="Featured mb-3 me-2 me-md-4"
             [ngClass]="{ 'active-btn': productType === 'Featured' }"
             (click)="setProductType('Featured')"
           >
-            {{ "homePage.latestPro.featured" | translate }}
+            {{ "HOME.latestPro.featured" | translate }}
           </button>
           <button
             class="Special_Offer mb-3 me-2 me-md-4"
             [ngClass]="{ 'active-btn': productType === 'SpecialOffer' }"
             (click)="setProductType('SpecialOffer')"
           >
-            {{ "homePage.latestPro.SpecialOffer" | translate }}
+            {{ "HOME.latestPro.SpecialOffer" | translate }}
           </button>
         </div>
       </div>

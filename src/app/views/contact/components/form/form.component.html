@@ -1,9 +1,7 @@
 <div>
-  <h3>Get In Touch</h3>
+  <h3>{{ "CONTACT.form.tittle" | translate }}</h3>
   <p class="mt-3">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque
-    ultrices tristique amet erat vitae eget dolor los vitae lobortis quis
-    bibendum quam.
+    {{ "CONTACT.form.description" | translate }}
   </p>
   <form action="javascript:void(0)" (submit)="send()">
     <div class="forms" [formGroup]="form">
@@ -12,14 +10,14 @@
           formControlName="from_name"
           type="text"
           id="inputName"
-          placeholder="Your Name*"
-          class="form-control me-3 w-50"
+          placeholder="{{ 'CONTACT.form.yourName' | translate }}"
+          class="form-control text w-50"
         />
         <input
           formControlName="from_email"
           type="email"
           id="email"
-          placeholder="Your E-mail"
+          placeholder="{{ 'CONTACT.form.yourEmail' | translate }}"
           class="form-control w-50"
         />
       </div>
@@ -28,7 +26,7 @@
           formControlName="subject"
           type="text"
           id="text"
-          placeholder="Subject*"
+          placeholder="{{ 'CONTACT.form.Subject' | translate }}"
           class="form-control w-100"
         />
       </div>
@@ -37,11 +35,13 @@
           formControlName="message"
           class="form-control w-100"
           id="message"
-          placeholder="Type Your Messege*"
+          placeholder="{{ 'CONTACT.form.Messege' | translate }}"
         ></textarea>
       </div>
       <div class="submit">
-        <button type="submit" class="btn">Send Mail</button>
+        <button type="submit" class="btn">
+          {{ "CONTACT.form.btn" | translate }}
+        </button>
       </div>
     </div>
   </form>

@@ -12,6 +12,7 @@ import {
 } from '@rxweb/reactive-form-validators';
 import { AuthService } from '../../../Shared/services/auth/auth.service';
 import { Router } from '@angular/router';
+import { LanguageService } from 'src/app/Shared/services/language/language.service';
 
 @Component({
   selector: 'app-register',
@@ -19,7 +20,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  constructor(private _AuthService: AuthService, private _Router: Router) {}
+  currentLang: string;
+  constructor(
+    private _AuthService: AuthService,
+    private languageService: LanguageService,
+    private _Router: Router
+  ) {
+    this.currentLang = this.languageService.getCurrentLang();
+  }
 
   error: string = '';
 
@@ -48,7 +56,7 @@ export class RegisterComponent implements OnInit {
   submitRegister(formInfo: FormGroup) {
     this._AuthService.register(formInfo.value).subscribe((response) => {
       if (response.message == 'Done') {
-        this._Router.navigate(['/login']);
+        this._Router.navigate(['/', this.currentLang, 'login']);
       } else {
         this.error = 'email is already registered';
       }

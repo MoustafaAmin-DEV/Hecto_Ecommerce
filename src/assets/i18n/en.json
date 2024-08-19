@@ -1,5 +1,5 @@
 {
-  "homePage": {
+  "HOME": {
     "DisItemTittle": "Discount Item",
     "feaProTittle": "featured products",
     "latProTittle": "latest products",
@@ -7,8 +7,8 @@
     "secOfferTittle": "What Shopex Offer!",
     "topCateTittle": "Top Categories",
     "trendingProTittle": "Trending Products",
-    "slider": { "btnShop": "Shop Now" },
-    "featuredPro": { "viewDetails": "View Details" },
+    "btnShop": "Shop Now",
+    "viewDetails": "View Details",
     "latestPro": {
       "newArrivals": "New Arrival",
       "BestSeller": "  Best Seller",
@@ -27,8 +27,7 @@
       "leatestDescription2": "More off this less hello samlande lied much over tightly circa horse taped mightly"
     },
     "newslater": {
-      "tittle": "Get Leatest Update By Subscribe\n 0ur Newslater",
-      "Shopnow": "Shop Now"
+      "tittle": "Get Leatest Update By Subscribe\n Our Newslater"
     },
     "trendPro": {
       "tittle": "Unique Features Of leatest & Trending Poducts",
@@ -42,15 +41,12 @@
     "trendingProducts": {
       "amontOffer": {
         "titleOffer1": "23% off in all products",
-        "linkOffer1": "Shop Now",
         "titleOffer2": "23% off in all products",
         "linkOffer2": "View Collection"
       }
     }
   },
-  "aboutPage": {
-    "TITLE": "About Us",
-    "DESCRIPTION": "This is the about page of our application.",
+  "ABOUT": {
     "ourEcommerce": {
       "title": "Know About Our Ecomerce Business, History",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
@@ -58,8 +54,30 @@
     }
   },
   "CONTACT": {
-    "TITLE": "Contact Us",
-    "DESCRIPTION": "This is the contact page of our application."
+    "info": {
+      "title": "Information About us",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam."
+    },
+    "contactWay": {
+      "title": "Contact Us",
+      "phoneNum": "Tel: 877-67-88-99",
+      "email": "E-Mail: shop@store.com",
+      "support": "Support Forum",
+      "over": "For over 24hr",
+      "Address1": "20 Margaret st, London",
+      "Address2": "Great britain, 3NM98-LK",
+      "standard": "Free standard shipping",
+      "order": "on all orders."
+    },
+    "form": {
+      "tittle": "Get In Touch",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "yourName": "Your Name*",
+      "yourEmail": "Your E-mail",
+      "Subject": "Subject*",
+      "Messege": "Type Your Messege*",
+      "btn": "Send Mail"
+    }
   },
   "BLOG": {
     "TITLE": "Blog",
@@ -124,13 +142,54 @@
     "pages": {
       "pagesTitle": "Pages",
       "pageList": {
-        "pageList1": "Home",
-        "pageList2": "About",
-        "pageList3": "Contact",
-        "pageList4": "Pages",
-        "pageList5": "Blog",
-        "pageList6": "Shop"
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "pages": "Pages",
+        "blog": "Blog",
+        "shop": "Shop"
       }
     }
+  },
+  "Login": {
+    "login": "Login",
+    "description": "Please login using account detail bellow.",
+    "emailAddress": "Email address",
+    "email": "email",
+    "required": "is required",
+    "invalid": "is invalid",
+    "condition": " Must start with upper case",
+    "password": "password",
+    "forgot": "Forgot your password?",
+    "noAccount": "Don’t have an Account?",
+    "createAcc": "Create account",
+    "signIn": "Sign In"
+  },
+  "register": {
+    "register": "Register",
+    "description": "To register you an account, please add your information in the following form.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "minLength": "minLength is 4",
+    "maxLength": "maxLength is 8",
+    "emailAddress": "Email address",
+    "email": "email",
+    "required": "is required",
+    "invalid": "is invalid",
+    "condition": " Must start with upper case",
+    "password": "password",
+    "confirmPassword": "confirm password",
+    "yourPassword": "Your Password",
+    "passwordCondition": "and confirmation Password do not match",
+    "anAccount": "Do you have an Account?",
+    "signUp": "Sign up",
+    "login": "Login"
+  },
+  "resetPassword": {
+    "resetPassword": "Reset Password",
+    "description": "  Provide the email address associated with your account to recover your password.",
+    "emailAddress": "Email address",
+    "login": "Login",
+    "register": "Register"
   }
 }

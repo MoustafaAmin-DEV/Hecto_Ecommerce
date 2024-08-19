@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./our-features.component.scss'],
 })
 export class OurFeaturesComponent {
-  @Input() public aboutPage: any;
+  @Input() public homePage: any;
 }

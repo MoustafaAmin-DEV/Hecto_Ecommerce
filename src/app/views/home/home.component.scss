@@ -13,3 +13,14 @@
     }
   }
 }
+:host-context([dir="rtl"]) {
+  ::ng-deep {
+    .title-head {
+      font-family: var(--font-family-lateef);
+      font-size: 60px;
+      @include respond-to(small) {
+        font-size: 42px;
+      }
+    }
+  }
+}

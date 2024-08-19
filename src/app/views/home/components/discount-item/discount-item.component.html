@@ -1,5 +1,5 @@
 <div class="discount-content" *ngIf="homePage">
-  <div class="title-head">{{ "homePage.DisItemTittle" | translate }}</div>
+  <div class="title-head">{{ "HOME.DisItemTittle" | translate }}</div>
   <div class="discount">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let disPro of homePage.discountItem">
@@ -20,7 +20,7 @@
                   <li>{{ disfeat.feat3 }}</li>
                   <li>{{ disfeat.feat4 }}</li>
                 </ul>
-                <a href="#" class="btn">Shop Now</a>
+                <a href="#" class="btn">{{ "HOME.btnShop" | translate }}</a>
               </div>
               <div class="col-lg-6 my-5 col-12">
                 <div class="item-img position-relative">

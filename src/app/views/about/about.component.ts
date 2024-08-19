@@ -7,12 +7,12 @@ import { SharedService } from '../../Shared/services/shared.service';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  public dataAboutPage: any;
+  public datahomePage: any;
   constructor(public apiService: SharedService) {}
 
   ngOnInit() {
-    this.apiService.dataAboutPage().subscribe((data) => {
-      this.dataAboutPage = data;
+    this.apiService.datahomePage().subscribe((data) => {
+      this.datahomePage = data;
     });
   }
 }

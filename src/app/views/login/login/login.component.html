@@ -5,13 +5,13 @@
         class="col-lg-6 col-12 m-auto gap-3 bg-white shadow p-5 rounded-2 d-flex flex-column"
       >
         <div class="title-login text-center">
-          <h1>Login</h1>
+          <h1>{{ "Login.login" | translate }}</h1>
           <div *ngIf="error" class="alert alert-primary mb-0">
             <h5>
               {{ error }}
             </h5>
           </div>
-          <p>Please login using account detail bellow.</p>
+          <p>{{ "Login.description" | translate }}</p>
         </div>
         <form
           class="d-flex gap-4 flex-column"
@@ -20,15 +20,15 @@
         >
           <!-- Email input -->
           <div class="d-flex flex-column gap-2">
-            <label class="emailAddress-label" for="emailAddress"
-              >Email address</label
+            <label class="emailAddress-label" for="emailAddress">
+              {{ "Login.emailAddress" | translate }}</label
             >
             <input
               type="email"
               id="emailAddress"
               class="emailAddress-input"
               formControlName="email"
-              placeholder="Email address"
+              placeholder="{{ 'Login.emailAddress' | translate }}"
             />
             <div
               *ngIf="
@@ -39,22 +39,26 @@
               role="alert"
             >
               <p *ngIf="loginForm.get('email')?.errors?.['required']">
-                <strong>email</strong> is required
+                <strong>{{ "Login.email" | translate }}</strong>
+                {{ "Login.required" | translate }}
               </p>
               <p *ngIf="loginForm.get('email')?.errors?.['email']">
-                <strong>email</strong> invalid
+                <strong>{{ "Login.email" | translate }}</strong>
+                {{ "Login.invalid" | translate }}
               </p>
             </div>
           </div>
 
           <!-- Password input -->
           <div class="d-flex flex-column gap-2">
-            <label class="password-label" for="password">Password</label>
+            <label class="password-label" for="password">{{
+              "Login.password" | translate
+            }}</label>
             <input
               type="password"
               id="password"
               class="password-input"
-              placeholder="Password"
+              placeholder="{{ 'Login.password' | translate }}"
               formControlName="password"
             />
             <div
@@ -66,17 +70,21 @@
               role="alert"
             >
               <p *ngIf="loginForm.get('password')?.errors?.['required']">
-                <strong>password</strong> is required
+                <strong>{{ "Login.password" | translate }}</strong>
+                {{ "Login.required" | translate }}
               </p>
               <p *ngIf="loginForm.get('password')?.errors?.['pattern']">
-                <strong>password</strong> Must start with upper case
+                <strong>{{ "Login.password" | translate }}</strong>
+                {{ "Login.condition" | translate }}
               </p>
             </div>
           </div>
 
           <!-- Submit button -->
           <div class="d-flex forgot-pass">
-            <a routerLink="/resetPassword">Forgot your password?</a>
+            <a [routerLink]="['/', currentLang, 'resetPassword']">{{
+              "Login.forgot" | translate
+            }}</a>
           </div>
 
           <!-- Submit button -->
@@ -86,15 +94,17 @@
               class="btn btn-signIn"
               [disabled]="loginForm.invalid"
             >
-              Sign In
+              {{ "Login.signIn" | translate }}
             </button>
           </div>
 
           <!-- Register buttons -->
           <div class="text-center hint-register">
             <p>
-              Don’t have an Account?
-              <a routerLink="/register">Create account</a>
+              {{ "Login.noAccount" | translate }}
+              <a [routerLink]="['/', currentLang, 'register']">{{
+                "Login.createAcc" | translate
+              }}</a>
             </p>
           </div>
         </form>

@@ -1,6 +1,6 @@
 <div class="top-categories" *ngIf="homePage">
   <div class="container">
-    <div class="title-head">{{ "homePage.topCateTittle" | translate }}</div>
+    <div class="title-head">{{ "HOME.topCateTittle" | translate }}</div>
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let catePro of homePage.catePro">
         <div class="card cate border-0">
@@ -9,9 +9,9 @@
               class="cateimg position-relative d-flex justify-content-center align-items-center"
             >
               <img class="mw-100" src="{{ catePro.cateImg }}" alt="Title" />
-              <a href="#" class="btn cate-btn position-absolute"
-                >View Details</a
-              >
+              <a href="#" class="btn cate-btn position-absolute">{{
+                "HOME.viewDetails" | translate
+              }}</a>
             </div>
           </div>
           <div class="card-body text-center">

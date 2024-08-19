@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/Shared/services/shared.service';
 
 @Component({
   selector: 'app-pages',
@@ -6,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.scss'],
 })
 export class PagesComponent implements OnInit {
-  constructor() {}
+  public dataShopPage: any;
+  constructor(public apiService: SharedService) {}
 
   ngOnInit(): void {
+    this.apiService.dataShopPage().subscribe((data) => {
+      this.dataShopPage = data;
+    });
     const itemList: HTMLElement | null = document.querySelector('.item-list');
     const gridViewBtn: HTMLElement | null =
       document.getElementById('grid-active-btn');

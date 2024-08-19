@@ -116,6 +116,10 @@
         line-height: 20px;
         cursor: pointer;
         /* 125% */
+        svg {
+          width: 16px;
+          height: 16px;
+        }
       }
 
       .active {
@@ -158,16 +162,6 @@
     width: calc(100% - 30%);
   }
 
-  // .offcanvas-header {
-  // h5 {
-  //   color: var(--secondary-color);
-  //   font-family: var(--font-family-josefin);
-  //   font-size: 30px;
-
-  //   font-weight: 700;
-  // }
-  // }
-
   .offcanvas-body {
     .link {
       ul {
@@ -177,6 +171,10 @@
           font-size: var(--font-size-medium);
           cursor: pointer;
           font-weight: 400;
+          svg {
+            width: 14px;
+            height: 14px;
+          }
         }
         .lang {
           li {
@@ -198,7 +196,25 @@
         }
       }
     }
-
+    .Account {
+      margin-top: 15px;
+      ul {
+        a {
+          color: #0d0e43;
+          font-family: var(--font-family-josefin);
+          font-size: var(--font-size-medium);
+          cursor: pointer;
+          font-weight: 400;
+          svg {
+            width: 14px;
+            height: 14px;
+          }
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
     .icon {
       a {
         cursor: pointer;
@@ -235,3 +251,72 @@
 }
 
 //end offcanvas
+
+//start style for rtl
+
+:host-context([dir="rtl"]) {
+  .heading-bar {
+    .head-left {
+      .envelope {
+        @include respond-to(medium) {
+          margin-inline-end: 0px;
+          margin-right: 0px;
+        }
+      }
+    }
+    .head-right {
+      li {
+        a {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-large);
+          .wish {
+            padding-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  .nav-bar {
+    .nav {
+      .nav-link {
+        font-size: var(--font-size-xlarge);
+      }
+    }
+  }
+  .offcanvas-body {
+    .link {
+      ul {
+        a {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-large);
+
+          @include respond-to(small) {
+            font-size: var(--font-size-medium);
+          }
+        }
+        .lang {
+          li {
+            button {
+              font-family: var(--font-family-lateef);
+              font-size: var(--font-size-medium);
+            }
+          }
+        }
+      }
+    }
+    .Account {
+      ul {
+        a {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-large);
+        }
+      }
+    }
+    .nav {
+      a {
+        font-family: var(--font-family-lateef);
+        font-size: var(--font-size-xlarge);
+      }
+    }
+  }
+}

@@ -1,14 +1,14 @@
 {
-  "homePage": {
+  "HOME": {
     "DisItemTittle": "بند الخصم",
     "feaProTittle": "المنتجات المميزة",
     "latProTittle": "المنتجات الحديثة",
     "leatBlogTittle": "أحدث مدونة",
-    "secOfferTittle": "What Shopex Offer!",
+    "secOfferTittle": "ما الذي يقدمه المتجر!",
     "topCateTittle": "أهم الفئات",
-    "trendingProTittle": "Trending Products",
-    "slider": { "btnShop": "تسوق الآن" },
-    "featuredPro": { "viewDetails": "عرض التفاصيل" },
+    "trendingProTittle": "المنتجات الرائجة",
+    "btnShop": "تسوق الآن",
+    "viewDetails": "عرض التفاصيل",
     "latestPro": {
       "newArrivals": "وصل حديثاً",
       "BestSeller": "الأكثر مبيعاً",
@@ -16,50 +16,68 @@
       "SpecialOffer": "عرض خاص"
     },
     "leatestBlog": {
-      "name1": "SaberAli",
-      "date1": "21 August,2020",
-      "leatestTilttle1": "Top esssential Trends in 2021",
-      "leatestDescription1": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      "leatestLink": "Read More",
-      "name2": "Surfauxion",
-      "date2": "21 August,2020",
-      "leatestTilttle2": "Top esssential Trends in 2021",
-      "leatestDescription2": "More off this less hello samlande lied much over tightly circa horse taped mightly"
+      "name1": "صابرعلي",
+      "date1": "21 أغسطس,2020",
+      "leatestTilttle1": "أهم التوجهات الأساسية في عام 2021",
+      "leatestDescription1": "أكثر من هذا، كذب ساملاند كثيرًا على حصان مقيد بإحكام",
+      "leatestLink": "اقرأ المزيد",
+      "name2": "صابرعلي",
+      "date2": "21 أغسطس,2020",
+      "leatestTilttle2": "أهم التوجهات الأساسية في عام 2021",
+      "leatestDescription2": "أكثر من هذا، كذب ساملاند كثيرًا على حصان مقيد بإحكام"
     },
     "newslater": {
-      "tittle": "Get Leatest Update By Subscribe\n 0ur Newslater",
-      "Shopnow": "Shop Now"
+      "tittle": "احصل على آخر المستجدات من خلال الاشتراك في \n نشرتنا الإخبارية"
     },
     "trendPro": {
       "tittle": "ميزات فريدة من نوعها لأحدث المنتجات الرائجة والأكثر رواجًا",
-      "leatest1": "All frames constructed with hardwood solids and laminates",
-      "leatest2": " Reinforced with double wood dowels, glue, screw - nails corner\n blocks and machine nails",
-      "leatest3": "Arms, backs and seats are structurally reinforced",
+      "leatest1": "جميع الإطارات مصنوعة من الخشب الصلب والرقائق الخشبية الصلبة",
+      "leatest2": " معززة بمسامير خشبية مزدوجة وغراء ومسامير لولبية وكتل زاوية ومسامير آلية",
+      "leatest3": "تم تعزيز الأذرع والظهر والمقاعد بشكل هيكلي",
       "btn": "أضف إلى السلة",
       "namePro": "كنبة إيطالية B&B",
       "pricePro": "32.00"
     },
     "trendingProducts": {
       "amontOffer": {
-        "titleOffer1": "23% off in all products",
-        "linkOffer1": "Shop Now",
-        "titleOffer2": "23% off in all products",
-        "linkOffer2": "View Collection"
+        "titleOffer1": "خصم 23% على جميع المنتجات",
+        "titleOffer2": "خصم 23% على جميع المنتجات",
+        "linkOffer2": "عرض التشكيلة"
       }
     }
   },
-  "aboutPage": {
-    "TITLE": "About Us",
-    "DESCRIPTION": "This is the about page of our application.",
+  "ABOUT": {
     "ourEcommerce": {
-      "title": "Know About Our Ecomerce Business, History",
+      "title": "تعرف على تاريخ أعمالنا التجارية الإلكترونية",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
-      "btn": "Contact us"
+      "btn": "اتصل بنا"
     }
   },
   "CONTACT": {
-    "TITLE": "اتصل بنا",
-    "DESCRIPTION": "هذه هي صفحة الاتصال الخاصة بتطبيقنا."
+    "info": {
+      "title": "معلومات عنا",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam."
+    },
+    "contactWay": {
+      "title": "تواصل معنا",
+      "phoneNum": "الهاتف: 877-67-88-99",
+      "email": "البريد الإلكتروني: shop@store.com",
+      "support": "منتدى الدعم",
+      "over": "للتواصل معنا مدار 24 ساعة",
+      "Address1": "20 شارع مارغريت، لندن",
+      "Address2": "بريطانيا العظمى، 3NM98-LK",
+      "standard": "الشحن مجاني",
+      "order": "في جميع الطلبات."
+    },
+    "form": {
+      "tittle": "تواصل معنا",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "yourName": "الأسم*",
+      "yourEmail": "البريد الألكتروني*",
+      "Subject": "الموضوع*",
+      "Messege": "أكتب الرسالة الخاصة بك*",
+      "btn": "ارسل رسالتك"
+    }
   },
   "BLOG": {
     "TITLE": "مدونة",
@@ -99,46 +117,79 @@
     "placeholder": "أدخل عنوان البريد الالكتروني",
     "btnFooter": "اشتراك",
     "contactInfo": "معلومات الاتصال",
-    "contactDES": "17 Princess Road, London, Greater London NW1 8JR, UK",
-    "copyRight": "©Webecy - All Rights Reserved",
-    "listFooter": [
-      {
-        "titleFooter": "الفئات",
-        "list": [
-          {
-            "listTitle1": "أجهزة الحواسيب وأجهزة الكمبيوتر",
-            "listTitle2": "الكاميرات والتصوير الفوتوغرافي",
-            "listTitle3": "الهواتف الذكية والأجهزة اللوحية",
-            "listTitle4": "ألعاب الفيديو وأجهزة التحكم",
-            "listTitle5": "سماعات مقاومة للماء"
-          }
-        ]
-      },
-      {
-        "titleFooter": "Customer Care",
-        "list": [
-          {
-            "listTitle1": "My Account",
-            "listTitle2": "Discount",
-            "listTitle3": "Returns",
-            "listTitle4": "Orders History",
-            "listTitle5": "Order Tracking"
-          }
-        ]
-      },
-      {
-        "titleFooter": "الصفحات",
-        "list": [
-          {
-            "listTitle1": "Home",
-            "listTitle2": "About",
-            "listTitle3": "Contact",
-            "listTitle4": "Pages",
-            "listTitle5": "Blog",
-            "listTitle6": "Shop"
-          }
-        ]
+    "contactDES": "17طريق الأميرات، لندن، لندن الكبرى، لندن الكبرى NW1 8JR، المملكة المتحدة",
+    "copyRight": " جميع الحقوق محفوظة",
+    "Catagories": {
+      "CatagoriesTitle": "الفئات",
+      "cateList": {
+        "cateList1": "أجهزة الحواسيب وأجهزة الكمبيوتر",
+        "cateList2": "الكاميرات والتصوير الفوتوغرافي",
+        "cateList3": "الهواتف الذكية والأجهزة اللوحية",
+        "cateList4": "ألعاب الفيديو وأجهزة التحكم",
+        "cateList5": "سماعات مقاومة للماء"
       }
-    ]
+    },
+    "customer": {
+      "customerTitle": "رعاية العملاء",
+      "customerList": {
+        "customerList1": "الحساب الخاص بي",
+        "customerList2": "الخصومات",
+        "customerList3": "العائدات",
+        "customerList4": "سجل الطلبات",
+        "customerList5": "تتبُّع الطلبات"
+      }
+    },
+    "pages": {
+      "pagesTitle": "الصفحات",
+      "pageList": {
+        "home": "الرئيسية",
+        "about": "نبذةعنا",
+        "contact": "تواصل معنا",
+        "pages": "الصفحات",
+        "blog": "المدونة",
+        "shop": "التسوق"
+      }
+    }
+  },
+  "Login": {
+    "login": "تسجيل الدخول",
+    "description": " يُرجى تسجيل الدخول باستخدام تفاصيل الحساب أدناه.",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "email": "البريد الإلكتروني",
+    "required": "مطلوب",
+    "invalid": "غير صالح",
+    "condition": "يجب أن تبدأ بأحرف كبيرة",
+    "password": "كلمة المرور",
+    "forgot": "هل نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "createAcc": "إنشاء حساب",
+    "signIn": "تسجيل الدخول"
+  },
+  "register": {
+    "register": "تسجيل",
+    "description": "لتسجيل حساب، يُرجى إضافة معلوماتك في النموذج التالي.",
+    "firstName": "الأسم الأول",
+    "lastName": "الأسم الأخير",
+    "minLength": "الحد الأدنى 4 حروف",
+    "maxLength": "الحلد الأقصى 8 حروف",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "email": "البريد الإلكتروني",
+    "required": "مطلوب",
+    "invalid": "غير صالح",
+    "condition": "يجب أن تبدأ بأحرف كبيرة",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "yourPassword": "كلمة المرور الخاصة بك",
+    "passwordCondition": "وكلمة المرور غير متطابقة",
+    "anAccount": "هل لديك حساب؟",
+    "signUp": "تسجيل",
+    "login": "تسجيل الدخول"
+  },
+  "resetPassword": {
+    "resetPassword": "استعادة كلمة المرور",
+    "description": "  لتغيير كلمة المرور، يُرجى أدخال عنوان بريدك الإلكتروني.",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "login": "تسجيل الدخول",
+    "register": "تسجيل"
   }
 }
