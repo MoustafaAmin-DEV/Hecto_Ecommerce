@@ -2,7 +2,10 @@
   <div class="container">
     <div class="title-head">{{ "HOME.topCateTittle" | translate }}</div>
     <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide *ngFor="let catePro of homePage.catePro">
+      <ng-template
+        carouselSlide
+        *ngFor="let catePro of homePage[currentLang].catePro"
+      >
         <div class="card cate border-0">
           <div class="cate-bg">
             <div
@@ -15,8 +18,8 @@
             </div>
           </div>
           <div class="card-body text-center">
-            <h4 class="card-title">{{ catePro.cateTittle }}</h4>
-            <p class="card-text">{{ catePro.cateSale }}</p>
+            <h4 class="card-title">{{ catePro.categoryProductTitle }}</h4>
+            <p class="card-text">{{ catePro.categoryProductPrice }}</p>
           </div>
         </div>
       </ng-template>

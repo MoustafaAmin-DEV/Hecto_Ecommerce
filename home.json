@@ -260,17 +260,17 @@
     "secOffer": [
       {
         "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
-        "titleOffer": "Free Delivery",
+        "titleOffer": "24/7 Support",
         "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
       },
       {
         "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
-        "titleOffer": "100% Cash Back",
+        "titleOffer": "24/7 Support",
         "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
       },
       {
         "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
-        "titleOffer": "Quality Product",
+        "titleOffer": "24/7 Support",
         "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
       },
       {
@@ -340,11 +340,305 @@
           "listSale": "$32.00"
         },
         {
-          "listImg": "../../../../../assets/images//home/image 28.png",
-          "listTitle": "Executive Seat chair",
-          "listSale": "$32.00"
+          "id": 2,
+          "featImg": "../../../../../assets/images/home/image 1.png",
+          "titleFeat": "كرسي قابل للطي",
+          "codeFeat": "الرمز - Z524501",
+          "saleFeat": "75.00"
+        },
+        {
+          "id": 3,
+          "featImg": "../../../../../assets/images/home/image 1169.png",
+          "titleFeat": "كرسي شيزلونج",
+          "codeFeat": "الرمز - H929801",
+          "saleFeat": "93.00"
+        },
+        {
+          "id": 4,
+          "featImg": "../../../../../assets/images/home/image 3.png",
+          "titleFeat": "كرسي أديرونداك",
+          "codeFeat": "الرمز - Y263291",
+          "saleFeat": "60.50"
+        },
+        {
+          "id": 5,
+          "featImg": "../../../../../assets/images/home/image 1171.png",
+          "titleFeat": "كرسي إيرون",
+          "codeFeat": "الرمز - Y628205",
+          "saleFeat": "87.06"
         }
-      ]
+      ],
+      "latestPro": {
+        "newArrivals": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 1166.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "كرسي خشبي أنيق",
+            "latestSale": "150.00",
+            "latestOffer": "20.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 15.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي أريكة فاخر",
+            "latestSale": "180.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي طعام عصري",
+            "latestSale": "90.00",
+            "latestOffer": "18.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي بذراعين كلاسيكي",
+            "latestSale": "220.00",
+            "latestOffer": "30.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي استرخاء مريح",
+            "latestSale": "75.00",
+            "latestOffer": "12.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "كرسي زاوية أنيق",
+            "latestSale": "270.00",
+            "latestOffer": "35.00"
+          }
+        ],
+        "BestSeller": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 15.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي أريكة فاخر",
+            "latestSale": "180.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي طعام عصري",
+            "latestSale": "90.00",
+            "latestOffer": "18.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "كرسي زاوية أنيق",
+            "latestSale": "270.00",
+            "latestOffer": "35.00"
+          }
+        ],
+        "Featured": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 1169.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي مكتب فاخر",
+            "latestSale": "650.00",
+            "latestOffer": "50.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي بذراعين أنيق",
+            "latestSale": "200.00",
+            "latestOffer": "20.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "كرسي استرخاء فاخر",
+            "latestSale": "250.00",
+            "latestOffer": "40.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "كرسي إضاءة عصري",
+            "latestSale": "280.00",
+            "latestOffer": "45.00"
+          }
+        ],
+        "SpecialOffer": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "كرسي صالة مصمم",
+            "latestSale": "110.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي خلفي عالي",
+            "latestSale": "85.00",
+            "latestOffer": "15.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي جانبي أنيق",
+            "latestSale": "210.00",
+            "latestOffer": "30.00"
+          }
+        ]
+      },
+      "discountItem": [
+        {
+          "discountTitle": "خصم 20% على جميع المنتجات",
+          "typePro": "أريكة إيمز المدمجة",
+          "descriptionPro": "تمنح هذه الكرسي الجناحي شعورًا دافئًا بفضل ذراعيه المستديرين، وخطوطه الناعمة، وتنجيده الجذاب.",
+          "featPro": [
+            {
+              "feat1": "مواد مكشوفة مثل المعادن",
+              "feat2": "خطوط واضحة وأشكال هندسية",
+              "feat3": "ألوان محايدة بسيطة",
+              "feat4": "مواد مكشوفة مثل المعادن"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        },
+        {
+          "discountTitle": "خصم 35% على بعض المنتجات",
+          "typePro": "إطار كرسي بوانغ",
+          "descriptionPro": "الخشب هو المادة الأكثر ارتباطًا بأثاث إيكيا، ولأسباب وجيهة",
+          "featPro": [
+            {
+              "feat1": "100% بولي بروبيلين",
+              "feat2": "خشب طبقات مغطى بالزان",
+              "feat3": "100% بوليستر (80% معاد تدويره على الأقل)",
+              "feat4": "مسح نظيف بقطعة قماش مبللة"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        },
+        {
+          "discountTitle": "خصم 10% على جميع المنتجات",
+          "typePro": "غطاء كرسي تولستا",
+          "descriptionPro": "مجموعة من الأغطية المنسقة تسهل عليك إعطاء أثاثك مظهرًا جديدًا.",
+          "featPro": [
+            {
+              "feat1": "رغوة بولي يوريثان 20 كجم/متر مكعب",
+              "feat2": "خشب صلب، طلاء أكريليك شفاف",
+              "feat3": "55% قطن، 45% بوليستر",
+              "feat4": "خشب صلب، لوح خشبي، 100% صلب"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        }
+      ],
+      "secOffer": [
+        {
+          "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+          "titleOffer": "النقل مجاني",
+          "descOffer": " احصل على النقل مجاني عند الشراء بقيمة أكبر من $100."
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+          "titleOffer": "استرداد نقدي",
+          "descOffer": "احصل على استرداد نقدي عند شراء منتجات محددة. استفد من العروض الآن!"
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+          "titleOffer": "جودة مميزة",
+          "descOffer": "نحن نقدم لك منتجات ذات جودة عالية لضمان تحقيق أقصى قدر من الراحة والمتانة."
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+          "titleOffer": "دعم على مدار الساعة",
+          "descOffer": "فريقنا جاهز لدعمك على مدار الساعة لضمان تجربة تسوق سلسة ومرضية."
+        }
+      ],
+      "catePro": [
+        {
+          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "categoryProductTitle": "كرسي عصري صغير",
+          "categoryProductPrice": "200.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 1168.png",
+          "categoryProductTitle": "كرسي جلد فاخر",
+          "categoryProductPrice": "250.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 1171.png",
+          "categoryProductTitle": "كرسي مكتب حديث",
+          "categoryProductPrice": "300.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "categoryProductTitle": "كرسي طعام أنيق",
+          "categoryProductPrice": "180.00 ج.م"
+        }
+      ],
+      "trendingProducts": {
+        "trendingPro": [
+          {
+            "trendImg": "../../../../../assets/images/home/image 1171.png",
+            "trendingProductTitle": "كرسي الكانتيلفير",
+            "newPrice": "$30.00",
+            "oldPrice": "$50.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 1170.png",
+            "trendingProductTitle": "كرسي الاسترخاء",
+            "newPrice": "$45.00",
+            "oldPrice": "$70.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 31.png",
+            "trendingProductTitle": "كرسي القراءة المريح",
+            "newPrice": "$60.00",
+            "oldPrice": "$80.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 11.png",
+            "trendingProductTitle": "كرسي الكانتيلفير",
+            "newPrice": "$30.00",
+            "oldPrice": "$50.00"
+          }
+        ],
+        "trendList": [
+          {
+            "listImg": "../../../../../assets/images//home/image 30.png",
+            "productListTitle": "كرسي تنفيذي فاخر",
+            "productListPrice": "$50.00"
+          },
+          {
+            "listImg": "../../../../../assets/images//home/image 19.png",
+            "productListTitle": "كرسي مكتبي",
+            "productListPrice": "$45.00"
+          },
+          {
+            "listImg": "../../../../../assets/images//home/image 28.png",
+            "productListTitle": "كرسي ضيافة",
+            "productListPrice": "$40.00"
+          }
+        ]
+      }
     }
   },
   "shopPage": {

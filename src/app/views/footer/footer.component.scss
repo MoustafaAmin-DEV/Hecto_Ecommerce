@@ -61,6 +61,10 @@ footer {
 
   ul {
     text-align: left;
+    html[dir="rtl"] & {
+      text-align: right;
+    }
+
     li {
       padding-bottom: 21px;
       a {
