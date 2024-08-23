@@ -22,7 +22,9 @@ export class SharedService {
   ProductDetails(id: string) {
     return this.http.get(`${this.urlProduct}/${id}`);
   }
-
+  dataAboutPage() {
+    return this.http.get(`${this.urlHome}/aboutPage`);
+  }
   dataShopPage() {
     return this.http.get(`${this.urlHome}/shopPage`);
   }

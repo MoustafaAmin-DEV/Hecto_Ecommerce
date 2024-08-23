@@ -119,7 +119,7 @@
         .slide-content {
           .item-text {
             .hint {
-              font-size: var(--font-size-xlarge);
+              font-size: var(--font-size-xxlarge);
             }
             .title-slider {
               font-family: var(--font-family-lateef);
@@ -130,7 +130,7 @@
               }
             }
             .description-slider {
-              font-size: var(--font-size-medium);
+              font-size: var(--font-size-large);
 
               @include respond-to(small) {
                 font-size: var(--font-size-small);
