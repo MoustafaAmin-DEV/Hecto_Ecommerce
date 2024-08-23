@@ -1,350 +1,664 @@
 {
   "homePage": {
-    "slider": [
-      {
-        "hint": "Best Furniture For Your Castle....",
-        "titleSlider": "New Furniture Collection Trends in 2020",
-        "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
-        "imgslider": "../../../../../assets/images/home/slider1.png",
-        "btnShop": "Shop Now"
+    "en": {
+      "slider": [
+        {
+          "hint": "The Best Furniture for Your Castle....",
+          "titleSlider": "New Furniture Collection Trends in 2024",
+          "descriptionSlider": "Discover the latest trends in furniture design to elegantly and comfortably refresh your home.",
+          "imgslider": "../../../../../assets/images/home/slider1.png"
+        },
+        {
+          "hint": "Choosing the Perfect Furniture....",
+          "titleSlider": "Innovative Designs for Modern Furniture",
+          "descriptionSlider": "Enjoy a blend of comfort and style with our latest furniture designs.",
+          "imgslider": "../../../../../assets/images/home/slider1.png"
+        },
+        {
+          "hint": "Revamp Your Space in Style....",
+          "titleSlider": "Top Furniture Picks for the New Year",
+          "descriptionSlider": "Explore our unique designs that cater to all your home needs.",
+          "imgslider": "../../../../../assets/images/home/slider1.png"
+        }
+      ],
+      "featuredPro": [
+        {
+          "id": 1,
+          "featImg": "../../../../../assets/images/home/image 1168.png",
+          "titleFeat": "Cantilever chair",
+          "codeFeat": "Code - Y523201",
+          "saleFeat": "42.00"
+        },
+        {
+          "id": 2,
+          "featImg": "../../../../../assets/images/home/image 1.png",
+          "titleFeat": "Folding chair",
+          "codeFeat": "Code - Z524501",
+          "saleFeat": "75.00"
+        },
+        {
+          "id": 3,
+          "featImg": "../../../../../assets/images/home/image 1169.png",
+          "titleFeat": "Chaise longue",
+          "codeFeat": "Code - H929801",
+          "saleFeat": "93.00"
+        },
+        {
+          "id": 4,
+          "featImg": "../../../../../assets/images/home/image 3.png",
+          "titleFeat": "Adirondack chair",
+          "codeFeat": "Code - Y263291",
+          "saleFeat": "60.50"
+        },
+        {
+          "id": 5,
+          "featImg": "../../../../../assets/images/home/image 1171.png",
+          "titleFeat": "Aeron chair",
+          "codeFeat": "Code - Y628205",
+          "saleFeat": "87.06"
+        }
+      ],
+      "latestPro": {
+        "newArrivals": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 1166.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "Elegant Wooden Chair",
+            "latestSale": "150.00",
+            "latestOffer": "20.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 15.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "Luxurious Sofa Chair",
+            "latestSale": "180.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "Modern Dining Chair",
+            "latestSale": "90.00",
+            "latestOffer": "18.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "Classic Armchair",
+            "latestSale": "220.00",
+            "latestOffer": "30.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "Comfortable Recliner",
+            "latestSale": "75.00",
+            "latestOffer": "12.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "Stylish Corner Chair",
+            "latestSale": "270.00",
+            "latestOffer": "35.00"
+          }
+        ],
+        "BestSeller": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 15.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "Luxurious Sofa Chair",
+            "latestSale": "180.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "Modern Dining Chair",
+            "latestSale": "90.00",
+            "latestOffer": "18.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "Stylish Corner Chair",
+            "latestSale": "270.00",
+            "latestOffer": "35.00"
+          }
+        ],
+        "Featured": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 1169.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "Premium Office Chair",
+            "latestSale": "650.00",
+            "latestOffer": "50.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "Elegant Armchair",
+            "latestSale": "200.00",
+            "latestOffer": "20.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "Luxurious Recliner",
+            "latestSale": "250.00",
+            "latestOffer": "40.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "Contemporary Lamp Chair",
+            "latestSale": "280.00",
+            "latestOffer": "45.00"
+          }
+        ],
+        "SpecialOffer": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "Designer Lounge Chair",
+            "latestSale": "110.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "High-Back Chair",
+            "latestSale": "85.00",
+            "latestOffer": "15.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "Elegant Side Chair",
+            "latestSale": "210.00",
+            "latestOffer": "30.00"
+          }
+        ]
       },
-      {
-        "hint": "Best Furniture For Your Castle....",
-        "titleSlider": "New Furniture Collection Trends in 2020",
-        "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
-        "imgslider": "../../../../../assets/images/home/slider1.png",
-        "btnShop": "Shop Now"
-      },
-      {
-        "hint": "Best Furniture For Your Castle....",
-        "titleSlider": "New Furniture Collection Trends in 2020",
-        "descriptionSlider": "Lorem ipsum dolor sit amet , consectetur adipiscing elit . Magnain est adipiscing in phasellus non in justo.",
-        "imgslider": "../../../../../assets/images/home/slider1.png"
+      "discountItem": [
+        {
+          "discountTitle": "20% Discount Of All Products",
+          "typePro": "Eams Sofa Compact",
+          "descriptionPro": "Round armrests, soft lines and an inviting upholstery give this wing chair a soft embracing feel.",
+          "featPro": [
+            {
+              "feat1": "Material expose like metals",
+              "feat2": "Clear lines and geomatric figures",
+              "feat3": "Simple neutral colours.",
+              "feat4": "Material expose like metals"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        },
+        {
+          "discountTitle": "35% Discount Of some Products",
+          "typePro": "POÄNG Armchair frame",
+          "descriptionPro": "Wood is the material most commonly associated with IKEA furniture, and for good reasons",
+          "featPro": [
+            {
+              "feat1": "100% polypropylene",
+              "feat2": "Layer-glued wood veneer, Birch veneer.",
+              "feat3": "100% polyester (min. 80% recycled)",
+              "feat4": "Wipe clean with a damp cloth."
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        },
+        {
+          "discountTitle": "10% Discount Of All Products",
+          "typePro": "TULLSTA Armchair cover",
+          "descriptionPro": "A range of coordinated covers makes it easy for you to give your furniture a new look.",
+          "featPro": [
+            {
+              "feat1": "Polyurethane foam 20 kg/cu.m.",
+              "feat2": "Solid beech, Clear acrylic lacquer",
+              "feat3": "55% cotton, 45% polyester",
+              "feat4": "Solid wood, Particleboard, 100%solid"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        }
+      ],
+      "secOffer": [
+        {
+          "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+          "titleOffer": "Free Delivery",
+          "descOffer": "Get free delivery on orders over $100."
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+          "titleOffer": "Cashback",
+          "descOffer": "Get cashback on selected products. Take advantage of our offers now!"
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+          "titleOffer": "Premium Quality",
+          "descOffer": "We provide you with high-quality products to ensure maximum comfort and durability."
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+          "titleOffer": "24/7 Support",
+          "descOffer": "Our team is ready to support you around the clock to ensure a smooth and satisfying shopping experience."
+        }
+      ],
+      "catePro": [
+        {
+          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "categoryProductTitle": "Comfortable Office Chair",
+          "categoryProductPrice": "$79.00"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 1168.png",
+          "categoryProductTitle": "Modern Dining Chair",
+          "categoryProductPrice": "$89.00"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 1171.png",
+          "categoryProductTitle": "Ergonomic Desk Chair",
+          "categoryProductPrice": "$99.00"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "categoryProductTitle": "Luxury Recliner",
+          "categoryProductPrice": "$120.00"
+        }
+      ],
+      "trendingProducts": {
+        "trendingPro": [
+          {
+            "trendImg": "../../../../../assets/images/home/image 1171.png",
+            "trendingProductTitle": "Cantilever chair",
+            "newPrice": "$26.00 ",
+            "oldPrice": "$42.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 1170.png",
+            "trendingProductTitle": "Cantilever chair",
+            "newPrice": "$26.00 ",
+            "oldPrice": "$42.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 31.png",
+            "trendingProductTitle": "Cantilever chair",
+            "newPrice": "$26.00 ",
+            "oldPrice": "$42.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 11.png",
+            "trendingProductTitle": "Cantilever chair",
+            "newPrice": "$26.00 ",
+            "oldPrice": "$42.00"
+          }
+        ],
+        "trendList": [
+          {
+            "listImg": "../../../../../assets/images//home/image 30.png",
+            "productListTitle": "Executive Seat chair",
+            "productListPrice": "$32.00"
+          },
+          {
+            "listImg": "../../../../../assets/images//home/image 19.png",
+            "productListTitle": "Executive Seat chair",
+            "productListPrice": "$32.00"
+          },
+          {
+            "listImg": "../../../../../assets/images//home/image 28.png",
+            "productListTitle": "Executive Seat chair",
+            "productListPrice": "$32.00"
+          }
+        ]
       }
-    ],
-    "featuredPro": [
-      {
-        "id": 1,
-        "featImg": "../../../../../assets/images/home/image 1168.png",
-        "titleFeat": "Cantilever chair",
-        "codeFeat": "Code - Y523201",
-        "saleFeat": "42.00"
-      },
-      {
-        "id": 2,
-        "featImg": "../../../../../assets/images/home/image 1.png",
-        "titleFeat": "Folding chair",
-        "codeFeat": "Code - Z524501",
-        "saleFeat": "75.00"
-      },
-      {
-        "id": 3,
-        "featImg": "../../../../../assets/images/home/image 1169.png",
-        "titleFeat": "Chaise longue",
-        "codeFeat": "Code - H929801",
-        "saleFeat": "93.00"
-      },
-      {
-        "id": 4,
-        "featImg": "../../../../../assets/images/home/image 3.png",
-        "titleFeat": "Adirondack chair",
-        "codeFeat": "Code - Y263291",
-        "saleFeat": "60.50"
-      },
-      {
-        "id": 5,
-        "featImg": "../../../../../assets/images/home/image 1171.png",
-        "titleFeat": "Aeron chair",
-        "codeFeat": "Code - Y628205",
-        "saleFeat": "87.06"
-      }
-    ],
-    "latestPro": {
-      "newArrivals": [
-        {
-          "latestImg": "../../../../../assets/images/home/image 1166.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Hot",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "100.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 15.png",
-          "imgvector": "",
-          "latestBanner": "",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "120.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 1168.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "New",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "84.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 23.png",
-          "imgvector": "",
-          "latestBanner": "",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "200.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 11.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "New",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "60.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 3.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Sale",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "250.00",
-          "latestOffer": "15.10"
-        }
-      ],
-      "BestSeller": [
-        {
-          "latestImg": "../../../../../assets/images/home/image 1169.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "New",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "621.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 23.png",
-          "imgvector": "",
-          "latestBanner": "",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "190.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 11.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Hot",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "235.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 3.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Sale",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "250.00",
-          "latestOffer": "15.10"
-        }
-      ],
-      "Featured": [
-        {
-          "latestImg": "../../../../../assets/images/home/image 11.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Hot",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "100.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 1168.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "New",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "84.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 23.png",
-          "imgvector": "",
-          "latestBanner": "",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "200.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 11.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "New",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "60.00",
-          "latestOffer": "15.10"
-        }
-      ],
-      "SpecialOffer": [
-        {
-          "latestImg": "../../../../../assets/images/home/image 15.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Hot",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "100.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 11.png",
-          "imgvector": "",
-          "latestBanner": "",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "120.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 23.png",
-          "imgvector": "",
-          "latestBanner": "",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "200.00",
-          "latestOffer": "15.10"
-        },
-        {
-          "latestImg": "../../../../../assets/images/home/image 3.png",
-          "imgvector": "../../../../../assets/images/home/Vector 1.png",
-          "latestBanner": "Sale",
-          "latestTitel": "Comfort Handy Craft",
-          "latestSale": "250.00",
-          "latestOffer": "15.10"
-        }
-      ]
     },
-    "discountItem": [
-      {
-        "discountTitle": "20% Discount Of All Products",
-        "typePro": "Eams Sofa Compact",
-        "descriptionPro": "Round armrests, soft lines and an inviting upholstery give this wing chair a soft embracing feel.",
-        "featPro": [
-          {
-            "feat1": "Material expose like metals",
-            "feat2": "Clear lines and geomatric figures",
-            "feat3": "Simple neutral colours.",
-            "feat4": "Material expose like metals"
-          }
-        ],
-        "imagPro": "../../../../../assets/images/home/chair1.png"
-      },
-      {
-        "discountTitle": "35% Discount Of some Products",
-        "typePro": "POÄNG Armchair frame",
-        "descriptionPro": "Wood is the material most commonly associated with IKEA furniture, and for good reasons",
-        "featPro": [
-          {
-            "feat1": "100% polypropylene",
-            "feat2": "Layer-glued wood veneer, Birch veneer.",
-            "feat3": "100% polyester (min. 80% recycled)",
-            "feat4": "Wipe clean with a damp cloth."
-          }
-        ],
-        "imagPro": "../../../../../assets/images/home/chair1.png"
-      },
-      {
-        "discountTitle": "10% Discount Of All Products",
-        "typePro": "TULLSTA Armchair cover",
-        "descriptionPro": "A range of coordinated covers makes it easy for you to give your furniture a new look.",
-        "featPro": [
-          {
-            "feat1": "Polyurethane foam 20 kg/cu.m.",
-            "feat2": "Solid beech, Clear acrylic lacquer",
-            "feat3": "55% cotton, 45% polyester",
-            "feat4": "Solid wood, Particleboard, 100%solid"
-          }
-        ],
-        "imagPro": "../../../../../assets/images/home/chair1.png"
-      }
-    ],
-    "secOffer": [
-      {
-        "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
-        "titleOffer": "24/7 Support",
-        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-      },
-      {
-        "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
-        "titleOffer": "24/7 Support",
-        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-      },
-      {
-        "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
-        "titleOffer": "24/7 Support",
-        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-      },
-      {
-        "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
-        "titleOffer": "24/7 Support",
-        "descOffer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-      }
-    ],
-    "catePro": [
-      {
-        "cateImg": "../../../../../assets/images/home/image 20.png",
-        "cateTittle": "Mini LCW Chair",
-        "cateSale": "$56.00"
-      },
-      {
-        "cateImg": "../../../../../assets/images/home/image 1168.png",
-        "cateTittle": "Mini LCW Chair",
-        "cateSale": "$56.00"
-      },
-      {
-        "cateImg": "../../../../../assets/images/home/image 1171.png",
-        "cateTittle": "Mini LCW Chair",
-        "cateSale": "$56.00"
-      },
-      {
-        "cateImg": "../../../../../assets/images/home/image 20.png",
-        "cateTittle": "Mini LCW Chair",
-        "cateSale": "$56.00"
-      }
-    ],
-    "trendingProducts": {
-      "trendingPro": [
+    "ar": {
+      "slider": [
         {
-          "trendImg": "../../../../../assets/images/home/image 1171.png",
-          "trendTitle": "Cantilever chair",
-          "saleNew": "$26.00 ",
-          "saleOld": "$42.00"
+          "hint": "أفضل أثاث لقلعتك....",
+          "titleSlider": "اتجاهات جديدة لمجموعة الأثاث في 2024",
+          "descriptionSlider": "هنا يمكنك العثور على أحدث الاتجاهات في تصميم الأثاث لتجديد منزلك بشكل أنيق ومريح.",
+          "imgslider": "../../../../../assets/images/home/slider1.png"
         },
         {
-          "trendImg": "../../../../../assets/images/home/image 1170.png",
-          "trendTitle": "Cantilever chair",
-          "saleNew": "$26.00 ",
-          "saleOld": "$42.00"
+          "hint": "اختيار الأثاث المثالي....",
+          "titleSlider": "تصاميم مبتكرة للأثاث الحديث",
+          "descriptionSlider": "استمتع بمزيج من الراحة والأناقة مع أحدث تصاميم الأثاث لدينا.",
+          "imgslider": "../../../../../assets/images/home/slider1.png"
         },
         {
-          "trendImg": "../../../../../assets/images/home/image 31.png",
-          "trendTitle": "Cantilever chair",
-          "saleNew": "$26.00 ",
-          "saleOld": "$42.00"
-        },
-        {
-          "trendImg": "../../../../../assets/images/home/image 11.png",
-          "trendTitle": "Cantilever chair",
-          "saleNew": "$26.00 ",
-          "saleOld": "$42.00"
+          "hint": "جدد مساحتك بأناقة....",
+          "titleSlider": "أفضل اختيارات الأثاث للعام الجديد",
+          "descriptionSlider": "اكتشف تصاميمنا الفريدة التي تلبي جميع احتياجاتك في المنزل.",
+          "imgslider": "../../../../../assets/images/home/slider1.png"
         }
       ],
-      "trendList": [
+      "featuredPro": [
         {
-          "listImg": "../../../../../assets/images//home/image 30.png",
-          "listTitle": "Executive Seat chair",
-          "listSale": "$32.00"
+          "id": 1,
+          "featImg": "../../../../../assets/images/home/image 1168.png",
+          "titleFeat": "كرسي كانتيلفير",
+          "codeFeat": "الرمز - Y523201",
+          "saleFeat": "42.00"
         },
         {
-          "listImg": "../../../../../assets/images//home/image 19.png",
-          "listTitle": "Executive Seat chair",
-          "listSale": "$32.00"
+          "id": 2,
+          "featImg": "../../../../../assets/images/home/image 1.png",
+          "titleFeat": "كرسي قابل للطي",
+          "codeFeat": "الرمز - Z524501",
+          "saleFeat": "75.00"
         },
         {
-          "listImg": "../../../../../assets/images//home/image 28.png",
-          "listTitle": "Executive Seat chair",
-          "listSale": "$32.00"
+          "id": 3,
+          "featImg": "../../../../../assets/images/home/image 1169.png",
+          "titleFeat": "كرسي شيزلونج",
+          "codeFeat": "الرمز - H929801",
+          "saleFeat": "93.00"
+        },
+        {
+          "id": 4,
+          "featImg": "../../../../../assets/images/home/image 3.png",
+          "titleFeat": "كرسي أديرونداك",
+          "codeFeat": "الرمز - Y263291",
+          "saleFeat": "60.50"
+        },
+        {
+          "id": 5,
+          "featImg": "../../../../../assets/images/home/image 1171.png",
+          "titleFeat": "كرسي إيرون",
+          "codeFeat": "الرمز - Y628205",
+          "saleFeat": "87.06"
         }
-      ]
+      ],
+      "latestPro": {
+        "newArrivals": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 1166.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "كرسي خشبي أنيق",
+            "latestSale": "150.00",
+            "latestOffer": "20.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 15.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي أريكة فاخر",
+            "latestSale": "180.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي طعام عصري",
+            "latestSale": "90.00",
+            "latestOffer": "18.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي بذراعين كلاسيكي",
+            "latestSale": "220.00",
+            "latestOffer": "30.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي استرخاء مريح",
+            "latestSale": "75.00",
+            "latestOffer": "12.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "كرسي زاوية أنيق",
+            "latestSale": "270.00",
+            "latestOffer": "35.00"
+          }
+        ],
+        "BestSeller": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 15.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي أريكة فاخر",
+            "latestSale": "180.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي طعام عصري",
+            "latestSale": "90.00",
+            "latestOffer": "18.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "كرسي زاوية أنيق",
+            "latestSale": "270.00",
+            "latestOffer": "35.00"
+          }
+        ],
+        "Featured": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 1169.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي مكتب فاخر",
+            "latestSale": "650.00",
+            "latestOffer": "50.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي بذراعين أنيق",
+            "latestSale": "200.00",
+            "latestOffer": "20.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "كرسي استرخاء فاخر",
+            "latestSale": "250.00",
+            "latestOffer": "40.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 3.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Sale",
+            "latestTitel": "كرسي إضاءة عصري",
+            "latestSale": "280.00",
+            "latestOffer": "45.00"
+          }
+        ],
+        "SpecialOffer": [
+          {
+            "latestImg": "../../../../../assets/images/home/image 11.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "Hot",
+            "latestTitel": "كرسي صالة مصمم",
+            "latestSale": "110.00",
+            "latestOffer": "25.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 1168.png",
+            "imgvector": "../../../../../assets/images/home/Vector 1.png",
+            "latestBanner": "New",
+            "latestTitel": "كرسي خلفي عالي",
+            "latestSale": "85.00",
+            "latestOffer": "15.00"
+          },
+          {
+            "latestImg": "../../../../../assets/images/home/image 23.png",
+            "imgvector": "",
+            "latestBanner": "",
+            "latestTitel": "كرسي جانبي أنيق",
+            "latestSale": "210.00",
+            "latestOffer": "30.00"
+          }
+        ]
+      },
+      "discountItem": [
+        {
+          "discountTitle": "خصم 20% على جميع المنتجات",
+          "typePro": "أريكة إيمز المدمجة",
+          "descriptionPro": "تمنح هذه الكرسي الجناحي شعورًا دافئًا بفضل ذراعيه المستديرين، وخطوطه الناعمة، وتنجيده الجذاب.",
+          "featPro": [
+            {
+              "feat1": "مواد مكشوفة مثل المعادن",
+              "feat2": "خطوط واضحة وأشكال هندسية",
+              "feat3": "ألوان محايدة بسيطة",
+              "feat4": "مواد مكشوفة مثل المعادن"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        },
+        {
+          "discountTitle": "خصم 35% على بعض المنتجات",
+          "typePro": "إطار كرسي بوانغ",
+          "descriptionPro": "الخشب هو المادة الأكثر ارتباطًا بأثاث إيكيا، ولأسباب وجيهة",
+          "featPro": [
+            {
+              "feat1": "100% بولي بروبيلين",
+              "feat2": "خشب طبقات مغطى بالزان",
+              "feat3": "100% بوليستر (80% معاد تدويره على الأقل)",
+              "feat4": "مسح نظيف بقطعة قماش مبللة"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        },
+        {
+          "discountTitle": "خصم 10% على جميع المنتجات",
+          "typePro": "غطاء كرسي تولستا",
+          "descriptionPro": "مجموعة من الأغطية المنسقة تسهل عليك إعطاء أثاثك مظهرًا جديدًا.",
+          "featPro": [
+            {
+              "feat1": "رغوة بولي يوريثان 20 كجم/متر مكعب",
+              "feat2": "خشب صلب، طلاء أكريليك شفاف",
+              "feat3": "55% قطن، 45% بوليستر",
+              "feat4": "خشب صلب، لوح خشبي، 100% صلب"
+            }
+          ],
+          "imagPro": "../../../../../assets/images/home/chair1.png"
+        }
+      ],
+      "secOffer": [
+        {
+          "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+          "titleOffer": "النقل مجاني",
+          "descOffer": " احصل على النقل مجاني عند الشراء بقيمة أكبر من $100."
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+          "titleOffer": "استرداد نقدي",
+          "descOffer": "احصل على استرداد نقدي عند شراء منتجات محددة. استفد من العروض الآن!"
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+          "titleOffer": "جودة مميزة",
+          "descOffer": "نحن نقدم لك منتجات ذات جودة عالية لضمان تحقيق أقصى قدر من الراحة والمتانة."
+        },
+        {
+          "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+          "titleOffer": "دعم على مدار الساعة",
+          "descOffer": "فريقنا جاهز لدعمك على مدار الساعة لضمان تجربة تسوق سلسة ومرضية."
+        }
+      ],
+      "catePro": [
+        {
+          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "categoryProductTitle": "كرسي عصري صغير",
+          "categoryProductPrice": "200.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 1168.png",
+          "categoryProductTitle": "كرسي جلد فاخر",
+          "categoryProductPrice": "250.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 1171.png",
+          "categoryProductTitle": "كرسي مكتب حديث",
+          "categoryProductPrice": "300.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "categoryProductTitle": "كرسي طعام أنيق",
+          "categoryProductPrice": "180.00 ج.م"
+        }
+      ],
+      "trendingProducts": {
+        "trendingPro": [
+          {
+            "trendImg": "../../../../../assets/images/home/image 1171.png",
+            "trendingProductTitle": "كرسي الكانتيلفير",
+            "newPrice": "$30.00",
+            "oldPrice": "$50.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 1170.png",
+            "trendingProductTitle": "كرسي الاسترخاء",
+            "newPrice": "$45.00",
+            "oldPrice": "$70.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 31.png",
+            "trendingProductTitle": "كرسي القراءة المريح",
+            "newPrice": "$60.00",
+            "oldPrice": "$80.00"
+          },
+          {
+            "trendImg": "../../../../../assets/images/home/image 11.png",
+            "trendingProductTitle": "كرسي الكانتيلفير",
+            "newPrice": "$30.00",
+            "oldPrice": "$50.00"
+          }
+        ],
+        "trendList": [
+          {
+            "listImg": "../../../../../assets/images//home/image 30.png",
+            "productListTitle": "كرسي تنفيذي فاخر",
+            "productListPrice": "$50.00"
+          },
+          {
+            "listImg": "../../../../../assets/images//home/image 19.png",
+            "productListTitle": "كرسي مكتبي",
+            "productListPrice": "$45.00"
+          },
+          {
+            "listImg": "../../../../../assets/images//home/image 28.png",
+            "productListTitle": "كرسي ضيافة",
+            "productListPrice": "$40.00"
+          }
+        ]
+      }
     }
   },
   "aboutPage": {

@@ -66,9 +66,6 @@ footer {
 
   ul {
     text-align: left;
-    html[dir="rtl"] & {
-      text-align: right;
-    }
 
     li {
       cursor: pointer;

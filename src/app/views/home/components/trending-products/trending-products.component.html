@@ -4,19 +4,19 @@
     <div class="row">
       <div
         class="col-lg-3 col-md-6 col-12"
-        *ngFor="let trendPro of homePage.trendingProducts.trendingPro"
+        *ngFor="let trendPro of homePage[lang].trendingProducts.trendingPro"
       >
         <div class="card border-0 trendPro">
           <div class="card-img-top trendImg">
             <img src="{{ trendPro.trendImg }}" class="mw-100" alt="Title" />
           </div>
           <div class="card-body">
-            <h4 class="card-title">{{ trendPro.trendTitle }}</h4>
+            <h4 class="card-title">{{ trendPro.trendingProductTitle }}</h4>
             <div
               class="saletrend d-flex justify-content-center align-items-center"
             >
-              <p class="sale-new">{{ trendPro.saleNew }}</p>
-              <p class="sale-old">{{ trendPro.saleOld }}</p>
+              <p class="sale-new">{{ trendPro.newPrice }}</p>
+              <p class="sale-old">{{ trendPro.oldPrice }}</p>
             </div>
           </div>
         </div>
@@ -61,14 +61,14 @@
         <div class="Trending-products-list d-flex flex-column">
           <div
             class="list d-flex justify-content-start align-items-center"
-            *ngFor="let list of homePage.trendingProducts.trendList"
+            *ngFor="let list of homePage[lang].trendingProducts.trendList"
           >
             <div class="list-img">
               <img src="{{ list.listImg }}" class="mw-100" alt="" />
             </div>
             <div class="list-body">
-              <p class="list-title m-0">{{ list.listTitle }}</p>
-              <p class="list-sale m-0">{{ list.listSale }}</p>
+              <p class="list-title m-0">{{ list.productListTitle }}</p>
+              <p class="list-sale m-0">{{ list.productListPrice }}</p>
             </div>
           </div>
         </div>

@@ -2,7 +2,10 @@
   <div class="title-head">{{ "homePage.DisItemTittle" | translate }}</div>
   <div class="discount">
     <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide *ngFor="let disPro of homePage.discountItem">
+      <ng-template
+        carouselSlide
+        *ngFor="let disPro of homePage[currentLang].discountItem"
+      >
         <div class="container">
           <div class="discount-item">
             <div
