@@ -6,6 +6,4 @@ import { Component, Input } from '@angular/core';
   templateUrl: './leatest-blog.component.html',
   styleUrls: ['./leatest-blog.component.scss'],
 })
-export class LeatestBlogComponent {
-  @Input() public homePage: any;
-}
+export class LeatestBlogComponent {}

@@ -1,5 +1,7 @@
 @import "../../../assets/scss/mixins";
 
+// start footer
+
 footer {
   background-color: #eeeffb;
   padding: 100px 0;
@@ -7,13 +9,6 @@ footer {
   @include respond-to(small) {
     padding: 10px 0;
   }
-
-  // h1 {
-  //   color: var(--black);
-  //   font-family: var(--font-family-josefin);
-  //   font-size: 38px;
-  //   font-weight: 700;
-  // }
 
   .sign-up {
     background-color: var(--white);
@@ -60,22 +55,30 @@ footer {
     margin-bottom: 25px;
     color: #8a8fb9;
     font-family: var(--font-family-josefin);
-    font-size: 22px;
+    font-size: var(--font-size-xlarge);
     font-weight: 600;
   }
 
   ul {
     text-align: left;
+    html[dir="rtl"] & {
+      text-align: right;
+    }
 
     li {
-      cursor: pointer;
-      color: #8a8fb9;
-      font-size: var(--font-size-medium);
-      font-weight: 400;
       padding-bottom: 21px;
+      a {
+        cursor: pointer;
+        color: #8a8fb9;
+        font-size: var(--font-size-medium);
+        font-weight: 400;
+      }
     }
   }
 }
+
+//end footer
+//start copyRight
 
 .copyRight {
   background: #e7e4f8;
@@ -113,6 +116,45 @@ footer {
           color: var(--white);
         }
       }
+    }
+  }
+}
+
+//end copyRights
+//start style for rtl
+
+:host-context([dir="rtl"]) {
+  footer {
+    input {
+      font-size: var(--font-size-large);
+    }
+    .sign {
+      p {
+        font-family: var(--font-family-lateef);
+        font-size: var(--font-size-xlarge);
+      }
+    }
+    p {
+      font-size: var(--font-size-xlarge);
+    }
+
+    h5 {
+      font-family: var(--font-family-lateef);
+      font-size: var(--font-size-xxlarge);
+    }
+
+    ul {
+      text-align: right;
+      li {
+        a {
+          font-size: var(--font-size-xlarge);
+        }
+      }
+    }
+  }
+  .copyRight {
+    p {
+      font-size: var(--font-size-xlarge);
     }
   }
 }

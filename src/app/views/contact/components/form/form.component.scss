@@ -9,24 +9,33 @@ h3 {
     font-size: 30px;
   }
 }
+p {
+  color: #8a8fb9;
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+  line-height: 25.6px; /* 160% */
+}
 form {
   input {
     height: 45px;
     padding-left: 11px;
     &::placeholder {
       color: #8a8fb9;
-      font-size: 16px;
+      font-size: var(--font-size-medium);
       font-weight: 400;
       letter-spacing: 0.16px;
       padding-left: 11px;
     }
+  }
+  .text {
+    margin-right: 10px;
   }
   textarea {
     height: 166px;
     resize: none;
     &::placeholder {
       color: #8a8fb9;
-      font-size: 16px;
+      font-size: var(--font-size-medium);
       font-weight: 400;
       letter-spacing: 0.16px;
       padding-left: 11px;
@@ -35,11 +44,42 @@ form {
   button {
     width: 157px;
     height: 44px;
-    background-color: #fb2e86;
-    color: #fff;
+    background-color: var(--accent-bg-color);
+    color: var(--white);
     font-family: var(--font-family-josefin);
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     font-weight: 400;
     line-height: 25.6px; /* 160% */
+  }
+}
+
+//start rtl
+
+:host-context([dir="rtl"]) {
+  h3 {
+    font-family: var(--font-family-lateef);
+  }
+  p {
+    font-size: var(--font-size-large);
+  }
+  form {
+    input {
+      &::placeholder {
+        font-size: var(--font-size-large);
+      }
+    }
+    .text {
+      margin-right: 0px;
+      margin-left: 10px;
+    }
+    textarea {
+      &::placeholder {
+        font-size: var(--font-size-large);
+      }
+    }
+    button {
+      font-family: var(--font-family-josefin);
+      font-size: var(--font-size-large);
+    }
   }
 }

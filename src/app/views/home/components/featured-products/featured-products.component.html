@@ -1,6 +1,6 @@
 <div class="featured-products" *ngIf="homePage">
   <div class="container">
-    <div class="title-head">{{ "homePage.feaProTittle" | translate }}</div>
+    <div class="title-head">{{ "HOME.feaProTittle" | translate }}</div>
     <owl-carousel-o [options]="customOptions">
       <ng-template
         carouselSlide
@@ -18,7 +18,7 @@
               <a
                 [routerLink]="['/products', featPro.id]"
                 class="btn feat-btn position-absolute"
-                >{{ "homePage.featuredPro.viewDetails" | translate }}</a
+                >{{ "HOME.viewDetails" | translate }}</a
               >
             </div>
             <div

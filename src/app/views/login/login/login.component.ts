@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../Shared/services/auth/auth.service';
 import { Router } from '@angular/router';
+import { LanguageService } from 'src/app/Shared/services/language/language.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private _AuthService: AuthService, private _Router: Router) {}
+  currentLang: string;
+  constructor(
+    private _AuthService: AuthService,
+    private languageService: LanguageService,
+    private _Router: Router
+  ) {
+    this.currentLang = this.languageService.getCurrentLang();
+  }
 
   error: string = '';
 
@@ -26,7 +34,7 @@ export class LoginComponent implements OnInit {
       if (response.message == 'Done') {
         localStorage.setItem('userToken', JSON.stringify(response.token));
         this._AuthService.setUserData();
-        this._Router.navigate(['/home']);
+        this._Router.navigate(['/', this.currentLang, 'home']);
       } else {
         this.error = 'email is already Email wrong';
       }

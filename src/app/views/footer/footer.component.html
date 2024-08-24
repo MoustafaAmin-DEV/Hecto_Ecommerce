@@ -78,22 +78,34 @@
         <h5>{{ "footer.pages.pagesTitle" | translate }}</h5>
         <ul>
           <li>
-            <a>{{ "footer.pages.pageList.pageList1" | translate }}</a>
+            <a [routerLink]="['/', currentLang, 'home']">{{
+              "footer.pages.pageList.home" | translate
+            }}</a>
           </li>
           <li>
-            <a>{{ "footer.pages.pageList.pageList2" | translate }}</a>
+            <a [routerLink]="['/', currentLang, 'about']">{{
+              "footer.pages.pageList.about" | translate
+            }}</a>
           </li>
           <li>
-            <a>{{ "footer.pages.pageList.pageList3" | translate }}</a>
+            <a [routerLink]="['/', currentLang, 'contact']">{{
+              "footer.pages.pageList.contact" | translate
+            }}</a>
           </li>
           <li>
-            <a>{{ "footer.pages.pageList.pageList4" | translate }}</a>
+            <a [routerLink]="['/', currentLang, 'pages']">{{
+              "footer.pages.pageList.pages" | translate
+            }}</a>
           </li>
           <li>
-            <a>{{ "footer.pages.pageList.pageList5" | translate }}</a>
+            <a [routerLink]="['/', currentLang, 'blog']">{{
+              "footer.pages.pageList.blog" | translate
+            }}</a>
           </li>
           <li>
-            <a>{{ "footer.pages.pageList.pageList6" | translate }}</a>
+            <a [routerLink]="['/', currentLang, 'shop']">{{
+              "footer.pages.pageList.shop" | translate
+            }}</a>
           </li>
         </ul>
       </div>

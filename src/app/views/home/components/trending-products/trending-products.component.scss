@@ -46,7 +46,7 @@
           color: rgba(21, 24, 117, 0.3);
           /* price cut */
           font-family: var(--font-family-josefin);
-          font-size: 12px;
+          font-size: var(--font-size-xsmall);
           font-weight: 400;
         }
       }
@@ -125,7 +125,7 @@
         color: var(--primary-color);
         /* price cut */
         font-family: var(--font-family-josefin);
-        font-size: 12px;
+        font-size: var(--font-size-xsmall);
         font-weight: 400;
       }
     }
@@ -149,5 +149,64 @@
 
   to {
     opacity: 1;
+  }
+}
+
+//start style for rtl
+:host-context([dir="rtl"]) {
+  .Trending-Products {
+    .trendPro {
+      .card-body {
+        .card-title {
+          font-size: var(--font-size-xlarge);
+        }
+
+        .saletrend {
+          .sale-new {
+            margin-left: 12px;
+
+            font-family: var(--font-family-josefin);
+            font-size: var(--font-size-medium);
+          }
+
+          .sale-old {
+            font-family: var(--font-family-josefin);
+            font-size: var(--font-size-medium);
+          }
+        }
+      }
+    }
+  }
+
+  .trend-offer {
+    .amont-offer {
+      padding: 34px 25px 0 0;
+    }
+
+    .title-offer {
+      font-family: var(--font-family-lateef);
+      font-size: 32px;
+    }
+
+    .link-offer {
+      font-size: var(--font-size-xlarge);
+    }
+  }
+  .Trending-products-list {
+    .list {
+      .list-body {
+        padding-right: 9px;
+
+        .list-title {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xlarge);
+        }
+
+        .list-sale {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-large);
+        }
+      }
+    }
   }
 }

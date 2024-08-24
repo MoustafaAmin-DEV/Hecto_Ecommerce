@@ -39,8 +39,23 @@ h3 {
   }
   p {
     color: #8a8fb9;
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     font-weight: 600;
     line-height: 25.6px; /* 160% */
+  }
+}
+
+:host-context([dir="rtl"]) {
+  h3 {
+    font-family: var(--font-family-lateef);
+  }
+  .contactWay {
+    .circle {
+      margin-left: 10px;
+      margin-right: 0px;
+    }
+    p {
+      font-size: var(--font-size-large);
+    }
   }
 }

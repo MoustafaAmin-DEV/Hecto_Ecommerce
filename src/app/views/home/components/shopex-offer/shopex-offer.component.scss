@@ -15,13 +15,30 @@
       h3 {
         color: var(--primary-color);
         font-family: var(--font-family-josefin);
-        font-size: 22px;
+        font-size: var(--font-size-xlarge);
         font-weight: 600;
       }
       p {
         color: #1a0b5b4d;
         font-size: var(--font-size-medium);
         font-weight: 700;
+      }
+    }
+  }
+}
+
+:host-context([dir="rtl"]) {
+  .section-offer {
+    margin-bottom: 135px;
+    .card {
+      .item-Offer {
+        h3 {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xxlarge);
+        }
+        p {
+          font-size: var(--font-size-large);
+        }
       }
     }
   }

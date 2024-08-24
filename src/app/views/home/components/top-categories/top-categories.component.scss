@@ -1,4 +1,5 @@
 @import "../../../../../assets/scss/mixins";
+//start top-categories
 
 .top-categories {
   margin-bottom: 136px;
@@ -41,7 +42,7 @@
     z-index: -1;
     color: var(--white);
     font-family: var(--font-family-josefin);
-    font-size: 12px;
+    font-size: var(--font-size-xsmall);
     font-weight: 400;
     border-radius: 2px;
     background: #08d15f;
@@ -99,5 +100,27 @@
     font-family: var(--font-family-josefin);
     font-size: var(--font-size-medium);
     font-weight: 400;
+  }
+}
+
+//end  top-categories
+//start style for rtl
+
+:host-context([dir="rtl"]) {
+  .top-categories {
+    .cate-btn {
+      font-family: var(--font-family-lateef);
+      font-size: var(--font-size-large);
+    }
+
+    .card-title {
+      font-family: var(--font-family-lateef);
+      font-size: var(--font-size-xlarge);
+    }
+
+    .card-text {
+      font-family: var(--font-family-lateef);
+      font-size: var(--font-size-xlarge);
+    }
   }
 }

@@ -5,15 +5,14 @@
         class="col-lg-7 col-12 m-auto gap-3 bg-white shadow p-5 rounded-2 d-flex flex-column"
       >
         <div class="title-register text-center">
-          <h1>Register</h1>
+          <h1>{{ "register.register" | translate }}</h1>
           <div *ngIf="error" class="alert alert-primary mb-0">
             <h5>
               {{ error }}
             </h5>
           </div>
           <p>
-            To register you an account, please add your information in the
-            following form.
+            {{ "register.description" | translate }}
           </p>
         </div>
         <form
@@ -25,14 +24,14 @@
           <div class="row gap-2">
             <div class="col">
               <div class="d-flex flex-column gap-2">
-                <label class="firstName-label" for="firstName"
-                  >First name</label
-                >
+                <label class="firstName-label" for="firstName">{{
+                  "register.firstName" | translate
+                }}</label>
                 <input
                   type="text"
                   id="firstName"
                   class="firstName-input"
-                  placeholder="First name"
+                  placeholder="{{ 'register.firstName' | translate }}"
                   formControlName="firstName"
                 />
                 <div
@@ -46,29 +45,34 @@
                   <p
                     *ngIf="registerForm.get('firstName')?.errors?.['required']"
                   >
-                    <strong>firstName</strong> is required
+                    <strong>{{ "register.firstName" | translate }}</strong>
+                    {{ "register.required" | translate }}
                   </p>
                   <p
                     *ngIf="registerForm.get('firstName')?.errors?.['minlength']"
                   >
-                    <strong>firstName</strong> minLength is 4
+                    <strong>{{ "register.firstName" | translate }}</strong>
+                    {{ "register.minLength" | translate }}
                   </p>
                   <p
                     *ngIf="registerForm.get('firstName')?.errors?.['maxlength']"
                   >
-                    <strong>firstName</strong> maxLength is 8
+                    <strong>{{ "register.firstName" | translate }}</strong>
+                    {{ "register.maxLength" | translate }}
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="d-flex flex-column gap-2">
-                <label class="lastName-label" for="lastName">Last name</label>
+                <label class="lastName-label" for="lastName">
+                  {{ "register.lastName" | translate }}</label
+                >
                 <input
                   type="text"
                   id="lastName"
                   class="lastName-input"
-                  placeholder="Last name"
+                  placeholder=" {{ 'register.lastName' | translate }}"
                   formControlName="lastName"
                 />
                 <div
@@ -80,17 +84,20 @@
                   role="alert"
                 >
                   <p *ngIf="registerForm.get('lastName')?.errors?.['required']">
-                    <strong>lastName</strong> is required
+                    <strong> {{ "register.lastName" | translate }}</strong>
+                    {{ "register.required" | translate }}
                   </p>
                   <p
                     *ngIf="registerForm.get('lastName')?.errors?.['minlength']"
                   >
-                    <strong>lastName</strong> minLength is 3
+                    <strong> {{ "register.lastName" | translate }}</strong>
+                    {{ "register.minLength" | translate }}
                   </p>
                   <p
                     *ngIf="registerForm.get('lastName')?.errors?.['maxlength']"
                   >
-                    <strong>lastName</strong> maxLength is 8
+                    <strong> {{ "register.lastName" | translate }}</strong>
+                    {{ "register.maxLength" | translate }}
                   </p>
                 </div>
               </div>
@@ -99,14 +106,14 @@
 
           <!-- Email input -->
           <div class="d-flex flex-column gap-2">
-            <label class="emailAddress-label" for="emailAddress"
-              >Email address</label
+            <label class="emailAddress-label" for="emailAddress">
+              {{ "register.emailAddress" | translate }}</label
             >
             <input
               type="email"
               id="emailAddress"
               class="emailAddress-input"
-              placeholder="Email address"
+              placeholder="{{ 'register.emailAddress' | translate }}"
               formControlName="email"
             />
             <div
@@ -118,22 +125,26 @@
               role="alert"
             >
               <p *ngIf="registerForm.get('email')?.errors?.['required']">
-                <strong>email</strong> is required
+                <strong>{{ "register.email" | translate }}</strong>
+                {{ "register.required" | translate }}
               </p>
               <p *ngIf="registerForm.get('email')?.errors?.['email']">
-                <strong>email</strong> invalid
+                <strong>{{ "register.email" | translate }}</strong
+                >{{ "register.invalid" | translate }}
               </p>
             </div>
           </div>
 
           <!-- Password input -->
           <div class="d-flex flex-column gap-2">
-            <label class="password-label" for="password">Password</label>
+            <label class="password-label" for="password">{{
+              "register.password" | translate
+            }}</label>
             <input
               type="password"
               id="password"
               class="password-input"
-              placeholder="Password"
+              placeholder="{{ 'register.password' | translate }}"
               formControlName="password"
             />
             <div
@@ -145,24 +156,26 @@
               role="alert"
             >
               <p *ngIf="registerForm.get('password')?.errors?.['required']">
-                <strong>password</strong> is required
+                <strong>{{ "register.password" | translate }}</strong>
+                {{ "register.required" | translate }}
               </p>
               <p *ngIf="registerForm.get('password')?.errors?.['pattern']">
-                <strong>password</strong> Must start with upper case
+                <strong>{{ "register.password" | translate }}</strong>
+                {{ "register.condition" | translate }}
               </p>
             </div>
           </div>
 
           <!-- Password input -->
           <div class="d-flex flex-column gap-2">
-            <label class="cPassword-label" for="cPassword"
-              >Confirm Password</label
-            >
+            <label class="cPassword-label" for="cPassword">
+              {{ "register.confirmPassword" | translate }}
+            </label>
             <input
               type="password"
               id="cPassword"
               class="cPassword-input"
-              placeholder="Confirm Password"
+              placeholder="{{ 'register.confirmPassword' | translate }}"
               formControlName="cPassword"
             />
             <div
@@ -171,8 +184,8 @@
               role="alert"
             >
               <p>
-                <strong>Your Password</strong> and confirmation Password do not
-                match
+                <strong>{{ "register.yourPassword" | translate }}</strong>
+                {{ "register.passwordCondition" | translate }}
               </p>
             </div>
           </div>
@@ -184,13 +197,18 @@
               class="btn btn-signUp"
               [disabled]="registerForm.invalid"
             >
-              Sign up
+              {{ "register.signUp" | translate }}
             </button>
           </div>
 
           <!-- Register buttons -->
           <div class="text-center hint-login">
-            <p>Do you have an Account? <a routerLink="/login">Login</a></p>
+            <p>
+              {{ "register.anAccount" | translate }}
+              <a [routerLink]="['/', currentLang, 'login']">{{
+                "register.login" | translate
+              }}</a>
+            </p>
           </div>
         </form>
       </div>

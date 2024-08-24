@@ -1,4 +1,7 @@
 @import "../../../../../assets/scss/mixins";
+
+//start discount-content
+
 .discount-content {
   margin: 150px 0 79px !important;
   ::ng-deep {
@@ -40,7 +43,7 @@
               height: 0;
               position: absolute;
               left: 0;
-              background-color: #fb2e86;
+              background-color: var(--accent-bg-color);
               top: 50%;
               transform: translate(0, -50%);
               z-index: -1;
@@ -55,7 +58,7 @@
               left: 50%;
               top: 50%;
               transform: translate(-50%, -50%);
-              font-size: 18px;
+              font-size: var(--font-size-large);
               font-weight: 400;
               transition: 0.3s;
             }
@@ -85,15 +88,15 @@
     .item-text {
       h2 {
         color: var(--primary-color);
-        font-family: Josefin Sans;
-        font-size: 35px;
+        font-family: var(--font-family-josefin);
+        font-size: var(--font-size-xxlarge);
         font-weight: 700;
         letter-spacing: 0.525px;
         margin-bottom: 16px;
       }
       span {
-        color: #fb2e86;
-        font-family: Josefin Sans;
+        color: var(--accent-text-color);
+        font-family: var(--font-family-josefin);
         font-size: 21px;
         font-weight: 400;
         letter-spacing: 0.315px;
@@ -119,7 +122,7 @@
           padding-left: 25px;
           position: relative;
           color: #b8b8dc;
-          font-size: 16px;
+          font-size: var(--font-size-medium);
           font-weight: 400;
           margin-bottom: 10px;
           @include respond-to(xlarge) {
@@ -138,13 +141,13 @@
         }
       }
       .btn {
-        color: #fff;
-        font-family: Josefin Sans;
+        color: var(--white-text);
+        font-family: var(--font-family-josefin);
         font-size: 17px;
         font-weight: 400;
         letter-spacing: 0.34px;
         padding: 20px 48px;
-        background-color: #fb2e86;
+        background-color: var(--accent-bg-color);
         border-radius: 0;
       }
     }
@@ -158,6 +161,39 @@
         max-height: 472px;
         z-index: -1;
         transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+//end discount-content
+//start style for rtl
+
+:host-context([dir="rtl"]) {
+  .discount-content {
+    .discount-item {
+      .item-text {
+        h2 {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xxlarge);
+        }
+        span {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xlarge);
+        }
+        p {
+          font-size: var(--font-size-xlarge);
+        }
+        ul {
+          li {
+            font-size: var(--font-size-xlarge);
+            padding-right: 22px;
+
+            &::before {
+              right: 0;
+            }
+          }
+        }
       }
     }
   }

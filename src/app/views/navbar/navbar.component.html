@@ -31,7 +31,7 @@
       </div>
       <div class="col-lg-6 col-4">
         <ul class="head-right d-flex align-items-center justify-content-end">
-          <li class="d-lg-block d-none" *ngIf="isLogin">
+          <li class="d-lg-block d-none">
             <a data-bs-toggle="dropdown" aria-expanded="false"
               >{{ "navbar.langENG" | translate }}
               <i class="fa-solid fa-chevron-down"></i>
@@ -40,7 +40,7 @@
               >
                 <li class="py-1 text-center">
                   <button
-                    class="dropdown-item pt-2 pb-2 pe-0"
+                    class="dropdown-item pt-2 pb-2 ps-1 pe-0"
                     href="#"
                     (click)="switchLanguage('en')"
                   >
@@ -230,7 +230,6 @@
 <div
   class="offcanvas offcanvas-start"
   [ngClass]="currentLang === 'ar' ? 'offcanvas-end' : ''"
-  *ngIf="isLogin"
   tabindex="-1"
   id="offcanvasExample"
   aria-labelledby="offcanvasExampleLabel"
@@ -262,7 +261,7 @@
             >
               <li class="py-1 text-center">
                 <button
-                  class="dropdown-item pt-2 pb-2 pe-0"
+                  class="dropdown-item pt-2 pb-2 ps-1 pe-0"
                   href="#"
                   (click)="switchLanguage('en')"
                 >
@@ -281,7 +280,8 @@
             </ul>
           </a>
         </li>
-        <li class="mx-md-3 mx-2">
+
+        <li class="mx-md-3 mx-2" *ngIf="isLogin">
           <a> {{ "navbar.fag" | translate }} </a>
         </li>
         <li class="nav-item mx-md-3 mx-2" *ngIf="isLogin">
@@ -292,7 +292,22 @@
         </li>
       </ul>
     </div>
-    <div class="icon mt-3">
+    <div class="Account" *ngIf="!isLogin">
+      <ul class="d-flex justify-content-around align-items-center">
+        <li>
+          <a [routerLink]="['/', currentLang, 'login']"
+            >{{ "navbar.loginAcc" | translate }}
+            <i class="fa-regular fa-user"></i
+          ></a>
+        </li>
+        <li>
+          <a [routerLink]="['/', currentLang, 'register']"
+            >{{ "navbar.regAcc" | translate }} <i class="fa-regular fa-user"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="icon mt-3" *ngIf="isLogin">
       <ul class="p-0 d-flex justify-content-center align-items-center">
         <li class="nav-item mx-3">
           <a class="nav-link"
@@ -309,7 +324,7 @@
         </li>
       </ul>
     </div>
-    <div class="nav mt-5">
+    <div class="nav mt-5" *ngIf="isLogin">
       <ul class="d-flex flex-column justify-content-sm-start align-items-start">
         <li class="nav-item mb-3" *ngIf="isLogin">
           <a
@@ -317,8 +332,7 @@
             [routerLink]="['/', currentLang, 'home']"
             routerLinkActive="active"
             >{{ "navbar.Home" | translate }}
-            <i class="ms-2 i fa-solid fa-caret-right"></i
-          ></a>
+          </a>
         </li>
         <li class="nav-item mb-3" *ngIf="isLogin">
           <a
@@ -373,11 +387,11 @@
         </li>
       </ul>
     </div>
-    <p class="mt-5">
+    <p class="mt-5" *ngIf="isLogin">
       <i class="fa-regular fa-envelope"></i>
       {{ "navbar.emailAdress" | translate }}
     </p>
-    <p class="mt-2">
+    <p class="mt-2" *ngIf="isLogin">
       <i class="fa-solid fa-phone-volume"></i>
       {{ "navbar.phoneNum" | translate }}
     </p>
