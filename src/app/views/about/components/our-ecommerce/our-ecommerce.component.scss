@@ -22,7 +22,7 @@
   }
   p {
     color: #8a8fb9;
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     font-weight: 600;
     line-height: 25.6px; /* 160% */
     margin-bottom: 25px;
@@ -30,11 +30,26 @@
   button {
     width: 157px;
     height: 44px;
-    background-color: #fb2e86;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--white);
     font-family: var(--font-family-josefin);
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     font-weight: 400;
     line-height: 25.6px; /*160%*/
+  }
+}
+
+:host-context([dir="rtl"]) {
+  .ourEcommerce {
+    h3 {
+      font-family: var(--font-family-lateef);
+    }
+    p {
+      font-size: var(--font-size-large);
+    }
+    button {
+      font-family: var(--font-family-lateef);
+      font-size: var(--font-size-xlarge);
+    }
   }
 }

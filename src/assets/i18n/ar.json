@@ -49,14 +49,15 @@
   "ABOUT": {
     "ourEcommerce": {
       "title": "تعرف على تاريخ أعمالنا التجارية الإلكترونية",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "description": "بيع الأثاث والديكور المنزلي عبر الإنترنت وجهة جديدة اجتاحت العالم مؤخرًا، لكن منذ زمنٍ ليس ببعيدٍ، كان يتوجّب على من يرغب بشراء قطع الأثاث والديكور المنزلي التوجه إلى المتجر وانتقاء القطع التي يريدها أو يقوم بطلب صُنع القطع خصيصًا،  لكن الآن لم يعد الأمر كما كان عليه من قبل، فالتكنولوجيا قد غيّرت حياتنا إلى الأبد كمتسوقين وبائعين ومستهلكين عاديين لأيّ نوعٍ من المُنتجات، فاليوم إذا أردت شراء منتجٍ ما يمكنك تصفح هاتفك اللوحي واختيار ما ترغب به ليصلك حتى عتبة بيتك.",
       "btn": "اتصل بنا"
-    }
+    },
+    "ourFeatures": "مميزاتنا"
   },
   "CONTACT": {
     "info": {
       "title": "معلومات عنا",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam."
+      "description": " شركتنا تأسست على رؤية مُختلفة ، تهدف إلى تقديم تجربة فريدة من نوعها في الأثاث المنزلي و التجاري ، حيث تمتاز بخبراتها الواسعة فأصبحت احد افضل الشركات الوطنية الرائدة في صناعة الأثاث والتصميم الداخلي  في المفروشات المكتبية والفندقية و المنزلية."
     },
     "contactWay": {
       "title": "تواصل معنا",
@@ -71,7 +72,7 @@
     },
     "form": {
       "tittle": "تواصل معنا",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "description": "  أرسل إستفسارك سيتم الرد عليكم خلال يومين.",
       "yourName": "الأسم*",
       "yourEmail": "البريد الألكتروني*",
       "Subject": "الموضوع*",

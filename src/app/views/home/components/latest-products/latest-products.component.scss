@@ -130,5 +130,16 @@
         font-size: var(--font-size-xlarge);
       }
     }
+    .latest_item {
+      .latest-pro {
+        .latest-text {
+          h2,
+          h3 {
+            font-family: var(--font-family-lateef);
+            font-size: var(--font-size-xlarge);
+          }
+        }
+      }
+    }
   }
 }

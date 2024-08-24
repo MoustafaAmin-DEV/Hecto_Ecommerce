@@ -49,14 +49,15 @@
   "ABOUT": {
     "ourEcommerce": {
       "title": "Know About Our Ecomerce Business, History",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "description": "Selling furniture and home décor online is a new trend that has recently swept the world, but not so long ago, people who wanted to buy furniture and home décor had to go to the store and pick out the pieces they wanted or order custom-made pieces.  Technology has changed our lives forever as shoppers, sellers and consumers of any kind of product. Today, if you want to buy a product, you can browse through your tablet, choose what you want and have it delivered to your doorstep.",
       "btn": "Contact us"
-    }
+    },
+    "ourFeatures": "Our Features"
   },
   "CONTACT": {
     "info": {
       "title": "Information About us",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam."
+      "description": "Our company was founded on a different vision, aiming to provide a unique experience in home and commercial furniture, where it is characterised by its extensive experience to become one of the best national leading companies in the furniture industry and interior design in office, hotel and home furnishings."
     },
     "contactWay": {
       "title": "Contact Us",
@@ -71,7 +72,7 @@
     },
     "form": {
       "tittle": "Get In Touch",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.",
+      "description": " Send your enquiry and you will receive a reply within two days.",
       "yourName": "Your Name*",
       "yourEmail": "Your E-mail",
       "Subject": "Subject*",

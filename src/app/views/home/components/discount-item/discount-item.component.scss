@@ -174,20 +174,20 @@
     .discount-item {
       .item-text {
         h2 {
-          font-family: var(--font-family-josefin);
+          font-family: var(--font-family-lateef);
           font-size: var(--font-size-xxlarge);
         }
         span {
-          font-family: var(--font-family-josefin);
-          font-size: 21px;
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xlarge);
         }
         p {
-          font-size: 17px;
+          font-size: var(--font-size-xlarge);
         }
         ul {
           li {
-            font-size: var(--font-size-medium);
-            padding-right: var(--font-size-xlarge);
+            font-size: var(--font-size-xlarge);
+            padding-right: 22px;
 
             &::before {
               right: 0;

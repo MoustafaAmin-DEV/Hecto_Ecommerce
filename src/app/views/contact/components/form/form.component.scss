@@ -9,6 +9,12 @@ h3 {
     font-size: 30px;
   }
 }
+p {
+  color: #8a8fb9;
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+  line-height: 25.6px; /* 160% */
+}
 form {
   input {
     height: 45px;
@@ -52,6 +58,9 @@ form {
 :host-context([dir="rtl"]) {
   h3 {
     font-family: var(--font-family-lateef);
+  }
+  p {
+    font-size: var(--font-size-large);
   }
   form {
     input {

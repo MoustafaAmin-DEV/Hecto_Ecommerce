@@ -1,4 +1,6 @@
 @import "../../../../../assets/scss/mixins";
+//start our-features
+
 .ourFeatures {
   margin-top: 135px;
   margin-bottom: 135px;
@@ -35,6 +37,29 @@
         color: #1a0b5b4d;
         font-size: var(--font-size-medium);
         font-weight: 700;
+      }
+    }
+  }
+}
+
+//end our-features
+//start style for rtl
+
+:host-context([dir="rtl"]) {
+  .ourFeatures {
+    .title-head {
+      font-family: var(--font-family-lateef);
+      font-size: 60px;
+    }
+    .card {
+      .item-Offer {
+        h3 {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xxlarge);
+        }
+        p {
+          font-size: var(--font-size-large);
+        }
       }
     }
   }

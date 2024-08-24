@@ -26,3 +26,20 @@
     }
   }
 }
+
+:host-context([dir="rtl"]) {
+  .section-offer {
+    margin-bottom: 135px;
+    .card {
+      .item-Offer {
+        h3 {
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xxlarge);
+        }
+        p {
+          font-size: var(--font-size-large);
+        }
+      }
+    }
+  }
+}

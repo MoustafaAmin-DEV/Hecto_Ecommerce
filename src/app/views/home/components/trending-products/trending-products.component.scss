@@ -154,6 +154,30 @@
 
 //start style for rtl
 :host-context([dir="rtl"]) {
+  .Trending-Products {
+    .trendPro {
+      .card-body {
+        .card-title {
+          font-size: var(--font-size-xlarge);
+        }
+
+        .saletrend {
+          .sale-new {
+            margin-left: 12px;
+
+            font-family: var(--font-family-josefin);
+            font-size: var(--font-size-medium);
+          }
+
+          .sale-old {
+            font-family: var(--font-family-josefin);
+            font-size: var(--font-size-medium);
+          }
+        }
+      }
+    }
+  }
+
   .trend-offer {
     .amont-offer {
       padding: 34px 25px 0 0;
@@ -174,13 +198,13 @@
         padding-right: 9px;
 
         .list-title {
-          font-family: var(--font-family-josefin);
-          font-size: var(--font-size-medium);
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-xlarge);
         }
 
         .list-sale {
-          font-family: var(--font-family-josefin);
-          font-size: var(--font-size-xsmall);
+          font-family: var(--font-family-lateef);
+          font-size: var(--font-size-large);
         }
       }
     }
