@@ -170,6 +170,38 @@
 //start style for rtl
 
 :host-context([dir="rtl"]) {
+  ::ng-deep {
+    .owl-carousel {
+      .owl-dots {
+        .owl-dot {
+          span {
+            &:first-child::before,
+            &:last-child::before,
+            &::before {
+              font-size: var(--font-size-xlarge);
+            }
+            &::before {
+              content: "كرسي بلاستيك";
+            }
+          }
+          &:first-child {
+            span {
+              &::before {
+                content: "كرسي خشب";
+              }
+            }
+          }
+          &:last-child {
+            span {
+              &::before {
+                content: "تشكيلة أريكة";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .discount-content {
     .discount-item {
       .item-text {

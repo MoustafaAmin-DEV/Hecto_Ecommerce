@@ -59,7 +59,7 @@
               </ul>
             </a>
           </li>
-          <li class="d-lg-block d-none" *ngIf="isLogin">
+          <!-- <li class="d-lg-block d-none" *ngIf="isLogin">
             <a data-bs-toggle="dropdown" aria-expanded="false"
               >{{ "navbar.coinUSD" | translate }}
               <i class="fa-solid fa-chevron-down"></i>
@@ -83,7 +83,7 @@
                 </li>
               </ul>
             </a>
-          </li>
+          </li> -->
           <li class="d-lg-block d-none" *ngIf="!isLogin">
             <a [routerLink]="['/', currentLang, 'login']"
               >{{ "navbar.loginAcc" | translate }}
@@ -148,8 +148,7 @@
               [routerLink]="['/', currentLang, 'home']"
               routerLinkActive="active"
               >{{ "navbar.Home" | translate }}
-              <i class="fa-solid fa-chevron-down"></i
-            ></a>
+            </a>
           </li>
           <li class="nav-item" *ngIf="isLogin">
             <a
