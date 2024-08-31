@@ -15,17 +15,6 @@
       "featured": "Featured",
       "SpecialOffer": "Special Offer"
     },
-    "leatestBlog": {
-      "name1": "SaberAli",
-      "date1": "21 August,2020",
-      "leatestTilttle1": "Top esssential Trends in 2021",
-      "leatestDescription1": "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      "leatestLink": "Read More",
-      "name2": "Surfauxion",
-      "date2": "21 August,2020",
-      "leatestTilttle2": "Top esssential Trends in 2021",
-      "leatestDescription2": "More off this less hello samlande lied much over tightly circa horse taped mightly"
-    },
     "newslater": {
       "tittle": "Get Leatest Update By Subscribe\n Our Newslater"
     },
@@ -95,12 +84,8 @@
   "navbar": {
     "emailAdress": "mhhasanul@gmail.com",
     "phoneNum": "(12345)67890",
-    "langENG": "English",
-    "langARB": "Arabic",
-    "langSPA": "Spanish",
-    "coinUSD": "USD",
-    "coinEGP": "EGP",
-    "coinIQD": "IQD",
+    "langEN": "English",
+    "langAR": "Arabic",
     "loginAcc": "Login",
     "regAcc": "Register",
     "logoutAcc": "Logout",
@@ -155,13 +140,8 @@
   "Login": {
     "login": "Login",
     "description": "Please login using account detail bellow.",
-    "emailAddress": "Email address",
-    "email": "email",
-    "required": "is required",
-    "invalid": "is invalid",
-    "condition": " Must start with upper case",
+    "email": "Email address",
     "password": "password",
-    "forgot": "Forgot your password?",
     "noAccount": "Don’t have an Account?",
     "createAcc": "Create account",
     "signIn": "Sign In"
@@ -171,26 +151,24 @@
     "description": "To register you an account, please add your information in the following form.",
     "firstName": "First name",
     "lastName": "Last name",
-    "minLength": "minLength is 4",
-    "maxLength": "maxLength is 8",
-    "emailAddress": "Email address",
-    "email": "email",
-    "required": "is required",
-    "invalid": "is invalid",
-    "condition": " Must start with upper case",
+    "email": "Email",
     "password": "password",
     "confirmPassword": "confirm password",
-    "yourPassword": "Your Password",
-    "passwordCondition": "and confirmation Password do not match",
     "anAccount": "Do you have an Account?",
-    "signUp": "Sign up",
+    "signUp": "Sign Up",
     "login": "Login"
   },
-  "resetPassword": {
-    "resetPassword": "Reset Password",
-    "description": "  Provide the email address associated with your account to recover your password.",
-    "emailAddress": "Email address",
-    "login": "Login",
-    "register": "Register"
+  "ERRORS": {
+    "error_minLength": "Must be at least 4 characters",
+    "error_maxLength": "Must be at most 8 characters",
+    "error_Maximum": "Must be at most 15 characters",
+    "error_required": "is Required",
+    "error_Cpassword": "Password and confirmation Password do not match",
+    "error_email": "please enter a valid email address",
+    "error_password": "Password must be at least 8 characters and contain uppercase and lowercase letters and numbers",
+    "error_character_arabic":"Arabic characters are not allowed",
+    "error_email_exists":"This email already exists",
+    "error_email_not_exists":"This email does not exist",
+    "error_incorrect_password":"Incorrect Password"
   }
 }

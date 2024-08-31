@@ -6,7 +6,7 @@
       <div class="col-lg-6 col-8 d-sm-none d-block">
         <div class="logo">
           <a [routerLink]="['/', currentLang, 'home']"
-            ><img src="../../../../../assets/images/home/logo.svg" alt=""
+            ><img src="../../../assets/images/home/Icon/logo.svg" alt=""
           /></a>
         </div>
       </div>
@@ -14,16 +14,18 @@
         <div class="d-flex align-items-center" *ngIf="isLogin">
           <div class="envelope">
             <p>
-              <span
+              <span *ngIf="userEmail$ | async as userEmail"
                 ><i class="fa-regular fa-envelope"></i>
-                {{ "navbar.emailAdress" | translate }}</span
-              >
+                {{ userEmail }}
+              </span>
             </p>
           </div>
           <div class="phone">
             <p>
-              <span><i class="fa-solid fa-phone-volume"></i></span
-              >{{ "navbar.phoneNum" | translate }}
+              <span *ngIf="userName$ | async as userName"
+                ><i class="fa-regular fa-user"></i>
+                {{ userName }}
+              </span>
             </p>
           </div>
         </div>
@@ -33,7 +35,7 @@
         <ul class="head-right d-flex align-items-center justify-content-end">
           <li class="d-lg-block d-none">
             <a data-bs-toggle="dropdown" aria-expanded="false"
-              >{{ "navbar.langENG" | translate }}
+              >{{ "navbar.langEN" | translate }}
               <i class="fa-solid fa-chevron-down"></i>
               <ul
                 class="shadow dropdown-menu p-0 border-0 rounded-0 position-absolute"
@@ -44,7 +46,7 @@
                     href="#"
                     (click)="switchLanguage('en')"
                   >
-                    {{ "navbar.langENG" | translate }}
+                    {{ "navbar.langEN" | translate }}
                   </button>
                 </li>
                 <li class="py-1 text-center">
@@ -53,60 +55,35 @@
                     href="#"
                     (click)="switchLanguage('ar')"
                   >
-                    {{ "navbar.langARB" | translate }}
+                    {{ "navbar.langAR" | translate }}
                   </button>
-                </li>
-              </ul>
-            </a>
-          </li>
-          <li class="d-lg-block d-none" *ngIf="isLogin">
-            <a data-bs-toggle="dropdown" aria-expanded="false"
-              >{{ "navbar.coinUSD" | translate }}
-              <i class="fa-solid fa-chevron-down"></i>
-              <ul
-                class="shadow dropdown-menu p-0 border-0 rounded-0 position-absolute"
-              >
-                <li class="ms-2 py-1 text-center">
-                  <a class="dropdown-item pt-2 pb-2 pe-0" href="#">
-                    {{ "navbar.coinUSD" | translate }}</a
-                  >
-                </li>
-                <li class="ms-2 me-2 py-2 text-center">
-                  <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ "navbar.coinEGP" | translate }}</a
-                  >
-                </li>
-                <li class="ms-2 me-2 py-2 text-center">
-                  <a class="dropdown-item pt-2 pb-2 ps-1 pe-0" href="#">
-                    {{ "navbar.coinIQD" | translate }}
-                  </a>
                 </li>
               </ul>
             </a>
           </li>
           <li class="d-lg-block d-none" *ngIf="!isLogin">
             <a [routerLink]="['/', currentLang, 'login']"
-              >{{ "navbar.loginAcc" | translate }}
-              <i class="fa-regular fa-user"></i
-            ></a>
+              ><i class="fa-solid fa-right-to-bracket"></i>
+              {{ "navbar.loginAcc" | translate }}
+            </a>
           </li>
           <li class="d-lg-block d-none" *ngIf="!isLogin">
             <a [routerLink]="['/', currentLang, 'register']"
-              >{{ "navbar.regAcc" | translate }}
-              <i class="fa-regular fa-user"></i
-            ></a>
+              ><i class="fa-solid fa-user-plus"></i>
+              {{ "navbar.regAcc" | translate }}
+            </a>
           </li>
           <li class="d-lg-block d-none" *ngIf="isLogin">
             <a (click)="callLogout()"
-              >{{ "navbar.logoutAcc" | translate }}
-              <i class="fa-regular fa-user"></i
-            ></a>
+              ><i class="fa-solid fa-right-from-bracket"></i>
+              {{ "navbar.logoutAcc" | translate }}
+            </a>
           </li>
           <li class="d-lg-block d-none" *ngIf="isLogin">
             <a href="#"
-              >{{ "navbar.wishlist" | translate
-              }}<i class="wish fa-regular fa-heart"></i
-            ></a>
+              ><i class="wish fa-regular fa-heart"></i>
+              {{ "navbar.wishlist" | translate }}</a
+            >
           </li>
           <li class="d-lg-block d-none" *ngIf="isLogin">
             <a><i class="fa-solid fa-cart-shopping"></i></a>
@@ -137,21 +114,20 @@
     <div class="d-flex align-content-center justify-content-between">
       <div class="logo d-flex align-items-center">
         <a [routerLink]="['/', currentLang, 'home']"
-          ><img src="../../../../../assets/images/home/logo.svg" alt=""
+          ><img src="../../../../../assets/images/home/Icon/logo.svg" alt=""
         /></a>
       </div>
-      <div class="d-lg-block d-none align-self-center">
+      <div class="d-lg-block d-none align-self-center" *ngIf="isLogin">
         <ul class="nav">
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'home']"
               routerLinkActive="active"
-              >{{ "navbar.Home" | translate }}
-              <i class="fa-solid fa-chevron-down"></i
-            ></a>
+              >{{ "navbar.Home" | translate }}</a
+            >
           </li>
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'pages']"
@@ -160,7 +136,7 @@
               {{ "navbar.Pages" | translate }}</a
             >
           </li>
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'products']"
@@ -168,7 +144,7 @@
               >{{ "navbar.Products" | translate }}</a
             >
           </li>
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'about']"
@@ -177,7 +153,7 @@
               {{ "navbar.About" | translate }}</a
             >
           </li>
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'blog']"
@@ -185,7 +161,7 @@
               >{{ "navbar.Blog" | translate }}
             </a>
           </li>
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'shop']"
@@ -194,7 +170,7 @@
               {{ "navbar.Shop" | translate }}</a
             >
           </li>
-          <li class="nav-item" *ngIf="isLogin">
+          <li class="nav-item">
             <a
               class="nav-link"
               [routerLink]="['/', currentLang, 'contact']"
@@ -239,7 +215,7 @@
   >
     <h5 class="offcanvas-title" id="offcanvasLabel">
       <a [routerLink]="['/', currentLang, 'home']"
-        ><img src="../../../../../assets/images/home/logo.svg" alt=""
+        ><img src="../../../assets/images/home/Icon/logo.svg" alt=""
       /></a>
     </h5>
     <button
@@ -254,7 +230,7 @@
       <ul class="p-0 d-flex justify-content-center align-items-center">
         <li class="nav-item mx-md-3 mx-2">
           <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"
-            >{{ "navbar.langENG" | translate }}
+            >{{ "navbar.langEN" | translate }}
             <i class="fa-solid fa-chevron-down"></i>
             <ul
               class="shadow lang dropdown-menu p-0 border-0 rounded-0 position-absolute"
@@ -265,7 +241,7 @@
                   href="#"
                   (click)="switchLanguage('en')"
                 >
-                  {{ "navbar.langENG" | translate }}
+                  {{ "navbar.langEN" | translate }}
                 </button>
               </li>
               <li class="py-1 text-center">
@@ -274,7 +250,7 @@
                   href="#"
                   (click)="switchLanguage('ar')"
                 >
-                  {{ "navbar.langARB" | translate }}
+                  {{ "navbar.langAR" | translate }}
                 </button>
               </li>
             </ul>
@@ -326,7 +302,7 @@
     </div>
     <div class="nav mt-5" *ngIf="isLogin">
       <ul class="d-flex flex-column justify-content-sm-start align-items-start">
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'home']"
@@ -334,7 +310,7 @@
             >{{ "navbar.Home" | translate }}
           </a>
         </li>
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'pages']"
@@ -343,7 +319,7 @@
             {{ "navbar.Pages" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'products']"
@@ -351,7 +327,7 @@
             >{{ "navbar.Products" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'about']"
@@ -360,7 +336,7 @@
             {{ "navbar.About" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'blog']"
@@ -368,7 +344,7 @@
             >{{ "navbar.Blog" | translate }}
           </a>
         </li>
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'shop']"
@@ -377,7 +353,7 @@
             {{ "navbar.Shop" | translate }}</a
           >
         </li>
-        <li class="nav-item mb-3" *ngIf="isLogin">
+        <li class="nav-item mb-3">
           <a
             class="nav-link"
             [routerLink]="['/', currentLang, 'contact']"

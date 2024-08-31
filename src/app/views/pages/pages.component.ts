@@ -11,9 +11,9 @@ export class PagesComponent implements OnInit {
   constructor(public apiService: SharedService) {}
 
   ngOnInit(): void {
-    this.apiService.dataShopPage().subscribe((data) => {
-      this.dataShopPage = data;
-    });
+    // this.apiService.dataShopPage().subscribe((data) => {
+    //   this.dataShopPage = data;
+    // });
     const itemList: HTMLElement | null = document.querySelector('.item-list');
     const gridViewBtn: HTMLElement | null =
       document.getElementById('grid-active-btn');

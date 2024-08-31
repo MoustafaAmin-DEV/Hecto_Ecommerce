@@ -37,12 +37,12 @@
       <div class="row product_cart">
         <div
           class="latest_item col-lg-4 col-md-6 col-12"
-          *ngFor="let product of homePage[lang].latestPro[productType]"
+          *ngFor="let product of homePage.latestPro[productType]"
         >
           <div class="">
             <div class="card latest-pro border-0 mb-4">
               <div class="card-img-top position-relative latest-img">
-                <img
+                <!-- <img
                   src="{{ product.imgvector }}"
                   alt=""
                   class="position-absolute vector"
@@ -52,7 +52,7 @@
                   class="position-absolute hint-sale"
                   [ngClass]="{ 'd-none': product.latestBanner === '' }"
                   >{{ product.latestBanner }}</span
-                >
+                > -->
                 <img src="{{ product.latestImg }}" alt="" />
                 <div class="icon-latest position-absolute d-flex flex-column">
                   <a href="#"><i class="fa fa-cart-shopping"></i></a>

@@ -1,49 +1,86 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { jwtDecode } from 'jwt-decode';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, map, Observable } from 'rxjs';
 import { LanguageService } from '../language/language.service';
+import { User } from '../../interfaces/auth';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
   currentLang: string;
-  userData = new BehaviorSubject(null);
+  private userSubject: BehaviorSubject<any | null> = new BehaviorSubject<any | null>(null);
+  public userData: Observable<any | null> = this.userSubject.asObservable();
+  private baseUrl = 'http://localhost:3000/users';
   constructor(
     private _HttpClient: HttpClient,
     private languageService: LanguageService,
     private _Router: Router
   ) {
     this.currentLang = this.languageService.getCurrentLang();
-    if (localStorage.getItem('userToken') != null) {
-      this.setUserData();
+    const storedUser = localStorage.getItem('currentUser');
+    if (storedUser) {
+      this.userSubject.next(JSON.parse(storedUser));
     }
   }
 
-  setUserData(): void {
-    let encodedToken = JSON.stringify(localStorage.getItem('userToken'));
-    let decodedToken: any = jwtDecode(encodedToken);
-    this.userData.next(decodedToken);
-  }
-  register(userData: object): Observable<any> {
-    return this._HttpClient.post(
-      'https://register-for-test.vercel.app/auth/signup',
-      userData
-    );
+  register(user: User): Observable<any> {
+    return this._HttpClient.post(this.baseUrl, user);
   }
 
-  login(userData: object): Observable<any> {
-    return this._HttpClient.post(
-      'https://register-for-test.vercel.app/auth/signin',
-      userData
-    );
+  checkEmailExists(email: string): Observable<any> {
+    return this._HttpClient.get<any[]>(`${this.baseUrl}?email=${email}`);
+  }
+
+  getUserFromLocalStorage(): any {
+    return JSON.parse(localStorage.getItem('currentUser') || '{}');
+  }
+
+
+  login(email: string, password: string): Observable<any> {
+    return this._HttpClient.get<any[]>(`${this.baseUrl}?email=${email}&password=${password}`);
+  }
+
+  saveUserToLocalStorage(user: any): void {
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    this.userSubject.next(user);
   }
 
   logOut(): void {
-    localStorage.removeItem('userToken');
-    this.userData.next(null);
+    localStorage.removeItem('currentUser');
+    this.userSubject.next(null);
     this._Router.navigate(['/', this.currentLang, 'login']);
+  }
+
+  isLoggedIn(): boolean {
+    return this.userSubject.getValue() !== null;
+  }
+
+  getUserEmail(): Observable<string | null> {
+    return this.userData.pipe(
+      map(user => user ? user.email : null)
+    );
+  }
+
+  getUserName(): Observable<string | null> {
+    return this.userData.pipe(
+      map(user => user ? user.firstName + ' ' + user.lastName : null)
+    );
+  }
+
+  checkUser(email: string, password: string): Observable<any> {
+    return this._HttpClient.get(`http://localhost:3000/users?email=${email}`).pipe(
+      map((users: any) => {
+        const user = users.find((u: any) => u.email === email && u.password === password);
+        if (user) {
+          return { valid: true, user };
+        } else if (users.length > 0) {
+          return { valid: false, message: 'Incorrect password' };
+        } else {
+          return { valid: false, message: 'User not found' };
+        }
+      })
+    );
   }
 }

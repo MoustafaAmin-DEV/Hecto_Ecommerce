@@ -20,7 +20,7 @@ export class HomeComponent {
   ngOnInit() {
     this.apiService.datahomePage().subscribe((data) => {
       console.log(data);
-      this.datahomePage = data;
+      this.datahomePage = data.homePage;
     });
   }
 }

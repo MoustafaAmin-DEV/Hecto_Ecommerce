@@ -15,7 +15,6 @@ import { HomeComponent } from './views/home/home.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { RegisterComponent } from './views/login/register/register.component';
 import { LoginComponent } from './views/login/login/login.component';
-import { ResetPasswordComponent } from './views/login/reset-password/reset-password.component';
 import { AuthClassGuard } from './Shared/services/auth/auth-class.guard';
 import { AboutModule } from './views/about/about.module';
 import { AboutComponent } from './views/about/about.component';
@@ -40,20 +39,20 @@ const routes: Routes = [
       import('./views/shop/shop.module').then(() => ShopModule),
     component: ShopComponent,
   },
-  {
-    path: ':lang/blog',
-    canActivate: [AuthClassGuard],
-    loadChildren: () =>
-      import('./views/blog/blog.module').then(() => BlogModule),
-    component: BlogComponent,
-  },
-  {
-    path: ':lang/pages',
-    canActivate: [AuthClassGuard],
-    loadChildren: () =>
-      import('./views/pages/pages.module').then(() => PagesModule),
-    component: PagesComponent,
-  },
+  // {
+  //   path: ':lang/blog',
+  //   canActivate: [AuthClassGuard],
+  //   loadChildren: () =>
+  //     import('./views/blog/blog.module').then(() => BlogModule),
+  //   component: BlogComponent,
+  // },
+  // {
+  //   path: ':lang/pages',
+  //   canActivate: [AuthClassGuard],
+  //   loadChildren: () =>
+  //     import('./views/pages/pages.module').then(() => PagesModule),
+  //   component: PagesComponent,
+  // },
   {
     path: ':lang/about',
     loadChildren: () =>
@@ -82,10 +81,6 @@ const routes: Routes = [
     path: ':lang/login',
     component: LoginComponent,
   },
-  {
-    path: ':lang/resetPassword',
-    component: ResetPasswordComponent,
-  },
   { path: '**', component: NotFoundComponent },
 ];
 
@@ -93,4 +88,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

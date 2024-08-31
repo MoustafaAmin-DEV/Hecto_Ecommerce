@@ -1,50 +1,47 @@
+<div *ngIf="isLoading" class="loading-spinner">
+  <div class="spinner">
+    <img src="../../../../assets/images/home/Icon/furniture.gif" alt="" />
+  </div>
+</div>
 <div class="login-form">
   <div class="container">
     <div class="row min-vh-100">
       <div
-        class="col-lg-6 col-12 m-auto gap-3 bg-white shadow p-5 rounded-2 d-flex flex-column"
+        class="col-lg-6 col-12 m-auto gap-3 bg-white shadow p-sm-5 px-3 py-5 rounded-2 d-flex flex-column"
       >
         <div class="title-login text-center">
           <h1>{{ "Login.login" | translate }}</h1>
-          <div *ngIf="error" class="alert alert-primary mb-0">
-            <h5>
-              {{ error }}
-            </h5>
-          </div>
           <p>{{ "Login.description" | translate }}</p>
         </div>
         <form
           class="d-flex gap-4 flex-column"
           [formGroup]="loginForm"
-          (ngSubmit)="submitLogin(loginForm)"
+          (ngSubmit)="login()"
         >
+          <div *ngIf="errorMessage" class="error-message">
+            <p class="error-text">{{ errorMessage }}</p>
+          </div>
           <!-- Email input -->
           <div class="d-flex flex-column gap-2">
             <label class="emailAddress-label" for="emailAddress">
-              {{ "Login.emailAddress" | translate }}</label
+              {{ "Login.email" | translate }}</label
             >
             <input
               type="email"
               id="emailAddress"
               class="emailAddress-input"
               formControlName="email"
-              placeholder="{{ 'Login.emailAddress' | translate }}"
+              [placeholder]="'Login.email' | translate"
             />
             <div
               *ngIf="
                 loginForm.get('email')?.errors &&
                 loginForm.get('email')?.touched
               "
-              class="alert alert-primary mb-0"
-              role="alert"
+              class="error-message mb-0"
             >
-              <p *ngIf="loginForm.get('email')?.errors?.['required']">
-                <strong>{{ "Login.email" | translate }}</strong>
-                {{ "Login.required" | translate }}
-              </p>
-              <p *ngIf="loginForm.get('email')?.errors?.['email']">
-                <strong>{{ "Login.email" | translate }}</strong>
-                {{ "Login.invalid" | translate }}
+              <p class="error-text" *ngIf="getErrorMessage('email')">
+                {{ getErrorMessage("email") | translate }}
               </p>
             </div>
           </div>
@@ -66,46 +63,31 @@
                 loginForm.get('password')?.errors &&
                 loginForm.get('password')?.touched
               "
-              class="alert alert-primary mb-0"
-              role="alert"
+              class="error-message mb-0"
             >
-              <p *ngIf="loginForm.get('password')?.errors?.['required']">
-                <strong>{{ "Login.password" | translate }}</strong>
-                {{ "Login.required" | translate }}
-              </p>
-              <p *ngIf="loginForm.get('password')?.errors?.['pattern']">
-                <strong>{{ "Login.password" | translate }}</strong>
-                {{ "Login.condition" | translate }}
+              <p class="error-text" *ngIf="getErrorMessage('password')">
+                {{ getErrorMessage("password") | translate }}
               </p>
             </div>
           </div>
 
           <!-- Submit button -->
-          <div class="d-flex forgot-pass">
-            <a [routerLink]="['/', currentLang, 'resetPassword']">{{
-              "Login.forgot" | translate
-            }}</a>
-          </div>
+          <div class="d-flex align-items-center flex-column flex-md-row">
+            <div class="d-flex col-md-5 col-12">
+              <button type="submit" class="btn btn-signIn">
+                {{ "Login.signIn" | translate }}
+              </button>
+            </div>
 
-          <!-- Submit button -->
-          <div class="d-flex">
-            <button
-              type="submit"
-              class="btn btn-signIn"
-              [disabled]="loginForm.invalid"
-            >
-              {{ "Login.signIn" | translate }}
-            </button>
-          </div>
-
-          <!-- Register buttons -->
-          <div class="text-center hint-register">
-            <p>
-              {{ "Login.noAccount" | translate }}
-              <a [routerLink]="['/', currentLang, 'register']">{{
-                "Login.createAcc" | translate
-              }}</a>
-            </p>
+            <!-- Register buttons -->
+            <div class="hint-register col-md-7 col-12 mx-3 my-3 my-md-0">
+              <p>
+                {{ "Login.noAccount" | translate }}
+                <a [routerLink]="['/', currentLang, 'register']">{{
+                  "Login.createAcc" | translate
+                }}</a>
+              </p>
+            </div>
           </div>
         </form>
       </div>

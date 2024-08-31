@@ -17,8 +17,8 @@ export class ProductsComponent implements OnInit {
     this.id = _ActivatedRoute.snapshot.params['id'];
   }
   ngOnInit(): void {
-    this._SharedService.ProductDetails(this.id).subscribe((response) => {
-      this.prodetails = response;
-    });
+    // this._SharedService.ProductDetails(this.id).subscribe((response) => {
+    //   this.prodetails = response;
+    // });
   }
 }

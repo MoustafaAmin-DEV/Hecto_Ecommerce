@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.apiService.datahomePage().subscribe((data) => {
-      this.datahomePage = data;
+      this.datahomePage = data.homePage;
     });
   }
 }

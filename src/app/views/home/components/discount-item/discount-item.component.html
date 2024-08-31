@@ -2,10 +2,7 @@
   <div class="title-head">{{ "HOME.DisItemTittle" | translate }}</div>
   <div class="discount">
     <owl-carousel-o [options]="customOptions">
-      <ng-template
-        carouselSlide
-        *ngFor="let disPro of homePage[currentLang].discountItem"
-      >
+      <ng-template carouselSlide *ngFor="let disPro of homePage.discountItem">
         <div class="container">
           <div class="discount-item">
             <div
@@ -29,7 +26,7 @@
                 <div class="item-img position-relative">
                   <img src="{{ disPro.imagPro }}" alt="" class="mw-100" />
                   <img
-                    src="../../../../../assets/images/home/ellipse-64.png"
+                    src="../../../../../assets/images/home/Slider/circle-round-bg.svg"
                     alt=""
                     class="position-absolute ellipse"
                   />

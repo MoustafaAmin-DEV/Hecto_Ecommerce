@@ -1,4 +1,4 @@
-<footer>
+<footer *ngIf="isLogin">
   <div class="container">
     <div class="row">
       <div
@@ -6,7 +6,7 @@
       >
         <div class="logo mb-3">
           <a routerLink="/"
-            ><img src="../../../../../assets/images/home/logo.svg" alt=""
+            ><img src="../../../../../assets/images/home/Icon/logo.svg" alt=""
           /></a>
         </div>
         <div
@@ -112,7 +112,7 @@
     </div>
   </div>
 </footer>
-<div class="copyRight d-flex align-items-center py-3 py-sm-0">
+<div class="copyRight d-flex align-items-center py-3 py-sm-0" *ngIf="isLogin">
   <div class="container">
     <div class="copyRight">
       <p>{{ "footer.copyRight" | translate }}</p>

@@ -1,16 +1,16 @@
+<div *ngIf="isLoading" class="loading-spinner">
+  <div class="spinner">
+    <img src="../../../../assets/images/home/Icon/furniture.gif" alt="" />
+  </div>
+</div>
 <div class="register-form">
   <div class="container">
     <div class="row min-vh-100">
       <div
-        class="col-lg-7 col-12 m-auto gap-3 bg-white shadow p-5 rounded-2 d-flex flex-column"
+        class="col-lg-8 col-12 m-auto gap-3 bg-white shadow p-sm-5 px-3 py-5 rounded-2 d-flex flex-column"
       >
         <div class="title-register text-center">
           <h1>{{ "register.register" | translate }}</h1>
-          <div *ngIf="error" class="alert alert-primary mb-0">
-            <h5>
-              {{ error }}
-            </h5>
-          </div>
           <p>
             {{ "register.description" | translate }}
           </p>
@@ -18,47 +18,35 @@
         <form
           class="d-flex gap-4 flex-column"
           [formGroup]="registerForm"
-          (ngSubmit)="submitRegister(registerForm)"
+          (ngSubmit)="submitRegister()"
         >
+          <div *ngIf="errorMessage" class="error-message">
+            <p class="error-text">{{ errorMessage }}</p>
+          </div>
           <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="row gap-2">
             <div class="col">
+              <!-- First Name input -->
               <div class="d-flex flex-column gap-2">
-                <label class="firstName-label" for="firstName">{{
-                  "register.firstName" | translate
-                }}</label>
+                <label class="firstName-label" for="firstName">
+                  {{ "register.firstName" | translate }}
+                </label>
                 <input
+                  formControlName="firstName"
                   type="text"
                   id="firstName"
                   class="firstName-input"
-                  placeholder="{{ 'register.firstName' | translate }}"
-                  formControlName="firstName"
+                  [placeholder]="'register.firstName' | translate"
                 />
                 <div
                   *ngIf="
                     registerForm.get('firstName')?.errors &&
                     registerForm.get('firstName')?.touched
                   "
-                  class="alert alert-primary mb-0"
-                  role="alert"
+                  class="error-message mb-0"
                 >
-                  <p
-                    *ngIf="registerForm.get('firstName')?.errors?.['required']"
-                  >
-                    <strong>{{ "register.firstName" | translate }}</strong>
-                    {{ "register.required" | translate }}
-                  </p>
-                  <p
-                    *ngIf="registerForm.get('firstName')?.errors?.['minlength']"
-                  >
-                    <strong>{{ "register.firstName" | translate }}</strong>
-                    {{ "register.minLength" | translate }}
-                  </p>
-                  <p
-                    *ngIf="registerForm.get('firstName')?.errors?.['maxlength']"
-                  >
-                    <strong>{{ "register.firstName" | translate }}</strong>
-                    {{ "register.maxLength" | translate }}
+                  <p class="error-text" *ngIf="getErrorMessage('firstName')">
+                    {{ getErrorMessage("firstName") | translate }}
                   </p>
                 </div>
               </div>
@@ -66,13 +54,13 @@
             <div class="col">
               <div class="d-flex flex-column gap-2">
                 <label class="lastName-label" for="lastName">
-                  {{ "register.lastName" | translate }}</label
-                >
+                  {{ "register.lastName" | translate }}
+                </label>
                 <input
                   type="text"
                   id="lastName"
                   class="lastName-input"
-                  placeholder=" {{ 'register.lastName' | translate }}"
+                  [placeholder]="'register.lastName' | translate"
                   formControlName="lastName"
                 />
                 <div
@@ -80,24 +68,10 @@
                     registerForm.get('lastName')?.errors &&
                     registerForm.get('lastName')?.touched
                   "
-                  class="alert alert-primary mb-0"
-                  role="alert"
+                  class="error-message mb-0"
                 >
-                  <p *ngIf="registerForm.get('lastName')?.errors?.['required']">
-                    <strong> {{ "register.lastName" | translate }}</strong>
-                    {{ "register.required" | translate }}
-                  </p>
-                  <p
-                    *ngIf="registerForm.get('lastName')?.errors?.['minlength']"
-                  >
-                    <strong> {{ "register.lastName" | translate }}</strong>
-                    {{ "register.minLength" | translate }}
-                  </p>
-                  <p
-                    *ngIf="registerForm.get('lastName')?.errors?.['maxlength']"
-                  >
-                    <strong> {{ "register.lastName" | translate }}</strong>
-                    {{ "register.maxLength" | translate }}
+                  <p class="error-text" *ngIf="getErrorMessage('lastName')">
+                    {{ getErrorMessage("lastName") | translate }}
                   </p>
                 </div>
               </div>
@@ -107,13 +81,13 @@
           <!-- Email input -->
           <div class="d-flex flex-column gap-2">
             <label class="emailAddress-label" for="emailAddress">
-              {{ "register.emailAddress" | translate }}</label
-            >
+              {{ "register.email" | translate }}
+            </label>
             <input
               type="email"
               id="emailAddress"
               class="emailAddress-input"
-              placeholder="{{ 'register.emailAddress' | translate }}"
+              [placeholder]="'register.email' | translate"
               formControlName="email"
             />
             <div
@@ -121,30 +95,24 @@
                 registerForm.get('email')?.errors &&
                 registerForm.get('email')?.touched
               "
-              class="alert alert-primary mb-0"
-              role="alert"
+              class="error-message mb-0"
             >
-              <p *ngIf="registerForm.get('email')?.errors?.['required']">
-                <strong>{{ "register.email" | translate }}</strong>
-                {{ "register.required" | translate }}
-              </p>
-              <p *ngIf="registerForm.get('email')?.errors?.['email']">
-                <strong>{{ "register.email" | translate }}</strong
-                >{{ "register.invalid" | translate }}
+              <p class="error-text" *ngIf="getErrorMessage('email')">
+                {{ getErrorMessage("email") | translate }}
               </p>
             </div>
           </div>
 
           <!-- Password input -->
           <div class="d-flex flex-column gap-2">
-            <label class="password-label" for="password">{{
-              "register.password" | translate
-            }}</label>
+            <label class="password-label" for="password">
+              {{ "register.password" | translate }}
+            </label>
             <input
               type="password"
               id="password"
               class="password-input"
-              placeholder="{{ 'register.password' | translate }}"
+              [placeholder]="'register.password' | translate"
               formControlName="password"
             />
             <div
@@ -152,21 +120,15 @@
                 registerForm.get('password')?.errors &&
                 registerForm.get('password')?.touched
               "
-              class="alert alert-primary"
-              role="alert"
+              class="error-message mb-0"
             >
-              <p *ngIf="registerForm.get('password')?.errors?.['required']">
-                <strong>{{ "register.password" | translate }}</strong>
-                {{ "register.required" | translate }}
-              </p>
-              <p *ngIf="registerForm.get('password')?.errors?.['pattern']">
-                <strong>{{ "register.password" | translate }}</strong>
-                {{ "register.condition" | translate }}
+              <p class="error-text" *ngIf="getErrorMessage('password')">
+                {{ getErrorMessage("password") | translate }}
               </p>
             </div>
           </div>
 
-          <!-- Password input -->
+          <!-- Confirm Password input -->
           <div class="d-flex flex-column gap-2">
             <label class="cPassword-label" for="cPassword">
               {{ "register.confirmPassword" | translate }}
@@ -175,40 +137,39 @@
               type="password"
               id="cPassword"
               class="cPassword-input"
-              placeholder="{{ 'register.confirmPassword' | translate }}"
+              [placeholder]="'register.confirmPassword' | translate"
               formControlName="cPassword"
             />
             <div
-              *ngIf="registerForm.controls?.['cPassword']?.errors"
-              class="alert alert-primary"
-              role="alert"
+              *ngIf="
+                registerForm.get('cPassword')?.errors &&
+                registerForm.get('cPassword')?.touched
+              "
+              class="error-message mb-0"
             >
-              <p>
-                <strong>{{ "register.yourPassword" | translate }}</strong>
-                {{ "register.passwordCondition" | translate }}
+              <p class="error-text" *ngIf="getErrorMessage('cPassword')">
+                {{ getErrorMessage("cPassword") | translate }}
               </p>
             </div>
           </div>
 
-          <!-- Submit button -->
-          <div class="d-flex gap-3">
-            <button
-              type="submit"
-              class="btn btn-signUp"
-              [disabled]="registerForm.invalid"
-            >
-              {{ "register.signUp" | translate }}
-            </button>
-          </div>
+          <div class="d-flex align-items-center flex-column flex-md-row">
+            <!-- Submit button -->
+            <div class="d-flex col-md-5 col-12">
+              <button type="submit" class="btn btn-signUp">
+                {{ "register.signUp" | translate }}
+              </button>
+            </div>
 
-          <!-- Register buttons -->
-          <div class="text-center hint-login">
-            <p>
-              {{ "register.anAccount" | translate }}
-              <a [routerLink]="['/', currentLang, 'login']">{{
-                "register.login" | translate
-              }}</a>
-            </p>
+            <!-- Register buttons -->
+            <div class="hint-login col-md-7 col-12 mx-3 my-3 my-md-0">
+              <p>
+                {{ "register.anAccount" | translate }}
+                <a [routerLink]="['/', currentLang, 'login']">{{
+                  "register.login" | translate
+                }}</a>
+              </p>
+            </div>
           </div>
         </form>
       </div>

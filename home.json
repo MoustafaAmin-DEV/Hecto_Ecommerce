@@ -1,59 +1,59 @@
 {
-  "homePage": {
-    "en": {
+  "en": {
+    "homePage": {
       "slider": [
         {
           "hint": "The Best Furniture for Your Castle....",
           "titleSlider": "New Furniture Collection Trends in 2024",
           "descriptionSlider": "Discover the latest trends in furniture design to elegantly and comfortably refresh your home.",
-          "imgslider": "../../../../../assets/images/home/slider1.png"
+          "imgslider": "../../../../../assets/images/home/Slider/Cantilever chair.png"
         },
         {
           "hint": "Choosing the Perfect Furniture....",
           "titleSlider": "Innovative Designs for Modern Furniture",
           "descriptionSlider": "Enjoy a blend of comfort and style with our latest furniture designs.",
-          "imgslider": "../../../../../assets/images/home/slider1.png"
+          "imgslider": "../../../../../assets/images/home/Slider/Parsons chair.png"
         },
         {
           "hint": "Revamp Your Space in Style....",
           "titleSlider": "Top Furniture Picks for the New Year",
           "descriptionSlider": "Explore our unique designs that cater to all your home needs.",
-          "imgslider": "../../../../../assets/images/home/slider1.png"
+          "imgslider": "../../../../../assets/images/home/Slider/Wingback chair.png"
         }
       ],
       "featuredPro": [
         {
           "id": 1,
-          "featImg": "../../../../../assets/images/home/image 1168.png",
-          "titleFeat": "Cantilever chair",
+          "featImg": "../../../../../assets/images/home/feature products/Eames Lounge Chair brown.png",
+          "titleFeat": "Lounge Chair brown",
           "codeFeat": "Code - Y523201",
           "saleFeat": "42.00"
         },
         {
           "id": 2,
-          "featImg": "../../../../../assets/images/home/image 1.png",
-          "titleFeat": "Folding chair",
+          "featImg": "../../../../../assets/images/home/feature products/eames lounge chair.png",
+          "titleFeat": "Eames Lounge Chair",
           "codeFeat": "Code - Z524501",
           "saleFeat": "75.00"
         },
         {
           "id": 3,
-          "featImg": "../../../../../assets/images/home/image 1169.png",
-          "titleFeat": "Chaise longue",
+          "featImg": "../../../../../assets/images/home/feature products/gray fabric sofa chair.png",
+          "titleFeat": "Fabric Sofa Chair",
           "codeFeat": "Code - H929801",
           "saleFeat": "93.00"
         },
         {
           "id": 4,
-          "featImg": "../../../../../assets/images/home/image 3.png",
-          "titleFeat": "Adirondack chair",
+          "featImg": "../../../../../assets/images/home/feature products/Sofa bed Chair.png",
+          "titleFeat": "Sofa Bed Chair",
           "codeFeat": "Code - Y263291",
           "saleFeat": "60.50"
         },
         {
           "id": 5,
-          "featImg": "../../../../../assets/images/home/image 1171.png",
-          "titleFeat": "Aeron chair",
+          "featImg": "../../../../../assets/images/home/feature products/Sofa bed Davenport Velvet.png",
+          "titleFeat": "Sofa bed Davenport Velvet",
           "codeFeat": "Code - Y628205",
           "saleFeat": "87.06"
         }
@@ -61,49 +61,37 @@
       "latestPro": {
         "newArrivals": [
           {
-            "latestImg": "../../../../../assets/images/home/image 1166.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "Hot",
+            "latestImg": "../../../../../assets/images/home/latest products/black bed.png",
             "latestTitel": "Elegant Wooden Chair",
             "latestSale": "150.00",
             "latestOffer": "20.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 15.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/brown fabric padded.png",
             "latestTitel": "Luxurious Sofa Chair",
             "latestSale": "180.00",
             "latestOffer": "25.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 1168.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "New",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Dining room.png",
             "latestTitel": "Modern Dining Chair",
             "latestSale": "90.00",
             "latestOffer": "18.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 23.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/chair Table Fritz Hansen.png",
             "latestTitel": "Classic Armchair",
             "latestSale": "220.00",
             "latestOffer": "30.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 11.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "New",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Varier.png",
             "latestTitel": "Comfortable Recliner",
             "latestSale": "75.00",
             "latestOffer": "12.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 3.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "Sale",
+            "latestImg": "../../../../../assets/images/home/latest products/club-chair.png",
             "latestTitel": "Stylish Corner Chair",
             "latestSale": "270.00",
             "latestOffer": "35.00"
@@ -111,25 +99,19 @@
         ],
         "BestSeller": [
           {
-            "latestImg": "../../../../../assets/images/home/image 15.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/Eames Lounge Chair Couch.png",
             "latestTitel": "Luxurious Sofa Chair",
             "latestSale": "180.00",
             "latestOffer": "25.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 1168.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "New",
+            "latestImg": "../../../../../assets/images/home/latest products/Egg Eames Lounge Chair.png",
             "latestTitel": "Modern Dining Chair",
             "latestSale": "90.00",
             "latestOffer": "18.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 3.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "Sale",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Varier.png",
             "latestTitel": "Stylish Corner Chair",
             "latestSale": "270.00",
             "latestOffer": "35.00"
@@ -137,33 +119,25 @@
         ],
         "Featured": [
           {
-            "latestImg": "../../../../../assets/images/home/image 1169.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "New",
+            "latestImg": "../../../../../assets/images/home/latest products/Sofa bed Couch Living room.png",
             "latestTitel": "Premium Office Chair",
             "latestSale": "650.00",
             "latestOffer": "50.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 23.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/Sofa bed Davenport Velvet.png",
             "latestTitel": "Elegant Armchair",
             "latestSale": "200.00",
             "latestOffer": "20.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 11.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "Hot",
+            "latestImg": "../../../../../assets/images/home/latest products/club-chair.png",
             "latestTitel": "Luxurious Recliner",
             "latestSale": "250.00",
             "latestOffer": "40.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 3.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "Sale",
+            "latestImg": "../../../../../assets/images/home/latest products/chair Table Fritz Hansen.png",
             "latestTitel": "Contemporary Lamp Chair",
             "latestSale": "280.00",
             "latestOffer": "45.00"
@@ -171,25 +145,19 @@
         ],
         "SpecialOffer": [
           {
-            "latestImg": "../../../../../assets/images/home/image 11.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "Hot",
+            "latestImg": "../../../../../assets/images/home/latest products/chair Table Fritz Hansen.png",
             "latestTitel": "Designer Lounge Chair",
             "latestSale": "110.00",
             "latestOffer": "25.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 1168.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "New",
+            "latestImg": "../../../../../assets/images/home/latest products/black bed.png",
             "latestTitel": "High-Back Chair",
             "latestSale": "85.00",
             "latestOffer": "15.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 23.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Dining room.png",
             "latestTitel": "Elegant Side Chair",
             "latestSale": "210.00",
             "latestOffer": "30.00"
@@ -209,7 +177,7 @@
               "feat4": "Material expose like metals"
             }
           ],
-          "imagPro": "../../../../../assets/images/home/chair1.png"
+          "imagPro": "../../../../../assets/images/home/discount Item/chair Table Fritz Hansen.png"
         },
         {
           "discountTitle": "35% Discount Of some Products",
@@ -223,7 +191,7 @@
               "feat4": "Wipe clean with a damp cloth."
             }
           ],
-          "imagPro": "../../../../../assets/images/home/chair1.png"
+          "imagPro": "../../../../../assets/images/home/discount Item/Sofa bed Chair.png"
         },
         {
           "discountTitle": "10% Discount Of All Products",
@@ -237,152 +205,142 @@
               "feat4": "Solid wood, Particleboard, 100%solid"
             }
           ],
-          "imagPro": "../../../../../assets/images/home/chair1.png"
+          "imagPro": "../../../../../assets/images/home/discount Item/Sofa bed Couch Living room.png"
         }
       ],
       "secOffer": [
         {
-          "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/free-delivery.svg",
           "titleOffer": "Free Delivery",
           "descOffer": "Get free delivery on orders over $100."
         },
         {
-          "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/cashback.svg",
           "titleOffer": "Cashback",
           "descOffer": "Get cashback on selected products. Take advantage of our offers now!"
         },
         {
-          "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/premium-quality.svg",
           "titleOffer": "Premium Quality",
           "descOffer": "We provide you with high-quality products to ensure maximum comfort and durability."
         },
         {
-          "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/24-hours-support.svg",
           "titleOffer": "24/7 Support",
           "descOffer": "Our team is ready to support you around the clock to ensure a smooth and satisfying shopping experience."
         }
       ],
       "catePro": [
         {
-          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Comfortable Office Chair.png",
           "categoryProductTitle": "Comfortable Office Chair",
           "categoryProductPrice": "$79.00"
         },
         {
-          "cateImg": "../../../../../assets/images/home/image 1168.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Modern Dining Chair.png",
           "categoryProductTitle": "Modern Dining Chair",
           "categoryProductPrice": "$89.00"
         },
         {
-          "cateImg": "../../../../../assets/images/home/image 1171.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Ergonomic Desk Chair.png",
           "categoryProductTitle": "Ergonomic Desk Chair",
           "categoryProductPrice": "$99.00"
         },
         {
-          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Luxury Recliner.png",
           "categoryProductTitle": "Luxury Recliner",
           "categoryProductPrice": "$120.00"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/topCategory/Recliner Chair.png",
+          "categoryProductTitle": "Recliner Chair",
+          "categoryProductPrice": "180.00 ج.م"
         }
       ],
       "trendingProducts": {
         "trendingPro": [
           {
-            "trendImg": "../../../../../assets/images/home/image 1171.png",
-            "trendingProductTitle": "Cantilever chair",
+            "trendImg": "../../../../../assets/images/home/trending Products/Bean Bag Chair.png",
+            "trendingProductTitle": "Bean Bag Chair",
             "newPrice": "$26.00 ",
             "oldPrice": "$42.00"
           },
           {
-            "trendImg": "../../../../../assets/images/home/image 1170.png",
-            "trendingProductTitle": "Cantilever chair",
+            "trendImg": "../../../../../assets/images/home/trending Products/Cafe table.png",
+            "trendingProductTitle": "Cafe table",
             "newPrice": "$26.00 ",
             "oldPrice": "$42.00"
           },
           {
-            "trendImg": "../../../../../assets/images/home/image 31.png",
-            "trendingProductTitle": "Cantilever chair",
+            "trendImg": "../../../../../assets/images/home/trending Products/Recliner Chair.png",
+            "trendingProductTitle": "Recliner Chair",
             "newPrice": "$26.00 ",
             "oldPrice": "$42.00"
           },
           {
-            "trendImg": "../../../../../assets/images/home/image 11.png",
-            "trendingProductTitle": "Cantilever chair",
+            "trendImg": "../../../../../assets/images/home/trending Products/table.png",
+            "trendingProductTitle": "table",
             "newPrice": "$26.00 ",
             "oldPrice": "$42.00"
-          }
-        ],
-        "trendList": [
-          {
-            "listImg": "../../../../../assets/images//home/image 30.png",
-            "productListTitle": "Executive Seat chair",
-            "productListPrice": "$32.00"
-          },
-          {
-            "listImg": "../../../../../assets/images//home/image 19.png",
-            "productListTitle": "Executive Seat chair",
-            "productListPrice": "$32.00"
-          },
-          {
-            "listImg": "../../../../../assets/images//home/image 28.png",
-            "productListTitle": "Executive Seat chair",
-            "productListPrice": "$32.00"
           }
         ]
       }
-    },
-    "ar": {
+    }
+  },
+  "ar": {
+    "homePage": {
       "slider": [
         {
           "hint": "أفضل أثاث لقلعتك....",
           "titleSlider": "اتجاهات جديدة لمجموعة الأثاث في 2024",
           "descriptionSlider": "هنا يمكنك العثور على أحدث الاتجاهات في تصميم الأثاث لتجديد منزلك بشكل أنيق ومريح.",
-          "imgslider": "../../../../../assets/images/home/slider1.png"
+          "imgslider": "../../../../../assets/images/home/Slider/Cantilever chair.png"
         },
         {
           "hint": "اختيار الأثاث المثالي....",
           "titleSlider": "تصاميم مبتكرة للأثاث الحديث",
           "descriptionSlider": "استمتع بمزيج من الراحة والأناقة مع أحدث تصاميم الأثاث لدينا.",
-          "imgslider": "../../../../../assets/images/home/slider1.png"
+          "imgslider": "../../../../../assets/images/home/Slider/Parsons chair.png"
         },
         {
           "hint": "جدد مساحتك بأناقة....",
           "titleSlider": "أفضل اختيارات الأثاث للعام الجديد",
           "descriptionSlider": "اكتشف تصاميمنا الفريدة التي تلبي جميع احتياجاتك في المنزل.",
-          "imgslider": "../../../../../assets/images/home/slider1.png"
+          "imgslider": "../../../../../assets/images/home/Slider/Wingback chair.png"
         }
       ],
       "featuredPro": [
         {
           "id": 1,
-          "featImg": "../../../../../assets/images/home/image 1168.png",
+          "featImg": "../../../../../assets/images/home/feature products/Eames Lounge Chair brown.png",
           "titleFeat": "كرسي كانتيلفير",
           "codeFeat": "الرمز - Y523201",
           "saleFeat": "42.00"
         },
         {
           "id": 2,
-          "featImg": "../../../../../assets/images/home/image 1.png",
+          "featImg": "../../../../../assets/images/home/feature products/eames lounge chair.png",
           "titleFeat": "كرسي قابل للطي",
           "codeFeat": "الرمز - Z524501",
           "saleFeat": "75.00"
         },
         {
           "id": 3,
-          "featImg": "../../../../../assets/images/home/image 1169.png",
+          "featImg": "../../../../../assets/images/home/feature products/gray fabric sofa chair.png",
           "titleFeat": "كرسي شيزلونج",
           "codeFeat": "الرمز - H929801",
           "saleFeat": "93.00"
         },
         {
           "id": 4,
-          "featImg": "../../../../../assets/images/home/image 3.png",
+          "featImg": "../../../../../assets/images/home/feature products/Sofa bed Chair.png",
           "titleFeat": "كرسي أديرونداك",
           "codeFeat": "الرمز - Y263291",
           "saleFeat": "60.50"
         },
         {
           "id": 5,
-          "featImg": "../../../../../assets/images/home/image 1171.png",
+          "featImg": "../../../../../assets/images/home/feature products/Sofa bed Davenport Velvet.png",
           "titleFeat": "كرسي إيرون",
           "codeFeat": "الرمز - Y628205",
           "saleFeat": "87.06"
@@ -391,49 +349,37 @@
       "latestPro": {
         "newArrivals": [
           {
-            "latestImg": "../../../../../assets/images/home/image 1166.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "مثير",
+            "latestImg": "../../../../../assets/images/home/latest products/black bed.png",
             "latestTitel": "كرسي خشبي أنيق",
             "latestSale": "150.00",
             "latestOffer": "20.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 15.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/brown fabric padded.png",
             "latestTitel": "كرسي أريكة فاخر",
             "latestSale": "180.00",
             "latestOffer": "25.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 1168.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "جديد",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Dining room.png",
             "latestTitel": "كرسي طعام عصري",
             "latestSale": "90.00",
             "latestOffer": "18.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 23.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/chair Table Fritz Hansen.png",
             "latestTitel": "كرسي بذراعين كلاسيكي",
             "latestSale": "220.00",
             "latestOffer": "30.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 11.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "جديد",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Varier.png",
             "latestTitel": "كرسي استرخاء مريح",
             "latestSale": "75.00",
             "latestOffer": "12.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 3.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "الأكثرطلباً",
+            "latestImg": "../../../../../assets/images/home/latest products/club-chair.png",
             "latestTitel": "كرسي زاوية أنيق",
             "latestSale": "270.00",
             "latestOffer": "35.00"
@@ -441,25 +387,19 @@
         ],
         "BestSeller": [
           {
-            "latestImg": "../../../../../assets/images/home/image 15.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/Eames Lounge Chair Couch.png",
             "latestTitel": "كرسي أريكة فاخر",
             "latestSale": "180.00",
             "latestOffer": "25.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 1168.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "جديد",
+            "latestImg": "../../../../../assets/images/home/latest products/Egg Eames Lounge Chair.png",
             "latestTitel": "كرسي طعام عصري",
             "latestSale": "90.00",
             "latestOffer": "18.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 3.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "الأكثرطلباً",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Varier.png",
             "latestTitel": "كرسي زاوية أنيق",
             "latestSale": "270.00",
             "latestOffer": "35.00"
@@ -467,33 +407,25 @@
         ],
         "Featured": [
           {
-            "latestImg": "../../../../../assets/images/home/image 1169.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "جديد",
+            "latestImg": "../../../../../assets/images/home/latest products/Sofa bed Couch Living room.png",
             "latestTitel": "كرسي مكتب فاخر",
             "latestSale": "650.00",
             "latestOffer": "50.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 23.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/Sofa bed Davenport Velvet.png",
             "latestTitel": "كرسي بذراعين أنيق",
             "latestSale": "200.00",
             "latestOffer": "20.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 11.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "مثير",
+            "latestImg": "../../../../../assets/images/home/latest products/club-chair.png",
             "latestTitel": "كرسي استرخاء فاخر",
             "latestSale": "250.00",
             "latestOffer": "40.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 3.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "الأكثرطلباً",
+            "latestImg": "../../../../../assets/images/home/latest products/chair Table Fritz Hansen.png",
             "latestTitel": "كرسي إضاءة عصري",
             "latestSale": "280.00",
             "latestOffer": "45.00"
@@ -501,25 +433,19 @@
         ],
         "SpecialOffer": [
           {
-            "latestImg": "../../../../../assets/images/home/image 11.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "مثير",
+            "latestImg": "../../../../../assets/images/home/latest products/chair Table Fritz Hansen.png",
             "latestTitel": "كرسي صالة مصمم",
             "latestSale": "110.00",
             "latestOffer": "25.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 1168.png",
-            "imgvector": "../../../../../assets/images/home/Vector 1.png",
-            "latestBanner": "جديد",
+            "latestImg": "../../../../../assets/images/home/latest products/black bed.png",
             "latestTitel": "كرسي خلفي عالي",
             "latestSale": "85.00",
             "latestOffer": "15.00"
           },
           {
-            "latestImg": "../../../../../assets/images/home/image 23.png",
-            "imgvector": "",
-            "latestBanner": "",
+            "latestImg": "../../../../../assets/images/home/latest products/Chair Dining room.png",
             "latestTitel": "كرسي جانبي أنيق",
             "latestSale": "210.00",
             "latestOffer": "30.00"
@@ -539,7 +465,7 @@
               "feat4": "مواد مكشوفة مثل المعادن"
             }
           ],
-          "imagPro": "../../../../../assets/images/home/chair1.png"
+          "imagPro": "../../../../../assets/images/home/discount Item/chair Table Fritz Hansen.png"
         },
         {
           "discountTitle": "خصم 35% على بعض المنتجات",
@@ -553,7 +479,7 @@
               "feat4": "مسح نظيف بقطعة قماش مبللة"
             }
           ],
-          "imagPro": "../../../../../assets/images/home/chair1.png"
+          "imagPro": "../../../../../assets/images/home/discount Item/Sofa bed Chair.png"
         },
         {
           "discountTitle": "خصم 10% على جميع المنتجات",
@@ -567,49 +493,54 @@
               "feat4": "خشب صلب، لوح خشبي، 100% صلب"
             }
           ],
-          "imagPro": "../../../../../assets/images/home/chair1.png"
+          "imagPro": "../../../../../assets/images/home/discount Item/Sofa bed Couch Living room.png"
         }
       ],
       "secOffer": [
         {
-          "imgOffer": "../../../../../assets/images/home/free-delivery 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/free-delivery.svg",
           "titleOffer": "النقل مجاني",
           "descOffer": " احصل على النقل مجاني عند الشراء بقيمة أكبر من $100."
         },
         {
-          "imgOffer": "../../../../../assets/images/home/cashback 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/cashback.svg",
           "titleOffer": "استرداد نقدي",
           "descOffer": "احصل على استرداد نقدي عند شراء منتجات محددة. استفد من العروض الآن!"
         },
         {
-          "imgOffer": "../../../../../assets/images/home/premium-quality 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/premium-quality.svg",
           "titleOffer": "جودة مميزة",
           "descOffer": "نحن نقدم لك منتجات ذات جودة عالية لضمان تحقيق أقصى قدر من الراحة والمتانة."
         },
         {
-          "imgOffer": "../../../../../assets/images/home/24-hours-support 1.svg",
+          "imgOffer": "../../../../../assets/images/home/Icon/24-hours-support.svg",
           "titleOffer": "دعم على مدار الساعة",
           "descOffer": "فريقنا جاهز لدعمك على مدار الساعة لضمان تجربة تسوق سلسة ومرضية."
         }
       ],
       "catePro": [
         {
-          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Comfortable Office Chair.png",
           "categoryProductTitle": "كرسي عصري صغير",
           "categoryProductPrice": "200.00 ج.م"
         },
         {
-          "cateImg": "../../../../../assets/images/home/image 1168.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Modern Dining Chair.png",
           "categoryProductTitle": "كرسي جلد فاخر",
           "categoryProductPrice": "250.00 ج.م"
         },
         {
-          "cateImg": "../../../../../assets/images/home/image 1171.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Ergonomic Desk Chair.png",
           "categoryProductTitle": "كرسي مكتب حديث",
           "categoryProductPrice": "300.00 ج.م"
         },
         {
-          "cateImg": "../../../../../assets/images/home/image 20.png",
+          "cateImg": "../../../../../assets/images/home/topCategory/Luxury Recliner.png",
+          "categoryProductTitle": "كرسي طعام أنيق",
+          "categoryProductPrice": "180.00 ج.م"
+        },
+        {
+          "cateImg": "../../../../../assets/images/home/topCategory/Recliner Chair.png",
           "categoryProductTitle": "كرسي طعام أنيق",
           "categoryProductPrice": "180.00 ج.م"
         }
@@ -617,51 +548,33 @@
       "trendingProducts": {
         "trendingPro": [
           {
-            "trendImg": "../../../../../assets/images/home/image 1171.png",
+            "trendImg": "../../../../../assets/images/home/trending Products/Bean Bag Chair.png",
             "trendingProductTitle": "كرسي الكانتيلفير",
             "newPrice": "$30.00",
             "oldPrice": "$50.00"
           },
           {
-            "trendImg": "../../../../../assets/images/home/image 1170.png",
+            "trendImg": "../../../../../assets/images/home/trending Products/Cafe table.png",
             "trendingProductTitle": "كرسي الاسترخاء",
             "newPrice": "$45.00",
             "oldPrice": "$70.00"
           },
           {
-            "trendImg": "../../../../../assets/images/home/image 31.png",
+            "trendImg": "../../../../../assets/images/home/trending Products/Recliner Chair.png",
             "trendingProductTitle": "كرسي القراءة المريح",
             "newPrice": "$60.00",
             "oldPrice": "$80.00"
           },
           {
-            "trendImg": "../../../../../assets/images/home/image 11.png",
+            "trendImg": "../../../../../assets/images/home/trending Products/table.png",
             "trendingProductTitle": "كرسي الكانتيلفير",
             "newPrice": "$30.00",
             "oldPrice": "$50.00"
-          }
-        ],
-        "trendList": [
-          {
-            "listImg": "../../../../../assets/images//home/image 30.png",
-            "productListTitle": "كرسي تنفيذي فاخر",
-            "productListPrice": "$50.00"
-          },
-          {
-            "listImg": "../../../../../assets/images//home/image 19.png",
-            "productListTitle": "كرسي مكتبي",
-            "productListPrice": "$45.00"
-          },
-          {
-            "listImg": "../../../../../assets/images//home/image 28.png",
-            "productListTitle": "كرسي ضيافة",
-            "productListPrice": "$40.00"
           }
         ]
       }
     }
   },
-
   "shopPage": {
     "shop": [
       {
@@ -714,5 +627,15 @@
         "prd_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
       }
     ]
-  }
+  },
+  "users": [
+    {
+      "id": "91ff",
+      "firstName": "Moustafa",
+      "lastName": "Amin",
+      "email": "darshola0@gmail.com",
+      "password": "Ahmed011",
+      "cPassword": "Ahmed011"
+    }
+  ]
 }

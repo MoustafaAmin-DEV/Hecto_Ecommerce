@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { LanguageService } from './language/language.service';
+import { catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SharedService {
-  public urlHome = ' http://localhost:3000';
-  public urlProduct = 'http://localhost:3000/featuredPro';
   lang: string;
+  urlApi = 'http://localhost:3000/';
   constructor(
     private http: HttpClient,
     private languageService: LanguageService
@@ -17,15 +17,13 @@ export class SharedService {
   }
 
   datahomePage() {
-    return this.http.get(`${this.urlHome}/homePage`);
-  }
-  ProductDetails(id: string) {
-    return this.http.get(`${this.urlProduct}/${id}`);
-  }
-  dataAboutPage() {
-    return this.http.get(`${this.urlHome}/aboutPage`);
-  }
-  dataShopPage() {
-    return this.http.get(`${this.urlHome}/shopPage`);
+    this.urlApi = `${this.urlApi}${this.lang}`;
+    console.log('Request URL:', this.urlApi);
+    return this.http.get<any>(this.urlApi).pipe(
+      catchError((error) => {
+        console.error('Error fetching data:', error);
+        return throwError(error);
+      })
+    );
   }
 }

@@ -16,8 +16,8 @@ export class ShopComponent {
     this.sortType = event.target.value;
   }
   ngOnInit() {
-    this.apiService.dataShopPage().subscribe((data) => {
-      this.dataShopPage = data;
-    });
+    // this.apiService.dataShopPage().subscribe((data) => {
+    //   this.dataShopPage = data;
+    // });
   }
 }

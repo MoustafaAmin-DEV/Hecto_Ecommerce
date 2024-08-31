@@ -13,14 +13,12 @@ import { navbarComponent } from './views/navbar/navbar.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { LoginComponent } from './views/login/login/login.component';
 import { RegisterComponent } from './views/login/register/register.component';
-import { ResetPasswordComponent } from './views/login/reset-password/reset-password.component';
 import {
   TranslateLoader,
   TranslateModule,
   TranslateService,
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -31,8 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     navbarComponent,
     LoginComponent,
-    RegisterComponent,
-    ResetPasswordComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -55,4 +52,4 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

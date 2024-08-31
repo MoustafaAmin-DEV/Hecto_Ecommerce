@@ -13,19 +13,12 @@ import { AuthService } from './auth.service';
   providedIn: 'root',
 })
 export class AuthClassGuard implements CanActivate {
-  constructor(private _AuthService: AuthService, private _router: Router) {}
-  canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ):
-    | Observable<boolean | UrlTree>
-    | Promise<boolean | UrlTree>
-    | boolean
-    | UrlTree {
-    if (this._AuthService.userData.getValue() != null) {
-      return true;
+  constructor(private _AuthService: AuthService, private _router: Router) { }
+  canActivate(): boolean {
+    if (this._AuthService.isLoggedIn()) {
+      return true; // إذا كان المستخدم مسجلاً للدخول، يسمح له بالدخول للمسار
     } else {
-      this._router.navigate(['/login']);
+      this._router.navigate(['/login']); // إعادة التوجيه إلى صفحة تسجيل الدخول
       return false;
     }
   }
